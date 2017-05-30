@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ezPAARSE</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script src="assets/js/jquery-min.js" type="text/javascript"></script>
+        <script src="assets/js/counter.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <header>
+        </header>
+        <div id="language">
+            <a href="index.html">
+                <img src="assets/img/french.jpg" />
+            </a>
+            <a href="index-en.html">
+                <img src="assets/img/english.jpg" />
+            </a>
+        </div>
+        <h1>ezPAARSE qu'est ce que c'est ?</h1>
+        <img src ="assets/img/logo-ezpaarse.jpg" alt="logo ezpaarse" id="logo"/>
+        <div id="presentation">
+            <p>C'est un <span  class="bleuciel">logiciel libre et gratuit</span> pour exploiter, analyser et enrichir
+                des logs d'accès aux ressources électroniques publiées sur les sites web des
+                <span  class="bleuciel">éditeurs de littérature scientifique</span>.
+            </p>
+            <p>
+                ezPAARSE est une application web qui dispose d'un <span  class="bleuciel">d'un formulaire en ligne</span>
+                et d'une <span  class="bleuciel">API</span> permettant l'ingestion manuelle ou automatique
+                des logs collectées sur les serveur et proxies de votre établissement. Il produit des fichiers CSV
+                d'événements de consultation qui obéissent aux recommandations <a href="http://www.projectcounter.org/" target="_blank">COUNTER</a>.
+            </p>
+            <img src="assets/img/image-home.jpg" alt="image accueil"/>
+        </div>
+        <div id="services">
+            <div class="serviceUnit">
+                <img src="assets/img/logo-analogist.png" alt="logo analogist" />
+                <h2 class="bleuciel">AnalogIST</h2>
+                <p>
+                    <a href="http://analyses.couperin.org/" target="_blank">Analogist</a> est l'espace collaboratif où
+                    sont réunies toutes les analyses de
+                    plate-formes (pré-requises pour la création de parseurs pour ezPAARSE).
+                </p>
+            </div>
+            <div class="serviceUnit">
+                <img src="assets/img/logo-ezmesure.png" alt="logo ezmesure" />
+                <h2 class="bleuciel">ezMESURE</h2>
+                <p>
+                    <a href="https://ezmesure.couperin.org/" target="_blank">ezMESURE</a> est un entrepôt national conçu
+                    pour collecter les données générées par les instances ezPAARSE installées dans les établissements de
+                    l'ESR et les présenter dans des visualisations dynamiques et personnalisables.
+                </p>
+            </div>
+            <div class="serviceUnit">
+                <img src="assets/img/bibliomap.jpg" alt="logo bibliomap" />
+                <h2 class="bleuciel">Bibliomap</h2>
+                <p>
+                    <a href="http://bibliomap.inist.fr" target="_blank">Bibliomap</a> affiche les événements de consultation
+                    générés par une instance d'ezPAARSE en temps réel sur une carte. C'est un outil utile pour surveiller le
+                    trafic de votre ezproxy ou pour aider à porter le projet d'adoption d'ezPAARSE dans votre établissement.
+                </p>
+            </div>
+        </div>
+        <div id="logs">
+            <div id="stats">
+                <div class="numberBox">
+                    <p id="counter1">0</p>
+                    <p class="what">Consultations</p>
+                </div>
+                <div class="numberBox">
+                    <p id="counter6">0</p>
+                    <p class="what">Type de documents</p>
+                </div>
+                <div class="numberBox">
+                    <p id="counter4">0</p>
+                    <p class="what">Titres</p>
+                </div>
+                <div class="numberBox">
+                    <p id="counter5">0</p>
+                    <p class="what">Plate-formes</p>
+                </div>
+                <div class="numberBox">
+                    <p id="counter2">0</p>
+                    <p class="what">Jours</p>
+                </div>
+                <div class="numberBox">
+                    <p id="counter3">0</p>
+                    <p class="what">Etablissements</p>
+                </div>
+            </div>
+        </div>
+        <div id="team">
+            <div id="teamTitle">Une équipe et une communauté</div>
+            <div id="teamTools">
+                <div class="teamItem">
+                    <img src="assets/img/people.jpg" alt="outils" />
+                    <p class="itemTitle">Un outil simple et efficace</p>
+                    <p class="itemText">
+                        Quelques clics suffisent à l'<a href="https://ezpaarse.readthedocs.io/en/master/start/install.html" target="_blank">installer</a>
+                        pour commencer à <a href="https://ezpaarse.readthedocs.io/en/master/start/usage.html" target="_blank">analyser</a> vos logs
+                    </p>
+                </div>
+                <div class="teamItem">
+                    <img src="assets/img/people.jpg" alt="outils" />
+                    <p class="itemTitle">Une équipe disponible et réactive</p>
+                    <p class="itemText">
+                        Un problème, une question, une suggestions ?<br/>
+                        N'hésitez pas à prendre contact avec nous : &ccedil;a  nous intéresse !
+                    </p>
+                </div>
+                <div class="teamItem">
+                    <img src="assets/img/community.jpg" alt="outils" />
+                    <p class="itemTitle">Une communauté grandissante</p>
+                    <p class="itemText">
+                        Et pas seulement francophone : ezPAARSE est installé dans des établissements aux
+                        &Eacute;tats-Unis, à Singapour, en Allemagne et beaucoup d'autres !
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="copyright">&copy; ezPAARSE 2017 All rigths reserved</div>
+            <div id="logosPictos">
+                <div class="logosZone1">
+                    <a href="http://www.couperin.org/" target="_blank">
+                        <img src="assets/img/logo-couperin.png" alt="logo couperin" />
+                    </a>
+                    <a href="http://www.univ-lorraine.fr/" target="_blank">
+                        <img src="assets/img/logo-ul.png" alt="logo université de lorraine" />
+                    </a>
+                    <a href="http://www.cnrs.fr" target="_blank">
+                        <img src="assets/img/logo-cnrs.png" alt="logo cnrs" />
+                    </a>
+                </div>
+                <div class="logosZone2">
+                    <a href="mailto:ezpaarse@couperin.org">
+                        <img src="assets/img/picto-mail.svg" alt="picto mail" />
+                    </a>
+                    <a href="http://blog.ezpaarse.org" target="_blank">
+                        <img src="assets/img/picto-blog.svg" alt="picto b" />
+                    </a>
+                    <a href="https://twitter.com/ezpaarse" target="_blank">
+                        <img src="assets/img/picto-twitter.svg" alt="picto twitter" />
+                    </a>
+                    <a href="https://www.facebook.com/Ezpaarse" target="_blank">
+                        <img src="assets/img/picto-facebook.svg" alt="picto facebook" />
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCcR-0UE9WjYiwS4fMG2T4tQ" target="_blank">
+                        <img src="assets/img/picto-youtube.svg" alt="picto run" />
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <script src="http://ezpaarse-header-1.ezsites.inist.fr/main.js" type="text/javascript"></script>
+    </body>
+</html>
