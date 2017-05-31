@@ -35,16 +35,31 @@ h1 {
     color: rgb(239,239,241);
 }
 h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 .bleuciel {
     color: rgb(92,187,189);
+}
+.bleufonce {
+    color: rgb(77,82,104);
 }
 .grey {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
+}
+.bibliomapImg {
+    position: relative;
+}
+.displayImg {
+    border-radius: 30px;
+}
+.imgText {
+    position: absolute;
+    top: 35%;
+    left: 5px;
+    font-size: 1.4rem;
 }
 #language {
     display: inline-block;
