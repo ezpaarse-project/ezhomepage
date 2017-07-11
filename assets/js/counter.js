@@ -25,7 +25,7 @@ $(document).ready(function(){
             if(curval4<=62400){
                 $('#counter4').text((curval4+48).toLocaleString());
             }
-            if(curval5<=111){
+            if(curval5<=202){
                 $('#counter5').text((curval5+1).toLocaleString());
             }
             if(curval6<=58){
