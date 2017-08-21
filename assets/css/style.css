@@ -51,6 +51,8 @@ h2 {
 }
 .bibliomapImg {
     position: relative;
+    font-size: 1rem;
+    text-align: left;
 }
 .displayImg {
     border-radius: 30px;
