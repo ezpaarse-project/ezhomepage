@@ -296,11 +296,21 @@ footer {
     .serviceUnit {
         width: 90%;
         margin: 0;
-    }    
+    }
 }
 @media (max-width: 667px) {
     #teamTools {
         justify-content: center;
         -webkit-justify-content: center;
+    }
+}
+
+@media (max-width: 732px) {
+    #logs {
+        height: 100%;
+        padding-top: 22vw;
+    }
+    #stats {
+      width: 100%;
     }
 }
