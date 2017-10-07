@@ -82,11 +82,10 @@ h2 {
 #presentation {
     font-size: 1.3rem;
     font-weight: bold;
-    width: 50%;
+    width: 40rem;
     text-align: center;
 }
 #presentation p {
-    width: 65%;
     display: inline-block;
 }
 #presentation img {
@@ -287,7 +286,7 @@ footer {
         font-size: 1.2rem;
     }
     #presentation {
-        width: 90%;
+        width: 100%;
     }
 }
 @media (max-width: 732px) {
