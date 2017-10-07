@@ -1,17 +1,17 @@
 {
-      "name": "ezpaarse-home",
-      "version": "1.0.0",
-      "description": "EzPAARSE projecthome page",
-      "scripts": {
-         "static": "./node_modules/node-static/bin/cli.js -H '{\"Access-Control-Allow-Origin\":\"*\"}'"
-      },
-      "dependencies": {
-          "node-static": "^0.7.9"
-       },
-       "repository": {
-           "type": "git",
-            "url": "https://github.com/ezpaarse-project/web-home"
-       },
-       "author": "Patrick Kremer <patrickkrem@gmail.com>",
-       "license": "MIT"
- }
+   "name": "ezpaarse-home",
+   "version": "1.0.0",
+   "description": "EzPAARSE projecthome page",
+   "scripts": {
+      "static": "./node_modules/node-static/bin/cli.js -H '{\"Access-Control-Allow-Origin\":\"*\"}'"
+   },
+   "dependencies": {
+      "node-static": "^0.7.9"
+   },
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/ezpaarse-project/web-home"
+   },
+   "author": "Patrick Kremer <patrickkrem@gmail.com>",
+   "license": "MIT"
+}
