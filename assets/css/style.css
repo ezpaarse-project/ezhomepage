@@ -1,22 +1,10 @@
-@font-face {
-    font-family: 'Alte Hass Grotesk';
-    src: url('../fonts/AlteHaasGroteskRegular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Alte Hass Grotesk bold';
-    src: url('../fonts/AlteHaasGroteskBold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: bold;
-}
 html {
     font-size: 100%;
 }
 body {
     margin: 0;
     background-color: rgb(239,239,241);
-    font-family: 'Alte Hass Grotesk', 'Helvetica';
+    font-family: 'Roboto', sans-serif;
     display: flex;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -58,9 +46,7 @@ h2 {
     border-radius: 30px;
 }
 .imgText {
-    position: absolute;
-    right: 10px;
-    bottom: 12px;
+    text-align: center;
     font-size: 0.9rem;
 }
 #language {
@@ -97,7 +83,7 @@ h2 {
     color: rgb(92,187,189);
 }
 #services {
-    padding: 10px;
+    margin-top: 20px;
     display: flex;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -215,7 +201,6 @@ h2 {
 }
 .itemText {
     font-size: 1.1rem;
-    font-family: 'Roboto', sans-serif;
 }
 footer {
     width: 100%;
