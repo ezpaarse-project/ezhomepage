@@ -137,19 +137,17 @@ h2 {
     -ms-flex-align: flex-start;
     -webkit-align-items: flex-start;
 }
-.numberBox {
-    padding: 10px;
-    margin: auto;
-}
-#counter1, #counter2, #counter3, #counter4, #counter5, #counter6 {
+#counter1, #counter2, #counter3, #counter4, #counter5 {
     font-size: 2rem;
     font-weight: bold;
     margin: 0;
+    padding-left: 3px;
+    padding-right: 3px;
 }
-.what {
+#stats-content {
     font-size: 1.3rem;
-    font-weight: bold;
     margin: 0;
+    margin-top: 65px;
 }
 #team {
     width: 100%;
