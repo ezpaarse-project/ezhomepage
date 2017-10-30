@@ -139,8 +139,6 @@ h2 {
     -webkit-align-items: flex-start;
 }
 .numberBox {
-    width: 13%;
-    min-width: 115px;
     padding: 10px;
 }
 #counter1, #counter2, #counter3, #counter4, #counter5, #counter6 {
