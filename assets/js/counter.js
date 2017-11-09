@@ -11,25 +11,20 @@ $(document).ready(function(){
             var curval4=Number(str4.replace(/\s/g,''));
             var str5=$('#counter5').text();
             var curval5=Number(str5.replace(/\s/g,''));
-            var str6=$('#counter6').text();
-            var curval6=Number(str6.replace(/\s/g,''));
-            if(curval1<=14650855){
+            if(curval1<=14650855){ // consultations
                 $('#counter1').text((curval1+10139).toLocaleString());
             }
-            if(curval2<=841){
+            if(curval2<=841){ // nb jours
                 $('#counter2').text((curval2+1).toLocaleString());
             }
-            if(curval3<=20){
+            if(curval3<=20){ // établissements ESR
                 $('#counter3').text((curval3+1).toLocaleString());
             }
-            if(curval4<=62400){
+            if(curval4<=62400){ // titres
                 $('#counter4').text((curval4+48).toLocaleString());
             }
-            if(curval5<=201){
+            if(curval5<=201){ // plateformes
                 $('#counter5').text((curval5+1).toLocaleString());
-            }
-            if(curval6<=58){
-                $('#counter6').text((curval6+1).toLocaleString());
             }
         }, 2);
 

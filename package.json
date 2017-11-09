@@ -3,6 +3,7 @@
    "version": "1.0.0",
    "description": "EzPAARSE projecthome page",
    "scripts": {
+      "start": "npm run static",
       "static": "./node_modules/node-static/bin/cli.js -H '{\"Access-Control-Allow-Origin\":\"*\"}'"
    },
    "dependencies": {
