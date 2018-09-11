@@ -137,7 +137,7 @@ h2 {
     -ms-flex-align: flex-start;
     -webkit-align-items: flex-start;
 }
-#counter1, #counter2, #counter3, #counter4, #counter5 {
+#counter1, #counter2, #counter3, #counter4, #counter5, #counter6 , #counter7 {
     font-size: 2rem;
     font-weight: bold;
     margin: 0;
