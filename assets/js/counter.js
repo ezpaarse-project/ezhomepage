@@ -18,7 +18,7 @@ window.addEventListener('load', function () {
       var metrics = response.data.metrics;
       metrics.docs = response.data.docs;
 
-      axios.get('http://localhost:3000/api/badges/metrics')
+      axios.get('http://analyses.ezpaarse.org/api/badges/metrics')
         .then(function (response) {
           if (response.status !== 200) {
             return console.error('Failed to fetch ezpaarse-badge metrics');
