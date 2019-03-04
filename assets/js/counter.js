@@ -9,6 +9,17 @@ window.addEventListener('load', function () {
     issues: document.getElementById('counter7')
   };
 
+  function startCounter(metrics) {
+    setTimeout(function () {
+      for (var p in nodes) {
+        if (metrics[p]) {
+          var counter = new CountUp(nodes[p], 0, metrics[p] || 0, 0, 3);
+          counter.start();
+        }
+      }
+    }, 500);
+  }
+
   axios.get('https://ezmesure.couperin.org/api/metrics')
     .then(function (response) {
       if (response.status !== 200) {
@@ -32,17 +43,12 @@ window.addEventListener('load', function () {
             metrics.contributors = badgesData.contributors
           }
 
-          setTimeout(function () {
-            for (var p in nodes) {
-              if (metrics[p]) {
-                var counter = new CountUp(nodes[p], 0, metrics[p] || 0, 0, 3);
-                counter.start();
-              }
-            }
-          }, 500);
-
+          startCounter(metrics);
         })
-        .catch (console.error);
+        .catch (function (error) {
+          console.error(error);
+          startCounter(metrics);
+        });
     })
     .catch (console.error);
 
