@@ -21,21 +21,23 @@ window.addEventListener('load', function () {
       axios.get('http://analyses.ezpaarse.org/api/badges/metrics')
         .then(function (response) {
           if (response.status !== 200) {
-            return console.error('Failed to fetch ezpaarse-badge metrics');
+            console.error('Failed to fetch ezpaarse-badge metrics');
+          } else {
+            var badgesData = response.data.data
+            var issues = 0;
+            for (var d in badgesData.metrics) {
+              issues = (issues + badgesData.metrics[d].issues.app)
+            }
+            metrics.issues = issues
+            metrics.contributors = badgesData.contributors
           }
-          
-          var badgesData = response.data.data
-          var issues = 0;
-          for (var d in badgesData.metrics) {
-            issues = (issues + badgesData.metrics[d].issues.app)
-          }
-          metrics.issues = issues
-          metrics.contributors = badgesData.contributors
-          
+
           setTimeout(function () {
             for (var p in nodes) {
-              var counter = new CountUp(nodes[p], 0, metrics[p] || 0, 0, 3);
-              counter.start();
+              if (metrics[p]) {
+                var counter = new CountUp(nodes[p], 0, metrics[p] || 0, 0, 3);
+                counter.start();
+              }
             }
           }, 500);
 
