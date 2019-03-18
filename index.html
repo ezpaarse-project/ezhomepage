@@ -1,187 +1,364 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>ezPAARSE - Exploitez les logs d'accès à la documentation numérique</title>
-        <meta name="description" content="ezPAARSE est un logiciel libre et gratuit chargé d'exploiter, analyser et enrichir les traces (logs) d'accès aux ressources électroniques disponibles sur les plate-formes web des éditeurs de littérature scientifique." />
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-        <script src="assets/js/axios.min.js" type="text/javascript"></script>
-        <script src="assets/js/countup.min.js" type="text/javascript"></script>
-        <script src="assets/js/counter.js" type="text/javascript"></script>
-    </head>
-    <body>
-        <header>
-        </header>
-        <div id="language">
-            <a href="index.html">
-                <img src="assets/img/french.jpg" />
-            </a>
-            <a href="index-en.html">
-                <img src="assets/img/english.jpg" />
-            </a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      ezPAARSE - Exploitez les logs d'accès à la documentation numérique
+    </title>
+    <meta
+      name="description"
+      content="ezPAARSE est un logiciel libre et gratuit chargé d'exploiter, analyser et enrichir les traces (logs) d'accès aux ressources électroniques disponibles sur les plate-formes web des éditeurs de littérature scientifique."
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css" />
+    <script src="assets/js/axios.min.js" type="text/javascript"></script>
+    <script src="assets/js/countup.min.js" type="text/javascript"></script>
+    <script src="assets/js/counter.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <header>
+      <div id="pkepEzpaarseHeader">
+        <img
+          src="assets/img/header/logo-ezpaarse-small.png"
+          alt="logo ezPAARSE"
+          class="pkepLogoEzpaarse"
+        />
+        <div id="pkepLinks">
+          <a
+            href="http://ezpaarse.org"
+            target="_blank"
+            title="Accueil ezPAARSE"
+          >
+            <img
+              src="assets/img/header/home-small.png"
+              class="pkepSmallImg"
+              alt="home"
+            />
+            <span class="pkepLinksText">Home</span>
+          </a>
+          <a
+            href="http://blog.ezpaarse.org"
+            target="_blank"
+            title="Blog ezPAARSE"
+          >
+            <img
+              src="assets/img/header/blog-small.png"
+              class="pkepSmallImg"
+              alt="blog"
+            />
+            <span class="pkepLinksText">Blog</span>
+          </a>
+          <a
+            href="http://analyses.ezpaarse.org/"
+            target="_blank"
+            title="Analyses de Plateformes"
+          >
+            <img
+              src="assets/img/header/analogist-small.png"
+              class="pkepSmallImg"
+              alt="analyses de plateformes"
+            />
+            <span class="pkepLinksText">Analogist</span>
+          </a>
+          <a href="http://demo.ezpaarse.org" target="_blank" title="Demo">
+            <img
+              src="assets/img/header/demo-small.png"
+              class="pkepSmallImg"
+              alt="demo"
+            />
+            <span class="pkepLinksText">Demo</span>
+          </a>
+          <a
+            href="http://ezmesure.couperin.org"
+            target="_blank"
+            title="ezMESURE"
+          >
+            <img
+              src="assets/img/header/ezmesure-small.png"
+              class="pkepSmallImg"
+              alt="ezmesure"
+            />
+            <span class="pkepLinksText">ezMESURE</span>
+          </a>
+          <a
+            href="http://bibliomap.inist.fr/"
+            target="_blank"
+            title="Bibliomap"
+          >
+            <img
+              src="assets/img/header/bibliomap-small.png"
+              class="pkepSmallImg"
+              alt="bibliomap"
+            />
+            <span class="pkepLinksText">Bibliomap</span>
+          </a>
+          <a
+            href="http://demo.ezpaarse.org/doc"
+            target="_blank"
+            title="Documents"
+          >
+            <img
+              src="assets/img/header/doc-small.png"
+              class="pkepSmallImg"
+              alt="documents"
+            />
+            <span class="pkepLinksText">Doc</span>
+          </a>
         </div>
-        <h1>ezPAARSE qu'est ce que c'est ?</h1>
-        <img src ="assets/img/logo-ezpaarse.jpg" alt="" id="logo" />
-        <div id="presentation">
-            <p>
-                ezPAARSE est un <span  class="bleuciel">logiciel libre et gratuit</span> chargé d'exploiter,
-                analyser et enrichir les traces (logs) d'accès aux ressources électroniques disponibles sur
-                les plate-formes web des <span  class="bleuciel">éditeurs de littérature scientifique</span>.
-            </p>
-            <p>
-                ezPAARSE propose un <span class="bleuciel">formulaire en ligne</span>
-                et une <span class="bleuciel">API</span> permettant le traitement manuel ou automatique
-                des logs collectées sur les serveurs ou proxies de votre établissement. Il produit des fichiers CSV
-                d'événements de consultation (ECs) qui obéissent aux recommandations
-                <a href="http://www.projectcounter.org/" target="_blank">COUNTER</a>.
-            </p>
-            <div class="bibliomapImg">
-                <a href="http://bibliomap.inist.fr" target="_blank">
-                    <img src="assets/img/map.gif" alt="image accueil" class="grey displayImg"/>
-                </a>
-                <div class="imgText bleufonce">
-                    <a href="http://bibliomap.inist.fr" target="_blank">
-                        Exemple de consultations analysées en temps réel par ezPAARSE (bibliomap).
-                    </a>
-                </div>
-            </div>
+        <div id="pkepSocial">
+          <a href="mailto:ezpaarse@couperin.org">
+            <img src="assets/img/header/picto-mail.svg" alt="mail ezparse" />
+          </a>
+          <a href="https://github.com/ezpaarse-project" target="_blank">
+            <img src="assets/img/header/picto-github.svg" alt="github ezpaarse" />
+          </a>
+          <a href="https://www.facebook.com/Ezpaarse" target="_blank">
+            <img src="assets/img/header/picto-facebook.svg" alt="facebook ezpaarse" />
+          </a>
+          <a href="https://twitter.com/ezpaarse" target="_blank">
+            <img src="assets/img/header/picto-twitter.svg" alt="twitter ezpaarse" />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCcR-0UE9WjYiwS4fMG2T4tQ"
+            target="_blank"
+          >
+            <img src="assets/img/header/picto-youtube.svg" alt="youtube ezpaarse" />
+          </a>
         </div>
-        <div id="services">
-            <div class="serviceUnit">
-                <img src="assets/img/logo-analogist.png" alt="logo analogist" />
-                <h2 class="bleuciel">AnalogIST</h2>
-                <p>
-                    <a href="http://analyses.ezpaarse.org/" target="_blank">Analogist</a> est l'espace collaboratif où
-                    sont réunies toutes les analyses de
-                    plate-formes (pré-requises pour la création de parseurs pour ezPAARSE).
-                </p>
-            </div>
-            <div class="serviceUnit">
-                <img src="assets/img/logo-ezmesure.png" alt="logo ezmesure" />
-                <h2 class="bleuciel">ezMESURE</h2>
-                <p>
-                    <a href="https://ezmesure.couperin.org/" target="_blank">ezMESURE</a> est un entrepôt national conçu
-                    pour collecter les données générées par les instances ezPAARSE installées dans les établissements de
-                    l'ESR et les présenter dans des visualisations dynamiques et personnalisables.
-                </p>
-            </div>
-            <div class="serviceUnit">
-                <img src="assets/img/bibliomap.jpg" alt="logo bibliomap" />
-                <h2 class="bleuciel">Bibliomap</h2>
-                <p>
-                    <a href="http://bibliomap.inist.fr" target="_blank">Bibliomap</a> affiche les événements de consultation
-                    générés par une instance d'ezPAARSE en temps réel sur une carte. C'est un outil utile pour surveiller le
-                    trafic de votre ezproxy ou pour aider à porter le projet d'adoption d'ezPAARSE dans votre établissement.
-                </p>
-            </div>
+      </div>
+    </header>
+    <div id="language">
+      <a href="index.html">
+        <img src="assets/img/french.jpg" />
+      </a>
+      <a href="index-en.html">
+        <img src="assets/img/english.jpg" />
+      </a>
+    </div>
+    <h1>ezPAARSE qu'est ce que c'est ?</h1>
+    <img src="assets/img/logo-ezpaarse.jpg" alt="" id="logo" />
+    <div id="presentation">
+      <p>
+        ezPAARSE est un
+        <span class="bleuciel">logiciel libre et gratuit</span> chargé
+        d'exploiter, analyser et enrichir les traces (logs) d'accès aux
+        ressources électroniques disponibles sur les plate-formes web des
+        <span class="bleuciel">éditeurs de littérature scientifique</span>.
+      </p>
+      <p>
+        ezPAARSE propose un <span class="bleuciel">formulaire en ligne</span> et
+        une <span class="bleuciel">API</span> permettant le traitement manuel ou
+        automatique des logs collectées sur les serveurs ou proxies de votre
+        établissement. Il produit des fichiers CSV d'événements de consultation
+        (ECs) qui obéissent aux recommandations
+        <a href="http://www.projectcounter.org/" target="_blank">COUNTER</a>.
+      </p>
+      <div class="bibliomapImg">
+        <a href="http://bibliomap.inist.fr" target="_blank">
+          <img
+            src="assets/img/map.gif"
+            alt="image accueil"
+            class="grey displayImg"
+          />
+        </a>
+        <div class="imgText bleufonce">
+          <a href="http://bibliomap.inist.fr" target="_blank">
+            Exemple de consultations analysées en temps réel par ezPAARSE
+            (bibliomap).
+          </a>
         </div>
-        <div id="logs">
-            <div id="stats">
-                <p id="stats-content">
-                En France, <span id="counter3" data-nb="21">0</span> <abbr title="Chaque établisement a droit à un index, dans cette version dynamique de visualisation des métriques, un établissement demandant plusieurs index compte plusieurs fois">établissements</abbr> de l'<abbr title="Enseignement Supérieur et Recherche">ESR</abbr> utilisent ezPAARSE pour traiter <span id="counter2" data-nb="842">0</span> jours de logs et ainsi générer <span id="counter1" data-nb="14660994">0</span> <abbr title="Evénements de Consultations">ECs</abbr> répartis sur <span id="counter5" data-nb="202">0</span> plate-formes d'éditeurs et <span id="counter4" data-nb="62448">0</span> titres de revues et ebooks différents.
-                <br /><br />
-                Un outil collaboratif où <span id="counter6" data-nb="63">0</span> contributeurs ont reçu <span id="counter7" data-nb="71">0</span> badges.
-                </p>
-            </div>
+      </div>
+    </div>
+    <div id="services">
+      <div class="serviceUnit">
+        <img src="assets/img/logo-analogist.png" alt="logo analogist" />
+        <h2 class="bleuciel">AnalogIST</h2>
+        <p>
+          <a href="http://analyses.ezpaarse.org/" target="_blank">Analogist</a>
+          est l'espace collaboratif où sont réunies toutes les analyses de
+          plate-formes (pré-requises pour la création de parseurs pour
+          ezPAARSE).
+        </p>
+      </div>
+      <div class="serviceUnit">
+        <img src="assets/img/logo-ezmesure.png" alt="logo ezmesure" />
+        <h2 class="bleuciel">ezMESURE</h2>
+        <p>
+          <a href="https://ezmesure.couperin.org/" target="_blank">ezMESURE</a>
+          est un entrepôt national conçu pour collecter les données générées par
+          les instances ezPAARSE installées dans les établissements de l'ESR et
+          les présenter dans des visualisations dynamiques et personnalisables.
+        </p>
+      </div>
+      <div class="serviceUnit">
+        <img src="assets/img/bibliomap.jpg" alt="logo bibliomap" />
+        <h2 class="bleuciel">Bibliomap</h2>
+        <p>
+          <a href="http://bibliomap.inist.fr" target="_blank">Bibliomap</a>
+          affiche les événements de consultation générés par une instance
+          d'ezPAARSE en temps réel sur une carte. C'est un outil utile pour
+          surveiller le trafic de votre ezproxy ou pour aider à porter le projet
+          d'adoption d'ezPAARSE dans votre établissement.
+        </p>
+      </div>
+    </div>
+    <div id="logs">
+      <div id="stats">
+        <p id="stats-content">
+          En France, <span id="counter3" data-nb="21">0</span>
+          <abbr
+            title="Chaque établisement a droit à un index, dans cette version dynamique de visualisation des métriques, un établissement demandant plusieurs index compte plusieurs fois"
+            >établissements</abbr
+          >
+          de l'<abbr title="Enseignement Supérieur et Recherche">ESR</abbr>
+          utilisent ezPAARSE pour traiter
+          <span id="counter2" data-nb="842">0</span> jours de logs et ainsi
+          générer <span id="counter1" data-nb="14660994">0</span>
+          <abbr title="Evénements de Consultations">ECs</abbr> répartis sur
+          <span id="counter5" data-nb="202">0</span> plate-formes d'éditeurs et
+          <span id="counter4" data-nb="62448">0</span> titres de revues et
+          ebooks différents. <br /><br />
+          <!-- Un outil collaboratif où
+          <span id="counter6" data-nb="63">0</span> contributeurs ont reçu
+          <span id="counter7" data-nb="71">0</span> badges. -->
+        </p>
+      </div>
+    </div>
+    <div id="team">
+      <div id="teamTitle">Une équipe et une communauté</div>
+      <div id="teamTools">
+        <div class="teamItem">
+          <img src="assets/img/outil.jpg" alt="outils" />
+          <p class="itemTitle">Un outil simple et efficace</p>
+          <p class="itemText">
+            Quelques clics suffisent à l'<a
+              href="https://ezpaarse.readthedocs.io/en/master/start/install.html"
+              target="_blank"
+              >installer</a
+            >
+            pour commencer à
+            <a
+              href="https://ezpaarse.readthedocs.io/en/master/start/usage.html"
+              target="_blank"
+              >analyser</a
+            >
+            vos logs
+          </p>
         </div>
-        <div id="team">
-            <div id="teamTitle">Une équipe et une communauté</div>
-            <div id="teamTools">
-                <div class="teamItem">
-                    <img src="assets/img/outil.jpg" alt="outils" />
-                    <p class="itemTitle">Un outil simple et efficace</p>
-                    <p class="itemText">
-                        Quelques clics suffisent à l'<a href="https://ezpaarse.readthedocs.io/en/master/start/install.html" target="_blank">installer</a>
-                        pour commencer à <a href="https://ezpaarse.readthedocs.io/en/master/start/usage.html" target="_blank">analyser</a> vos logs
-                    </p>
-                </div>
-                <div class="teamItem">
-                    <img src="assets/img/people.jpg" alt="outils" />
-                    <p class="itemTitle">Une équipe disponible et réactive</p>
-                    <p class="itemText">
-                        Un problème, une question, une suggestions ?<br/>
-                        N'hésitez pas à prendre contact avec nous : &ccedil;a  nous intéresse !
-                    </p>
-                </div>
-                <div class="teamItem">
-                    <img src="assets/img/community.jpg" alt="outils" />
-                    <p class="itemTitle">Une communauté grandissante</p>
-                    <p class="itemText">
-                        Et pas seulement francophone : ezPAARSE est installé dans des établissements aux
-                        &Eacute;tats-Unis, à Singapour, en Allemagne et beaucoup d'autres !
-                    </p>
-                </div>
-            </div>
+        <div class="teamItem">
+          <img src="assets/img/people.jpg" alt="outils" />
+          <p class="itemTitle">Une équipe disponible et réactive</p>
+          <p class="itemText">
+            Un problème, une question, une suggestions ?<br />
+            N'hésitez pas à prendre contact avec nous : &ccedil;a nous intéresse
+            !
+          </p>
         </div>
-        <footer>
-            <div id="copyright">&copy; ezPAARSE 2019 All rights reserved</div>
-            <div id="logosPictos">
-                <div class="logosZone1">
-                    <a href="http://www.couperin.org/" target="_blank">
-                        <img src="assets/img/logo-couperin.png" alt="logo couperin" />
-                    </a>
-                    <a href="http://www.univ-lorraine.fr/" target="_blank">
-                        <img src="assets/img/logo-ul.png" alt="logo université de lorraine" />
-                    </a>
-                    <a href="http://www.cnrs.fr" target="_blank">
-                        <img src="assets/img/logo-cnrs.png" alt="logo cnrs" />
-                    </a>
-                    <a href="https://blog.ezpaarse.org/2018/08/communication-les-badges-ezpaarse/" target="_blank">
-                        <img src="assets/img/logo-openbadges.svg" alt="logo openbadges" />
-                    </a>
-                </div>
-                <div class="logosZone2">
-                    <a href="mailto:ezpaarse@couperin.org">
-                        <img src="assets/img/picto-mail.svg" alt="picto mail" />
-                    </a>
-                    <a href="http://blog.ezpaarse.org" target="_blank">
-                        <img src="assets/img/picto-blog.svg" alt="picto b" />
-                    </a>
-                    <a href="https://twitter.com/ezpaarse" target="_blank">
-                        <img src="assets/img/picto-twitter.svg" alt="picto twitter" />
-                    </a>
-                    <a href="https://www.facebook.com/Ezpaarse" target="_blank">
-                        <img src="assets/img/picto-facebook.svg" alt="picto facebook" />
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCcR-0UE9WjYiwS4fMG2T4tQ" target="_blank">
-                        <img src="assets/img/picto-youtube.svg" alt="picto run" />
-                    </a>
-                </div>
-            </div>
-        </footer>
-        <script src="https://header.ezpaarse.org/main.js" type="text/javascript"></script>
-        <!-- Piwik -->
-<script type="text/javascript">
-  var _paq = _paq || [];
+        <div class="teamItem">
+          <img src="assets/img/community.jpg" alt="outils" />
+          <p class="itemTitle">Une communauté grandissante</p>
+          <p class="itemText">
+            Et pas seulement francophone : ezPAARSE est installé dans des
+            établissements aux &Eacute;tats-Unis, à Singapour, en Allemagne et
+            beaucoup d'autres !
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="copyright">&copy; ezPAARSE 2019 All rights reserved</div>
+      <div id="logosPictos">
+        <div class="logosZone1">
+          <a href="http://www.couperin.org/" target="_blank">
+            <img src="assets/img/logo-couperin.png" alt="logo couperin" />
+          </a>
+          <a href="http://www.univ-lorraine.fr/" target="_blank">
+            <img
+              src="assets/img/logo-ul.png"
+              alt="logo université de lorraine"
+            />
+          </a>
+          <a href="http://www.cnrs.fr" target="_blank">
+            <img src="assets/img/logo-cnrs.png" alt="logo cnrs" />
+          </a>
+          <a
+            href="https://blog.ezpaarse.org/2018/08/communication-les-badges-ezpaarse/"
+            target="_blank"
+          >
+            <img src="assets/img/logo-openbadges.svg" alt="logo openbadges" />
+          </a>
+        </div>
+        <div class="logosZone2">
+          <a href="mailto:ezpaarse@couperin.org">
+            <img src="assets/img/picto-mail.svg" alt="picto mail" />
+          </a>
+          <a href="http://blog.ezpaarse.org" target="_blank">
+            <img src="assets/img/picto-blog.svg" alt="picto b" />
+          </a>
+          <a href="https://twitter.com/ezpaarse" target="_blank">
+            <img src="assets/img/picto-twitter.svg" alt="picto twitter" />
+          </a>
+          <a href="https://www.facebook.com/Ezpaarse" target="_blank">
+            <img src="assets/img/picto-facebook.svg" alt="picto facebook" />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCcR-0UE9WjYiwS4fMG2T4tQ"
+            target="_blank"
+          >
+            <img src="assets/img/picto-youtube.svg" alt="picto run" />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
 
-    _paq.push([function() {
-var self = this;
-function getOriginalVisitorCookieTimeout() {
-var now = new Date(),
-nowTs = Math.round(now.getTime() / 1000),
-visitorInfo = self.getVisitorInfo();
-var createTs = parseInt(visitorInfo[2]);
-var cookieTimeout = 33696000;
- var originalTimeout = createTs + cookieTimeout - nowTs;
-return originalTimeout;
-}
-this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() );
-}]);
+      _paq.push([
+        function() {
+          var self = this;
+          function getOriginalVisitorCookieTimeout() {
+            var now = new Date(),
+              nowTs = Math.round(now.getTime() / 1000),
+              visitorInfo = self.getVisitorInfo();
+            var createTs = parseInt(visitorInfo[2]);
+            var cookieTimeout = 33696000;
+            var originalTimeout = createTs + cookieTimeout - nowTs;
+            return originalTimeout;
+          }
+          this.setVisitorCookieTimeout(getOriginalVisitorCookieTimeout());
+        }
+      ]);
 
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-     var u="https://piwik2.inist.fr/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '38']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//piwik2.inist.fr/piwik.php?idsite=38" style="border:0;" alt="" /></p></noscript>
-<!-- End Piwik Code -->
-
-    </body>
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function() {
+        var u = "https://piwik2.inist.fr/";
+        _paq.push(["setTrackerUrl", u + "piwik.php"]);
+        _paq.push(["setSiteId", "38"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.type = "text/javascript";
+        g.async = true;
+        g.defer = true;
+        g.src = u + "piwik.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <noscript
+      ><p>
+        <img
+          src="//piwik2.inist.fr/piwik.php?idsite=38"
+          style="border:0;"
+          alt=""
+        /></p
+    ></noscript>
+    <!-- End Piwik Code -->
+  </body>
 </html>
