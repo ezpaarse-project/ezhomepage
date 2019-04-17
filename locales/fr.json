@@ -1,0 +1,23 @@
+{
+  "title": "ezPAARSE - Exploitez les logs d'accès à la documentation numérique",
+  "description": "ezPAARSE est un logiciel libre et gratuit chargé d'exploiter, analyser et enrichir les traces (logs) d'accès aux ressources électroniques disponibles sur les plate-formes web des éditeurs de littérature scientifique.",
+  "home": "Accueil",
+  "blog": "Blog ezPAARSE",
+  "analogist": "Analyses de Plateformes",
+  "whatIsEzPaarse": "ezPAARSE qu'est ce que c'est ?",
+  "ezpaarseFirstLine": "ezPAARSE est un <span class=\"bleuciel\">logiciel libre et gratuit</span> chargé d'exploiter, analyser et enrichir les traces (logs) d'accès aux ressources électroniques disponibles sur les plate-formes web des <span class=\"bleuciel\">éditeurs de littérature scientifique</span>.",
+  "ezpaarseSecondLine": "ezPAARSE propose un <span class=\"bleuciel\">formulaire en ligne</span> et une <span class=\"bleuciel\">API</span> permettant le traitement manuel ou automatique des logs collectées sur les serveurs ou proxies de votre établissement. Il produit des fichiers CSV d'événements de consultation (ECs) qui obéissent aux recommandations <a href=\"http://www.projectcounter.org/\" target=\"_blank\">COUNTER</a>.",
+  "example": "Exemple de consultations analysées en temps réel par ezPAARSE (bibliomap).",
+  "whatIsAnalogist": "est l'espace collaboratif où sont réunies toutes les analyses de plate-formes (pré-requises pour la création de parseurs pour ezPAARSE).",
+  "whatIsEzmesure": "est un entrepôt national conçu pour collecter les données générées par les instances ezPAARSE installées dans les établissements de l'ESR et les présenter dans des visualisations dynamiques et personnalisables.",
+  "whatIsBibliomap": "affiche les événements de consultation générés par une instance d'ezPAARSE en temps réel sur une carte. C'est un outil utile pour surveiller le trafic de votre ezproxy ou pour aider à porter le projet d'adoption d'ezPAARSE dans votre établissement.",
+  "teamAndCommunity": "Une équipe et une communauté",
+  "simpleTool": "Un outil simple et efficace",
+  "simpleToolDescription": "Quelques clics suffisent à l'<a href=\"https://ezpaarse.readthedocs.io/en/master/start/install.html\" target=\"_blank\" >installer</a > pour commencer à <a href=\"https://ezpaarse.readthedocs.io/en/master/start/usage.html\" target=\"_blank\">analyser</a> vos logs",
+  "availableTeam": "Une équipe disponible et réactive",
+  "availableTeamDescription": "Un problème, une question, une suggestions ?<br /> N'hésitez pas à prendre contact avec nous : &ccedil;a nous intéresse !",
+  "growingCommunity": "Une communauté grandissante",
+  "growingCommunityDescription": "Et pas seulement francophone : ezPAARSE est installé dans des établissements aux &Eacute;tats-Unis, à Singapour, en Allemagne et beaucoup d'autres !",
+  "copyright": "&copy; ezPAARSE 2019 - Tous droits réservés",
+  "statsContnent": "En France, <span id=\"counter3\" data-nb=\"21\">0</span> <abbr   title=\"Chaque établisement a droit à un index, dans cette version dynamique de visualisation des métriques, un établissement demandant plusieurs index compte plusieurs fois\"   >établissements</abbr > de l'<abbr title=\"Enseignement Supérieur et Recherche\">ESR</abbr> utilisent ezPAARSE pour traiter <span id=\"counter2\" data-nb=\"842\">0</span> jours de logs et ainsi générer <span id=\"counter1\" data-nb=\"14660994\">0</span> <abbr title=\"Evénements de Consultations\">ECs</abbr> répartis sur <span id=\"counter5\" data-nb=\"202\">0</span> plate-formes d'éditeurs et <span id=\"counter4\" data-nb=\"62448\">0</span> titres de revues et ebooks différents. <br /><br />"
+}

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html data-i18n="locale" data-i18n-attr="lang" lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>
+    <title data-i18n="title">
       ezPAARSE - Exploitez les logs d'accès à la documentation numérique
     </title>
     <meta
+      data-i18n="description"
+      data-i18n-attr="content"
       name="description"
       content="ezPAARSE est un logiciel libre et gratuit chargé d'exploiter, analyser et enrichir les traces (logs) d'accès aux ressources électroniques disponibles sur les plate-formes web des éditeurs de littérature scientifique."
     />
@@ -17,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/header.css" />
     <script src="assets/js/axios.min.js" type="text/javascript"></script>
+    <script src="assets/js/i18n.js" type="text/javascript"></script>
     <script src="assets/js/countup.min.js" type="text/javascript"></script>
     <script src="assets/js/counter.js" type="text/javascript"></script>
   </head>
@@ -30,23 +33,31 @@
         />
         <div id="pkepLinks">
           <a
+            data-i18n="home"
+            data-i18n-attr="title"
             href="http://ezpaarse.org"
             target="_blank"
             title="Accueil ezPAARSE"
           >
             <img
+              data-i18n="home"
+              data-i18n-attr="alt"
               src="assets/img/header/home-small.png"
               class="pkepSmallImg"
               alt="home"
             />
-            <span class="pkepLinksText">Home</span>
+            <span class="pkepLinksText" data-i18n="home">Accueil</span>
           </a>
           <a
+            data-i18n="blog"
+            data-i18n-attr="title"
             href="http://blog.ezpaarse.org"
             target="_blank"
             title="Blog ezPAARSE"
           >
             <img
+              data-i18n="blog"
+              data-i18n-attr="alt"
               src="assets/img/header/blog-small.png"
               class="pkepSmallImg"
               alt="blog"
@@ -54,14 +65,18 @@
             <span class="pkepLinksText">Blog</span>
           </a>
           <a
+            data-i18n="analogist"
+            data-i18n-attr="title"
             href="http://analyses.ezpaarse.org/"
             target="_blank"
             title="Analyses de Plateformes"
           >
             <img
+              data-i18n="analogist"
+              data-i18n-attr="alt"
               src="assets/img/header/analogist-small.png"
               class="pkepSmallImg"
-              alt="analyses de plateformes"
+              alt="Analyses de plateformes"
             />
             <span class="pkepLinksText">Analogist</span>
           </a>
@@ -117,9 +132,6 @@
           <a href="https://github.com/ezpaarse-project" target="_blank">
             <img src="assets/img/header/picto-github.svg" alt="github ezpaarse" />
           </a>
-          <a href="https://www.facebook.com/Ezpaarse" target="_blank">
-            <img src="assets/img/header/picto-facebook.svg" alt="facebook ezpaarse" />
-          </a>
           <a href="https://twitter.com/ezpaarse" target="_blank">
             <img src="assets/img/header/picto-twitter.svg" alt="twitter ezpaarse" />
           </a>
@@ -133,24 +145,24 @@
       </div>
     </header>
     <div id="language">
-      <a href="index.html">
+      <a href="?lang=fr">
         <img src="assets/img/french.jpg" />
       </a>
-      <a href="index-en.html">
+      <a href="?lang=en">
         <img src="assets/img/english.jpg" />
       </a>
     </div>
-    <h1>ezPAARSE qu'est ce que c'est ?</h1>
+    <h1 data-i18n="whatIsEzPaarse">ezPAARSE qu'est ce que c'est ?</h1>
     <img src="assets/img/logo-ezpaarse.jpg" alt="" id="logo" />
     <div id="presentation">
-      <p>
+      <p data-i18n="ezpaarseFirstLine">
         ezPAARSE est un
         <span class="bleuciel">logiciel libre et gratuit</span> chargé
         d'exploiter, analyser et enrichir les traces (logs) d'accès aux
         ressources électroniques disponibles sur les plate-formes web des
         <span class="bleuciel">éditeurs de littérature scientifique</span>.
       </p>
-      <p>
+      <p data-i18n="ezpaarseSecondLine">
         ezPAARSE propose un <span class="bleuciel">formulaire en ligne</span> et
         une <span class="bleuciel">API</span> permettant le traitement manuel ou
         automatique des logs collectées sur les serveurs ou proxies de votre
@@ -167,9 +179,8 @@
           />
         </a>
         <div class="imgText bleufonce">
-          <a href="http://bibliomap.inist.fr" target="_blank">
-            Exemple de consultations analysées en temps réel par ezPAARSE
-            (bibliomap).
+          <a href="http://bibliomap.inist.fr" target="_blank" data-i18n="example">
+            Exemple de consultations analysées en temps réel par ezPAARSE (bibliomap).
           </a>
         </div>
       </div>
@@ -179,10 +190,10 @@
         <img src="assets/img/logo-analogist.png" alt="logo analogist" />
         <h2 class="bleuciel">AnalogIST</h2>
         <p>
-          <a href="http://analyses.ezpaarse.org/" target="_blank">Analogist</a>
-          est l'espace collaboratif où sont réunies toutes les analyses de
+          <a href="http://analyses.ezpaarse.org/" target="_blank" >Analogist</a>
+          <span data-i18n="whatIsAnalogist">est l'espace collaboratif où sont réunies toutes les analyses de
           plate-formes (pré-requises pour la création de parseurs pour
-          ezPAARSE).
+          ezPAARSE).</span>
         </p>
       </div>
       <div class="serviceUnit">
@@ -190,9 +201,9 @@
         <h2 class="bleuciel">ezMESURE</h2>
         <p>
           <a href="https://ezmesure.couperin.org/" target="_blank">ezMESURE</a>
-          est un entrepôt national conçu pour collecter les données générées par
+          <span data-i18n="whatIsEzmesure">est un entrepôt national conçu pour collecter les données générées par
           les instances ezPAARSE installées dans les établissements de l'ESR et
-          les présenter dans des visualisations dynamiques et personnalisables.
+          les présenter dans des visualisations dynamiques et personnalisables.</span>
         </p>
       </div>
       <div class="serviceUnit">
@@ -200,16 +211,16 @@
         <h2 class="bleuciel">Bibliomap</h2>
         <p>
           <a href="http://bibliomap.inist.fr" target="_blank">Bibliomap</a>
-          affiche les événements de consultation générés par une instance
+          <span data-i18n="whatIsBibliomap">affiche les événements de consultation générés par une instance
           d'ezPAARSE en temps réel sur une carte. C'est un outil utile pour
           surveiller le trafic de votre ezproxy ou pour aider à porter le projet
-          d'adoption d'ezPAARSE dans votre établissement.
+          d'adoption d'ezPAARSE dans votre établissement.</span>
         </p>
       </div>
     </div>
     <div id="logs">
       <div id="stats">
-        <p id="stats-content">
+        <p id="stats-content" data-i18n="statsContnent">
           En France, <span id="counter3" data-nb="21">0</span>
           <abbr
             title="Chaque établisement a droit à un index, dans cette version dynamique de visualisation des métriques, un établissement demandant plusieurs index compte plusieurs fois"
@@ -230,12 +241,12 @@
       </div>
     </div>
     <div id="team">
-      <div id="teamTitle">Une équipe et une communauté</div>
+      <div id="teamTitle" data-i18n="teamAndCommunity">Une équipe et une communauté</div>
       <div id="teamTools">
         <div class="teamItem">
           <img src="assets/img/outil.jpg" alt="outils" />
-          <p class="itemTitle">Un outil simple et efficace</p>
-          <p class="itemText">
+          <p class="itemTitle" data-i18n="simpleTool">Un outil simple et efficace</p>
+          <p class="itemText" data-i18n="simpleToolDescription">
             Quelques clics suffisent à l'<a
               href="https://ezpaarse.readthedocs.io/en/master/start/install.html"
               target="_blank"
@@ -252,17 +263,16 @@
         </div>
         <div class="teamItem">
           <img src="assets/img/people.jpg" alt="outils" />
-          <p class="itemTitle">Une équipe disponible et réactive</p>
-          <p class="itemText">
+          <p class="itemTitle" data-i18n="availableTeam">Une équipe disponible et réactive</p>
+          <p class="itemText" data-i18n="availableTeamDescription">
             Un problème, une question, une suggestions ?<br />
-            N'hésitez pas à prendre contact avec nous : &ccedil;a nous intéresse
-            !
+            N'hésitez pas à prendre contact avec nous : &ccedil;a nous intéresse !
           </p>
         </div>
         <div class="teamItem">
           <img src="assets/img/community.jpg" alt="outils" />
-          <p class="itemTitle">Une communauté grandissante</p>
-          <p class="itemText">
+          <p class="itemTitle" data-i18n="growingCommunity">Une communauté grandissante</p>
+          <p class="itemText" data-i18n="growingCommunityDescription">
             Et pas seulement francophone : ezPAARSE est installé dans des
             établissements aux &Eacute;tats-Unis, à Singapour, en Allemagne et
             beaucoup d'autres !
@@ -271,7 +281,7 @@
       </div>
     </div>
     <footer>
-      <div id="copyright">&copy; ezPAARSE 2019 All rights reserved</div>
+      <div id="copyright" data-i18n="copyright">&copy; ezPAARSE 2019 - Tous droits réservés</div>
       <div id="logosPictos">
         <div class="logosZone1">
           <a href="http://www.couperin.org/" target="_blank">

@@ -1,4 +1,4 @@
-window.addEventListener('load', function () {
+function counter () {
   var nodes = {
     indices: document.getElementById('counter3'),
     days: document.getElementById('counter2'),
@@ -52,5 +52,4 @@ window.addEventListener('load', function () {
       //   });
     })
     .catch (console.error);
-
-})
+}
