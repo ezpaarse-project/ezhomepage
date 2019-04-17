@@ -37,6 +37,6 @@ window.addEventListener('load', function () {
     })
     .catch (function (error) {
       counter();
-      console.log(error)
+      console.log(error);
     });
 });
