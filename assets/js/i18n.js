@@ -1,7 +1,14 @@
 window.addEventListener('load', function () {
   var url = new URL(window.location.href);
   var params = new URLSearchParams(url.search);
-  var locale = params.get('lang') || 'fr';
+  var locale = params.get('lang');
+  if (locale && locale === 'fr') {
+    return;
+  }
+
+  if (locale && locale !== 'en') {
+    locale = 'en';
+  }
 
   axios.get(`/locales/${locale}.json`)
     .then(function (response) {
