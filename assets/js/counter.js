@@ -29,27 +29,36 @@ function counter () {
       var metrics = response.data.metrics;
       metrics.docs = response.data.docs;
 
-      startCounter(metrics);
-      // axios.get('http://analyses.ezpaarse.org/api/badges/metrics')
-      //   .then(function (response) {
-      //     if (response.status !== 200) {
-      //       console.error('Failed to fetch ezpaarse-badge metrics');
-      //     } else {
-      //       var badgesData = response.data.data
-      //       var issues = 0;
-      //       for (var d in badgesData.metrics) {
-      //         issues = (issues + badgesData.metrics[d].issues.app)
-      //       }
-      //       metrics.issues = issues
-      //       metrics.contributors = badgesData.contributors
-      //     }
+      axios.get('https://ezmesure.couperin.org/api/partners')
+      .then(function (response) {
+        if (response.status !== 200) {
+          return console.error('Failed to fetch ezMESURE metrics');
+        }
+        metrics.indices = response.data.length;
 
-      //     startCounter(metrics);
-      //   })
-      //   .catch (function (error) {
-      //     console.error(error);
-      //     startCounter(metrics);
-      //   });
+        // axios.get('http://analyses.ezpaarse.org/api/badges/metrics')
+        // .then(function (response) {
+        //   if (response.status !== 200) {
+        //     return console.error('Failed to fetch ezpaarse-badge metrics');
+        //   }
+
+        //   var badgesData = response.data.data
+        //   var issues = 0;
+        //   for (var d in badgesData.metrics) {
+        //     issues = (issues + badgesData.metrics[d].issues.app)
+        //   }
+        //   metrics.issues = issues
+        //   metrics.contributors = badgesData.contributors
+
+        //   startCounter(metrics);
+        // })
+        // .catch (function (error) {
+        //   console.error(error);
+        //   startCounter(metrics);
+        // });
+
+        startCounter(metrics);
+      });
     })
     .catch (console.error);
 }
