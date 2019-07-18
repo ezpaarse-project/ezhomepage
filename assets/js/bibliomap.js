@@ -1,5 +1,5 @@
 window.addEventListener('load', function () {
-  axios.get(`http://bibliomap.inist.fr/`)
+  axios.get(`https://bibliomap.inist.fr/`)
   .then(function (response) {
     if (response && response.status !== 200) {
       hideBibliomapLive();
