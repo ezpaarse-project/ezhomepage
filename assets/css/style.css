@@ -30,35 +30,3 @@
   text-shadow: 0px 0px 20px red;
   position: relative;
 }
-
-.liveContainer .live {
-  position: absolute;
-  color: red;
-  margin: 0 0 20px 20px;
-  bottom: 0;
-}
-
-.liveContainer .liveCircle {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: red;
-  display: inline-block;
-  animation: ripple 0.7s linear infinite;
-  margin-right: 10px;
-}
-
-@keyframes ripple {
-  0% {
-    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.3),
-                0 0 0 1px rgba(255, 0, 0, 0.3),
-                0 0 0 5px rgba(255, 0, 0, 0.3),
-                0 0 0 10px rgba(255, 0, 0, 0.3);
-  }
-  100% {
-    box-shadow: 0 0 0 1px rgba(255, 0, 0, 0.3),
-                0 0 0 5px rgba(255, 0, 0, 0.3),
-                0 0 0 10px rgba(255, 0, 0, 0.3),
-                0 0 0 15px rgba(255, 0, 0, 0);
-  }
-}
