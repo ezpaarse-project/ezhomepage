@@ -1,4 +1,6 @@
 window.addEventListener('load', function () {
+  $('#year').text(new Date().getFullYear() || '');
+
   var url = new URL(window.location.href);
   var params = new URLSearchParams(url.search);
   var locale = params.get('lang') || 'fr';
