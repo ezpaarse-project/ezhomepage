@@ -10,6 +10,9 @@
     content="ezPAARSE est un logiciel libre et gratuit chargé d'exploiter, analyser et enrichir les traces (logs) d'accès aux ressources électroniques disponibles sur les plate-formes web des éditeurs de littérature scientifique."
   />
   <meta name="theme-color" content="#4D5267" />
+  <meta name="msapplication-navbutton-color" content="#4D5267">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#4D5267">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:type" content="website" />
@@ -47,7 +50,16 @@
   <meta property="twitter:language" content="fr" data-i18n="locale" data-i18n-attr="content" />
   <meta name="twitter:url" content="https://ezpaarse.org/" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css" />
+  <link rel="icon" type="image/png" href="/assets/img/icon.png" />
+  <link rel="icon" sizes="192x192" href="/assets/img/icon.png">
+  <link rel="apple-touch-icon" href="/assets/img/icon.png">
+  <meta name="msapplication-square310x310logo" content="/assets/img/icon.png">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css"
+    crossorigin="anonymous"
+    integrity="sha384-RRsJasp1aTbeXFSCPshp7JJQOtxM1ud0+PNsdovszS+bqV+vLS+8pDryQsBX2Wv5"
+  />
   <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
@@ -58,7 +70,7 @@
   </div>
 
   <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"></div>
-    <nav class="uk-navbar-container uk-hidden@m" id="menu" uk-navbar>
+    <nav class="uk-navbar-container uk-hidden@l" id="menu" uk-navbar>
       <div class="uk-navbar-left">
         <a class="uk-navbar-toggle" href="#" uk-toggle="target: #menu-mobile">
           <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left"></span>
@@ -72,10 +84,10 @@
     </nav>
   </div>
 
-  <div class="uk-offcanvas-content">
+  <div class="uk-offcanvas-content"s>
     <div id="menu-mobile" uk-offcanvas="mode: push; overlay: true">
       <div class="uk-offcanvas-bar">
-        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <button class="uk-offcanvas-close" type="button" title="Close" uk-close></button>
         <ul class="uk-nav uk-nav-default">
           <li>
             <a class="uk-link-muted" href="https://blog.ezpaarse.org/" title="Blog ezPAARSE" data-i18n="blog" data-i18n-attr="title">
@@ -203,13 +215,13 @@
           <li>
             <a href="#">
               <div>
-                <img width="28px" src="assets/img/fr.png" id="localeImg" uk-img> <span id="currentLocale">Français</span>
+                <img width="28px" src="assets/img/fr.png" id="localeImg" alt="Français" uk-img> <span id="currentLocale">Français</span>
               </div>
             </a>
             <div uk-dropdown>
               <ul class="uk-nav uk-dropdown-nav">
-                <li class="uk-active frItem"><a href="?lang=fr" id="frLink"><img width="28px" src="assets/img/fr.png" uk-img> Français</a></li>
-                <li class="enItem"><a href="?lang=en" id="enLink"><img width="28px" src="assets/img/en.png" uk-img>  English</a></li>
+                <li class="uk-active frItem"><a href="?lang=fr" id="frLink"><img width="28px" src="assets/img/fr.png" alt="Français" uk-img> Français</a></li>
+                <li class="enItem"><a href="?lang=en" id="enLink"><img width="28px" src="assets/img/en.png" alt="English" uk-img>  English</a></li>
               </ul>
             </div>
           </li>
@@ -343,7 +355,7 @@
         <div class="uk-grid-large">
           <p>
             <div class="liveContainer" id="bibliomapLive">
-              <object data="https://bibliomap.inist.fr/?d=false&m=false&z=5" width="100%" height="444"></object>
+              <object data="https://bibliomap.inist.fr/?d=false&m=false&z=5" width="100%" height="444" title="Bibliomap"></object>
             </div>
             <a href="https://bibliomap.inist.fr/">
               <video src="/assets/video/map.webm" id="bibliomapOff" width="890px" class="hidden" loop muted playsinline uk-video="autoplay: inview"></video>
@@ -434,8 +446,16 @@
     </div>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"
+    integrity="sha384-Gx4bKZ7r3DgZ77+Kz14hOjvN/is+Cvvz+wy+X1qBOw0XnZfoGZ1tl4hC5bt3Ectc"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"
+    integrity="sha384-IhOMlZcYJEIUZSu4w8iZWRv2iVw00kviyoljFr8o0P2YNjQB/8NE/IsqC/4fEi35"
+    crossorigin="anonymous"
+  ></script>
   <script src="assets/js/jquery-3.4.1.min.js"></script>
   <script src="assets/js/axios.min.js" type="text/javascript"></script>
   <script src="assets/js/bibliomap.js" type="text/javascript"></script>
