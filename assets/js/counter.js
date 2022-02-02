@@ -22,11 +22,25 @@ function counter () {
 
   axios.get('https://ezmesure.couperin.org/api/metrics')
     .then(function (response) {
+
+      var metrics = {
+        docs: 646060453,
+        dateCoverage: {
+          min: new Date('2021-01-01'),
+          max: new Date('2021-12-31'),
+        },
+        metrics: {
+          days: 365,
+          title: 161908,
+          platforms: 245,
+          indices: 78
+        }
+      }
       if (response.status !== 200) {
         return console.error('Failed to fetch ezMESURE metrics');
       }
 
-      var metrics = response.data.metrics;
+      metrics = response.data.metrics;
       metrics.docs = response.data.docs;
 
       axios.get('https://ezmesure.couperin.org/api/partners')
