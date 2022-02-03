@@ -1,9 +1,9 @@
 window.addEventListener('load', function () {
   $('#year').text(new Date().getFullYear() || '');
 
-  var url = new URL(window.location.href);
-  var params = new URLSearchParams(url.search);
-  var locale = params.get('lang') || 'fr';
+  let url = new URL(window.location.href);
+  let params = new URLSearchParams(url.search);
+  let locale = params.get('lang') || 'fr';
   if (locale && locale === 'fr') {
     i18n(locale);
     return closeOverlay();
@@ -21,10 +21,10 @@ window.addEventListener('load', function () {
         return console.error('Failed to get ezPAARSE translation');
       }
 
-      var translations = response.data;
+      let translations = response.data;
       translations.locale = locale;
 
-      var i18nTags = document.querySelectorAll('[data-i18n]');
+      let i18nTags = document.querySelectorAll('[data-i18n]');
       if (i18nTags) {
         i18nTags.forEach(function (tag) {
           if (!tag.dataset.i18nAttr) {
@@ -52,7 +52,7 @@ window.addEventListener('load', function () {
     });
 });
 
-function closeOverlay() {
+async function closeOverlay() {
   $('#loading').fadeOut(500, counter());
 }
 
@@ -69,8 +69,8 @@ function i18n(locale) {
     $('#localeImg').attr('src', 'assets/img/en.png');
     $('#currentLocale').text('English');
   }
-  var lang = locale === 'fr' ? 'en' : 'fr';
-  var language = locale === 'fr' ? 'English' : 'Français';
+  let lang = locale === 'fr' ? 'en' : 'fr';
+  let language = locale === 'fr' ? 'English' : 'Français';
   $('#i18n')
     .attr('href', '?lang=' + lang)
     .attr('title', language)
