@@ -1,10 +1,10 @@
 function counter () {
   var nodes = {
-    indices: document.getElementById('counter3') || 78,
-    days: document.getElementById('counter2') || 365,
-    docs: document.getElementById('counter1') || 646060453,
-    platforms: document.getElementById('counter5') || 245,
-    titles: document.getElementById('counter4') || 161908,
+    indices: document.getElementById('counter3'),
+    days: document.getElementById('counter2'),
+    docs: document.getElementById('counter1'),
+    platforms: document.getElementById('counter5'),
+    titles: document.getElementById('counter4'),
     contributors: document.getElementById('counter6'),
     issues: document.getElementById('counter7')
   };
