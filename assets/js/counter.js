@@ -10,7 +10,6 @@ function counter () {
   };
 
   const lang = document.querySelector('html').getAttribute('lang');
-  console.log(lang);
 
   function startCounter(metrics) {
     setTimeout(function () {
