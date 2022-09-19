@@ -1,0 +1,14 @@
+version: "3.3"
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 80:80
+    environment:
+      - NGINX_HOST
+    volumes:
+      - "./templates/http.conf.template:/etc/nginx/templates/default.conf.template:ro"
+    restart: unless-stopped
