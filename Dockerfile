@@ -9,5 +9,5 @@ COPY package*.json /homepage/
 RUN npm ci --only=production
 COPY . /homepage
 
-FROM nginx:1.20.1-alpine
+FROM nginx:1.23.1-alpine
 COPY --from=generate /homepage /usr/share/nginx/html
