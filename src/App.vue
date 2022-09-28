@@ -10,10 +10,10 @@
       <v-divider />
       <v-container>
         <v-row>
-          <v-col>
+          <v-col cols="12" md="6">
             <Analogist />
           </v-col>
-          <v-col>
+          <v-col cols="12" md="6">
             <Readmetrics />
           </v-col>
         </v-row>
@@ -28,16 +28,16 @@
 </template>
 
 <script>
-import Appbar from './components/skeleton/Appbar.vue';
-import Footer from './components/skeleton/Footer.vue';
-import Team from './components/skeleton/Team.vue';
+import Appbar from '@/components/skeleton/Appbar.vue';
+import Footer from '@/components/skeleton/Footer.vue';
+import Team from '@/components/skeleton/Team.vue';
 
-import Ezpaarse from './components/application/Ezpaarse.vue';
-import Metrics from './components/application/Metrics.vue';
-import Analogist from './components/application/Analogist.vue';
-import Ezmesure from './components/application/Ezmesure.vue';
-import Bibliomap from './components/application/Bibliomap.vue';
-import Readmetrics from './components/application/Readmetrics.vue';
+import Ezpaarse from '@/components/application/Ezpaarse.vue';
+import Metrics from '@/components/application/Metrics.vue';
+import Analogist from '@/components/application/Analogist.vue';
+import Ezmesure from '@/components/application/Ezmesure.vue';
+import Bibliomap from '@/components/application/Bibliomap.vue';
+import Readmetrics from '@/components/application/Readmetrics.vue';
 
 export default {
   name: 'App',

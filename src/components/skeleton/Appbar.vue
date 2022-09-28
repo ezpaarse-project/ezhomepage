@@ -2,7 +2,7 @@
   <v-app-bar dark>
     <v-img
       max-width="150"
-      :src="require('../../../public/images/ezpaarse-logo.png')"
+      :src="require('../../../public/images/ezpaarse.png')"
       class="ma-4 logo-white"
     ></v-img>
 
@@ -113,6 +113,8 @@
 
 export default {
   data: () => ({
+    drawer: false,
+
     blogURL: 'https://blog.ezpaarse.org/',
     analogistURL: 'http://analyses.ezpaarse.org/',
     ezpaarseDemoURL: 'http://demo.ezpaarse.org/',
@@ -124,11 +126,15 @@ export default {
     githubURL: 'https://github.com/ezpaarse-project',
     twitterURL: 'https://twitter.com/ezpaarse',
     youtubeURL: 'https://www.youtube.com/channel/UCcR-0UE9WjYiwS4fMG2T4tQ',
-
   }),
   computed: {
     local() {
       return this.$i18n.locale;
+    },
+  },
+  watch: {
+    group() {
+      this.drawer = false;
     },
   },
 };
@@ -136,6 +142,6 @@ export default {
 
 <style scoped>
 .logo-white {
-  filter: brightness(0) invert(1)
+  filter: brightness(0) invert(1);
 }
 </style>

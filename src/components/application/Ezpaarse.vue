@@ -7,16 +7,16 @@
     >
       <v-img
         max-width="350"
-        :src="require('../../../public/images/ezpaarse-logo.png')"
+        :src="require('../../../public/images/ezpaarse.png')"
         class="ma-2"
       />
       <h1>Qu'est ce que c'est ?</h1>
     </v-row>
     <v-row class="my-10">
-      <v-col>
+      <v-col cols="12" md="6">
         <p class="text-center ma-2"> {{ $t("ezpaarse.text1") }}</p>
       </v-col>
-      <v-col>
+      <v-col cols="12" md="6">
         <p class="text-center ma-2"> {{ $t("ezpaarse.text2") }}</p>
       </v-col>
     </v-row>

@@ -1,14 +1,14 @@
 <template>
   <v-container class="my-10">
     <v-row>
-      <v-col cols="12" sm="4">
+      <v-col cols="12" md="4">
         <v-row class="text-center ma-2" justify="center" align="center">
           <v-icon size="60">mdi-web</v-icon>
           <h1>Bibliomap</h1>
         </v-row>
         <p class="text-center ma-2">{{ $t("bibliomap") }}</p>
       </v-col>
-      <v-col cols="12" sm="8">
+      <v-col cols="12" md="8">
         <v-row class="text-center" justify="center" align="center">
           <object
             data="https://bibliomap.inist.fr/?d=false&m=false&z=5"
