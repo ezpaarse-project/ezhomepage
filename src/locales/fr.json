@@ -1,0 +1,30 @@
+{
+  "message": "français",
+  "ezpaarse": {
+    "text1": "ezPAARSE est un logiciel libre et gratuit chargé d'exploiter, analyser et enrichir les traces (logs) d'accès aux ressources électroniques disponibles sur les plate-formes web des éditeurs de littérature scientifique.",
+    "text2": "ezPAARSE propose un formulaire en ligne et une API permettant le traitement manuel ou automatique des logs collectées sur les serveurs ou proxies de votre établissement. Il produit des fichiers CSV d'événements de consultation (ECs) qui obéissent aux recommandations COUNTER."
+  },
+  "metrics": "En France, 0 établissements de l'ESR utilisent ezPAARSE pour traiter 0 jours de logs et ainsi générer 0 ECs répartis sur 0 plate-formes d'éditeurs et 0 titres de revues et ebooks différents.",
+  "ezmesure": "ezMESURE est un entrepôt national conçu pour collecter les données générées par les instances ezPAARSE installées dans les établissements de l'ESR et les présenter dans des visualisations dynamiques et personnalisables.", 
+  "ezcounter": "ezCounter est un plugin d'ezMESURE où vous pouvez déléguez la collecte des données d'usage COUNTER 5 de manière automatique et les présenter dans des visualisations dynamiques et personnalisables.",
+  "analogist": "AnalogIST est l'espace collaboratif où sont réunies toutes les analyses de plate-formes (pré-requises pour la création de parseurs pour ezPAARSE).",
+  "readmetrics": "ReadMetrics est un package ezPAARSE ezMESURE qui vous fournir un aperçu complet de l'utilisation des ressources électroniques de votre institution.",
+  "bibliomap": "Bibliomap affiche les événements de consultation générés par une instance d'ezPAARSE en temps réel sur une carte. C'est un outil utile pour surveiller le trafic de votre ezproxy ou pour aider à porter le projet d'adoption d'ezPAARSE dans votre établissement.",
+  "bibliomapTitle": "Consultations analysées en temps réel par ezPAARSE (Bibliomap).",
+  "footer": {
+    "title": "Une équipe et une communauté",
+    "block1": {
+      "title": "Un outil simple et efficace",
+      "text": "Quelques clics suffisent à l'installer pour commencer à analyser vos logs"
+    },
+    "block2": {
+      "title": "Une équipe disponible et réactive",
+      "text": "Un problème, une question, une suggestions ? N'hésitez pas à prendre contact avec nous : ça nous intéresse !"
+    },
+    "block3": {
+      "title": "Une communauté grandissante",
+      "text": "Et pas seulement francophone : ezPAARSE est installé dans des établissements aux États-Unis, à Singapour, en Allemagne et beaucoup d'autres !"
+    },
+    "signature": "Tout droit reservé" 
+  }
+}

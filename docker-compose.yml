@@ -9,6 +9,10 @@ services:
     ports:
       -  ${NGINX_PORT:-80}:80
     environment:
+      # proxy
+      - http_proxy
+      - https_proxy
+      - NODE_ENV=production
       - NGINX_HOST
     volumes:
       - "./templates/http.conf.template:/etc/nginx/templates/default.conf.template:ro"

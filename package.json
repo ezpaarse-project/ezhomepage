@@ -1,18 +1,33 @@
 {
-   "name": "ezpaarse-home",
-   "version": "1.0.0",
-   "description": "EzPAARSE projecthome page",
-   "scripts": {
-      "start": "npm run static",
-      "static": "./node_modules/node-static/bin/cli.js -H '{\"Access-Control-Allow-Origin\":\"*\"}'"
-   },
-   "dependencies": {
-      "node-static": "^0.7.9"
-   },
-   "repository": {
-      "type": "git",
-      "url": "https://github.com/ezpaarse-project/web-home"
-   },
-   "author": "Patrick Kremer <patrickkrem@gmail.com>",
-   "license": "MIT"
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\""
+  },
+  "dependencies": {
+    "@vue/cli-plugin-eslint": "^5.0.8",
+    "vue": "^2.6.14",
+    "vue-i18n": "^8.26.3",
+    "vue-i18n-bridge": "^9.2.0-beta.10",
+    "vuetify": "^2.6.0"
+  },
+  "devDependencies": {
+    "@intlify/vue-i18n-loader": "^3.2.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-airbnb": "^6.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-vue": "^8.0.3",
+    "eslint-plugin-vuejs-accessibility": "^1.1.0",
+    "sass": "~1.32.0",
+    "sass-loader": "^10.0.0",
+    "vue-cli-plugin-i18n": "~2.3.1",
+    "vue-cli-plugin-vuetify": "~2.5.8",
+    "vue-template-compiler": "^2.6.14",
+    "vuetify-loader": "^1.7.0"
+  }
 }
