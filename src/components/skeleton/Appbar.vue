@@ -1,16 +1,17 @@
 <template>
-  <v-app-bar dark>
+  <v-app-bar class="cyan darken-4" dark>
+    <v-app-bar-nav-icon dark @click.stop="setDrawer()" class="hidden-lg-and-up" />
     <v-img
       max-width="150"
       :src="require('../../../public/images/ezpaarse.png')"
       class="ma-4 logo-white"
     ></v-img>
 
-    <v-btn :href="blogURL" text>
+    <v-btn class="hidden-md-and-down" :href="blogURL" text>
       <v-icon class="mr-1">mdi-message-text</v-icon>
       Blog
     </v-btn>
-    <v-btn :href="analogistURL" text>
+    <v-btn class="hidden-md-and-down" :href="analogistURL" text>
       <v-img
         max-width="30"
         :src="require('../../../public/images/analogist-logo.png')"
@@ -18,11 +19,11 @@
       />
       Analogist
     </v-btn>
-    <v-btn :href="ezpaarseDemoURL" text>
+    <v-btn class="hidden-md-and-down" :href="ezpaarseDemoURL" text>
       <v-icon class="mr-1">mdi-chevron-double-right</v-icon>
       Démonstration
     </v-btn>
-    <v-btn :href="ezmesureURL" text>
+    <v-btn class="hidden-md-and-down" :href="ezmesureURL" text>
       <v-img
         max-width="40"
         :src="require('../../../public/images/ezmesure-logo.svg')"
@@ -30,11 +31,11 @@
       ></v-img>
       ezmesure
     </v-btn>
-    <v-btn :href="bibliomapURL" text>
+    <v-btn class="hidden-md-and-down" :href="bibliomapURL" text>
       <v-icon class="mr-1">mdi-web</v-icon>
       bibliomap
     </v-btn>
-    <v-btn :href="ezpaarseDocURL" text>
+    <v-btn class="hidden-md-and-down" :href="ezpaarseDocURL" text>
       <v-icon class="mr-1">mdi-file-document-multiple</v-icon>
       documentation
     </v-btn>
@@ -43,8 +44,8 @@
 
     <v-tooltip bottom>
       <template v-slot:activator="{ on, attrs }">
-        <v-btn :href="mailURL" v-bind="attrs" v-on="on" icon>
-          <v-icon>mdi-mail</v-icon>
+        <v-btn class="hidden-md-and-down" :href="mailURL" v-bind="attrs" v-on="on" icon>
+          <v-icon>mdi-email</v-icon>
         </v-btn>
       </template>
       <span>Mail ezPAARSE</span>
@@ -52,7 +53,7 @@
 
     <v-tooltip bottom>
       <template v-slot:activator="{ on, attrs }">
-        <v-btn :href="githubURL" v-bind="attrs" v-on="on" icon>
+        <v-btn class="hidden-md-and-down" :href="githubURL" v-bind="attrs" v-on="on" icon>
           <v-icon>mdi-github</v-icon>
         </v-btn>
       </template>
@@ -61,16 +62,16 @@
 
     <v-tooltip bottom>
       <template v-slot:activator="{ on, attrs }">
-        <v-btn :href="twitterURL" v-bind="attrs" v-on="on" icon>
+        <v-btn class="hidden-md-and-down" :href="twitterURL" v-bind="attrs" v-on="on" icon>
           <v-icon>mdi-twitter</v-icon>
         </v-btn>
       </template>
       <span>Twitter ezPAARSE</span>
     </v-tooltip>
 
-    <v-tooltip bottom>
+    <v-tooltip>
       <template v-slot:activator="{ on, attrs }">
-        <v-btn :href="youtubeURL" v-bind="attrs" v-on="on" icon>
+        <v-btn class="hidden-md-and-down" :href="youtubeURL" v-bind="attrs" v-on="on" icon>
           <v-icon>mdi-youtube</v-icon>
         </v-btn>
       </template>
@@ -79,7 +80,7 @@
 
     <v-menu left bottom>
       <template v-slot:activator="{ on, attrs }">
-        <v-btn icon v-bind="attrs" v-on="on">
+        <v-btn class="hidden-md-and-down"  icon v-bind="attrs" v-on="on">
           <v-img
             max-width="25"
             :src="require(`../../../public/images/${local}.png`)"
@@ -113,8 +114,6 @@
 
 export default {
   data: () => ({
-    drawer: false,
-
     blogURL: 'https://blog.ezpaarse.org/',
     analogistURL: 'http://analyses.ezpaarse.org/',
     ezpaarseDemoURL: 'http://demo.ezpaarse.org/',
@@ -127,9 +126,17 @@ export default {
     twitterURL: 'https://twitter.com/ezpaarse',
     youtubeURL: 'https://www.youtube.com/channel/UCcR-0UE9WjYiwS4fMG2T4tQ',
   }),
+  methods: {
+    setDrawer() {
+      this.$store.dispatch('setDrawer', !this.drawer);
+    },
+  },
   computed: {
     local() {
       return this.$i18n.locale;
+    },
+    drawer() {
+      return this.$store.state.drawer;
     },
   },
   watch: {

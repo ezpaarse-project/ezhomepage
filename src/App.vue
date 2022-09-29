@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <Appbar />
+    <Drawer />
     <div class="content">
       <Ezpaarse />
       <v-divider />
@@ -28,6 +29,7 @@
 </template>
 
 <script>
+import Drawer from '@/components/skeleton/Drawer.vue';
 import Appbar from '@/components/skeleton/Appbar.vue';
 import Footer from '@/components/skeleton/Footer.vue';
 import Team from '@/components/skeleton/Team.vue';
@@ -42,6 +44,7 @@ import Readmetrics from '@/components/application/Readmetrics.vue';
 export default {
   name: 'App',
   components: {
+    Drawer,
     Appbar,
     Footer,
     Team,

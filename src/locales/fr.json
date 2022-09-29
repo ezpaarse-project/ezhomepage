@@ -4,6 +4,12 @@
     "text1": "ezPAARSE est un logiciel libre et gratuit chargé d'exploiter, analyser et enrichir les traces (logs) d'accès aux ressources électroniques disponibles sur les plate-formes web des éditeurs de littérature scientifique.",
     "text2": "ezPAARSE propose un formulaire en ligne et une API permettant le traitement manuel ou automatique des logs collectées sur les serveurs ou proxies de votre établissement. Il produit des fichiers CSV d'événements de consultation (ECs) qui obéissent aux recommandations COUNTER."
   },
+  "appbar": {
+    "demonstration": "Démonstration",
+    "language": "Language",
+    "french": "Français",
+    "english": "Anglais"
+  },
   "metrics": "En France, 0 établissements de l'ESR utilisent ezPAARSE pour traiter 0 jours de logs et ainsi générer 0 ECs répartis sur 0 plate-formes d'éditeurs et 0 titres de revues et ebooks différents.",
   "ezmesure": "ezMESURE est un entrepôt national conçu pour collecter les données générées par les instances ezPAARSE installées dans les établissements de l'ESR et les présenter dans des visualisations dynamiques et personnalisables.", 
   "ezcounter": "ezCounter est un plugin d'ezMESURE où vous pouvez déléguez la collecte des données d'usage COUNTER 5 de manière automatique et les présenter dans des visualisations dynamiques et personnalisables.",
