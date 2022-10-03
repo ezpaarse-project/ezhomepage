@@ -4,7 +4,7 @@ LABEL maintainer="ezTeam <ezteam@couperin.org>"
 WORKDIR /homepage
 
 COPY package*.json ./
-RUN npm ci --omit=dev
+RUN npm ci 
 COPY . .
 RUN npm run build
 
