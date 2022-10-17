@@ -10,7 +10,7 @@
     "french": "Français",
     "english": "Anglais"
   },
-  "metrics": "En France, 0 établissements de l'ESR utilisent ezPAARSE pour traiter 0 jours de logs et ainsi générer 0 ECs répartis sur 0 plate-formes d'éditeurs et 0 titres de revues et ebooks différents.",
+  "metrics": "En France, 130 établissements de l'ESR utilisent ezPAARSE pour traiter <span>{days}</span> jours de logs et ainsi générer {docs} ECs répartis sur {platforms} plate-formes d'éditeurs et {titles} titres de revues et ebooks différents.",
   "ezmesure": "ezMESURE est un entrepôt national conçu pour collecter les données générées par les instances ezPAARSE installées dans les établissements de l'ESR et les présenter dans des visualisations dynamiques et personnalisables.", 
   "ezcounter": "ezCounter est un plugin d'ezMESURE où vous pouvez déléguez la collecte des données d'usage COUNTER 5 de manière automatique et les présenter dans des visualisations dynamiques et personnalisables.",
   "analogist": "AnalogIST est l'espace collaboratif où sont réunies toutes les analyses de plate-formes (pré-requises pour la création de parseurs pour ezPAARSE).",

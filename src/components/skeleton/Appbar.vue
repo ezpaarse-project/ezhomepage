@@ -69,7 +69,7 @@
       <span>Twitter ezPAARSE</span>
     </v-tooltip>
 
-    <v-tooltip>
+    <v-tooltip bottom>
       <template v-slot:activator="{ on, attrs }">
         <v-btn class="hidden-md-and-down" :href="youtubeURL" v-bind="attrs" v-on="on" icon>
           <v-icon>mdi-youtube</v-icon>
