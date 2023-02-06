@@ -70,19 +70,19 @@ export default {
           name: 'ezPAARSE',
           pathImage: 'ezpaarse-logo.png',
           text: this.$t('ezpaarseSubtitle'),
-          link: '',
+          link: 'http://demo.ezpaarse.org/',
         },
         {
           name: 'analogist',
           pathImage: 'analogist-logo.png',
           text: this.$t('analogistSubtitle'),
-          link: '',
+          link: 'http://analyses.ezpaarse.org/',
         },
         {
           name: 'ezUNPAYWALL',
           pathImage: 'circle.png',
           text: this.$t('ezunpaywallSubtitle'),
-          link: '',
+          link: 'https://unpaywall.inist.fr/',
         },
         {
           name: 'readmetrics',
