@@ -26,7 +26,7 @@
               max-width="170"
               max-height="170"
               class="ma-2"
-              :src="require('../../../public/images/minister-text.png')"
+              :src="require('../../../public/images/ministry-text.png')"
             />
           </v-row>
         </v-card>
