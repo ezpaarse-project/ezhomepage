@@ -9,10 +9,11 @@
         cols="12"
         md="4"
       >
-        <v-img
-          max-width="350"
+        <img
+          style="max-width: 350px"
           :src="require('../../../public/images/ezpaarse-text.png')"
           class="ma-2 mx-auto"
+          alt="ezpaarse-img"
         />
       </v-col>
       <v-col>

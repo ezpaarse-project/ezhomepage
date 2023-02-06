@@ -5,10 +5,11 @@
         cols="12"
         md="4"
       >
-        <v-img
-          max-width="350"
+        <img
+          style="max-width: 350px"
           :src="require('../../../public/images/circle.png')"
           class="ma-2 mx-auto"
+          alt="ezunpaywall-img"
         />
       </v-col>
       <v-col

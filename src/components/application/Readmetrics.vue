@@ -13,11 +13,12 @@
         cols="12"
         md="4"
       >
-      <v-img
+      <img
+        style="max-width: 200px"
         height="auto"
-        max-width="200"
         :src="require('../../../public/images/readmetrics-text.png')"
         class="ma-2 mx-auto"
+        alt="readmetrics-img"
       />
       </v-col>
     </v-row>

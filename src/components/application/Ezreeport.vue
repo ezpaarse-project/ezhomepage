@@ -5,10 +5,11 @@
         cols="12"
         md="4"
       >
-        <v-img
-          max-width="350"
+        <img
+          style="max-width: 350px"
           :src="require('../../../public/images/ezmesure-logo.svg')"
           class="ma-2 mx-auto"
+          alt="ezreeport-img"
         />
       </v-col>
       <v-col

@@ -1,11 +1,12 @@
 <template>
   <v-app-bar class="cyan darken-4" dark>
     <v-app-bar-nav-icon dark @click.stop="setDrawer()" class="hidden-lg-and-up" />
-    <v-img
-      max-width="150"
+    <img
+      style="max-width: 150px"
       :src="require('../../../public/images/ezpaarse-text.png')"
       class="ma-4 logo-white"
-    ></v-img>
+      alt="ezpaarse-img"
+    />
 
     <v-btn class="hidden-md-and-down" :href="blogURL" text>
       <v-icon class="mr-1">mdi-message-text</v-icon>

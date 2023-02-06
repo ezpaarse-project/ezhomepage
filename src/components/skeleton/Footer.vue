@@ -4,29 +4,29 @@
       <v-col class="pa-0" cols=12>
         <v-card class="flex cyan darken-4 pa-5" flat tile>
           <v-row align="center" class="ma-2">
-            <v-img
-              max-width="160"
-              max-height="50"
+            <img
+              style="max-width: 160px; max-height: 50px"
               class="ma-2"
               :src="require('../../../public/images/couperin-text.png')"
+              alt="couperin-img"
             />
-            <v-img
-              max-width="150"
-              max-height="50"
+            <img
+              style="max-width: 150px; max-height: 50px"
               class="ma-2"
               :src="require('../../../public/images/counter-text.png')"
+              alt="counter-img"
             />
-            <v-img
-              max-width="70"
-              max-height="70"
+            <img
+              style="max-width: 70px; max-height: 70px"
               class="ma-2"
               :src="require('../../../public/images/cnrs-logo.svg')"
+              alt="cnrs-img"
             />
-            <v-img
-              max-width="170"
-              max-height="170"
+            <img
+              style="max-width: 170px; max-height: 170px"
               class="ma-2"
               :src="require('../../../public/images/ministry-text.png')"
+              alt="ministry-img"
             />
           </v-row>
         </v-card>

@@ -19,10 +19,11 @@
       </v-list-item>
 
       <v-list-item link :href="analogistURL" ripple>
-        <v-img
-          max-width="30"
+        <img
+          style="max-width: 30px"
           :src="require('../../../public/images/analogist-logo.png')"
           class="mr-6 logo-white"
+          alt="analogist-img"
         />
 
         <v-list-item-content>
@@ -41,10 +42,11 @@
       </v-list-item>
 
       <v-list-item link :href="ezmesureURL" ripple>
-        <v-img
-          max-width="32"
+        <img
+          style="max-width: 32px"
           :src="require('../../../public/images/ezmesure-logo.svg')"
           class="mr-6 logo-white"
+          alt="ezmesure-img"
         />
 
         <v-list-item-content>

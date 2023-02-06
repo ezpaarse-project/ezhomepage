@@ -14,13 +14,14 @@
         >
           <v-row align="center" justify="center">
             <v-col class="ma-4" cols="12" sm="1" md="1" lg="1">
-              <v-btn :href="application.link" icon>
-                <v-img
-                  max-width="60"
+              <v-btn icon>
+                <img
+                  style="max-width: 60px"
                   :src="
                     require(`../../../public/images/${application.pathImage}`)
                   "
                   class="mr-1 logo-white"
+                  :alt="`${application.name}-img`"
                 />
               </v-btn>
             </v-col>
@@ -100,3 +101,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+a {
+    text-decoration: none;
+}
+
+</style>

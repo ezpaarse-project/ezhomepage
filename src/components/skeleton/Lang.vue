@@ -8,19 +8,21 @@
     <v-card>
       <v-list>
         <v-list-item @click="$i18n.locale = 'fr'">
-          <v-img
-            max-width="25"
+          <img
+            style="max-width: 25px"
             :src="require('../../../public/images/lang/fr.png')"
             class="mr-2"
-          ></v-img>
+            alt="fr"
+          />
           fr
         </v-list-item>
         <v-list-item @click="$i18n.locale = 'en'">
-          <v-img
-            max-width="25"
+          <img
+            style="max-width: 25px"
             :src="require('../../../public/images/lang/en.png')"
             class="mr-2"
-          ></v-img>
+            alt="fr"
+          />
           en
         </v-list-item>
       </v-list>
@@ -40,6 +42,3 @@ export default {
   },
 };
 </script>
-
-<style>
-</style>

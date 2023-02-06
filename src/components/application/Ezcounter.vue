@@ -13,10 +13,11 @@
         cols="12"
         md="4"
       >
-      <v-img
-        max-width="450"
+      <img
+        style="max-width: 450px"
         :src="require('../../../public/images/ezcounter-text.png')"
         class="ma-2 mx-auto"
+        alt="ezcounter-img"
       />
       </v-col>
     </v-row>
