@@ -14,7 +14,7 @@
         md="4"
       >
       <v-img
-        max-width="350"
+        max-width="450"
         :src="require('../../../public/images/ezcounter-text.png')"
         class="ma-2 mx-auto"
       />

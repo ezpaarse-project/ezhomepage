@@ -7,7 +7,7 @@
       >
         <v-img
           max-width="350"
-          :src="require('../../../public/images/circle.png')"
+          :src="require('../../../public/images/ezmesure-logo.svg')"
           class="ma-2 mx-auto"
         />
       </v-col>
