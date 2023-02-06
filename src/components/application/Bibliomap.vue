@@ -3,8 +3,8 @@
     <v-row justify="center" align="center">
       <v-col cols="12" md="8">
         <v-row justify="center" align="center">
-          <object
-            data="https://bibliomap.inist.fr/?d=false&m=false&z=5"
+          <iframe
+            src="https://bibliomap.inist.fr/?d=false&m=false&z=5"
             width="100%"
             height="444"
             title="Bibliomap"
