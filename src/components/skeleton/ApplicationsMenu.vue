@@ -6,7 +6,12 @@
       </template>
 
       <v-card class="pt-4 pb-4">
-        <div class="ma-2" :key="application.name" v-for="application in applications">
+        <a
+          :href="application.link"
+          class="ma-2 black--text"
+          :key="application.name"
+          v-for="application in applications"
+        >
           <v-row align="center" justify="center">
             <v-col class="ma-4" cols="12" sm="1" md="1" lg="1">
               <v-btn :href="application.link" icon>
@@ -30,7 +35,7 @@
               </v-row>
             </v-col>
           </v-row>
-        </div>
+        </a>
       </v-card>
     </v-menu>
   </div>
