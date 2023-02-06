@@ -132,7 +132,7 @@
       >
         <v-list-item-title class="body-2" v-text="$t('appbar.french')"/>
         <v-list-item-icon>
-          <img width="24" :src="require('../../../public/images/fr.png')" alt="fr">
+          <img width="24" :src="require('../../../public/images/lang/fr.png')" alt="fr">
         </v-list-item-icon>
       </v-list-item>
 
@@ -141,7 +141,7 @@
       >
         <v-list-item-title class="body-2" v-text="$t('appbar.english')"/>
         <v-list-item-icon>
-          <img width="24" :src="require('../../../public/images/en.png')" alt="en">
+          <img width="24" :src="require('../../../public/images/lang/en.png')" alt="en">
         </v-list-item-icon>
       </v-list-item>
     </v-list-group>
@@ -162,7 +162,7 @@ export default {
       bibliomapURL: 'https://bibliomap.inist.fr/',
       ezpaarseDocURL: 'https://ezpaarse-project.github.io/ezpaarse/',
 
-      mailURL: 'mailto:ezpaarse@couperin.org',
+      mailURL: 'mailto:ezteam@couperin.org',
       githubURL: 'https://github.com/ezpaarse-project',
       twitterURL: 'https://twitter.com/ezpaarse',
       youtubeURL: 'https://www.youtube.com/channel/UCcR-0UE9WjYiwS4fMG2T4tQ',

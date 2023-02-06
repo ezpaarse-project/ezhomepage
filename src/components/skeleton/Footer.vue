@@ -8,25 +8,13 @@
               max-width="150"
               max-height="50"
               class="ma-2"
-              :src="require('../../../public/images/couperin-logo.png')"
-            />
-            <v-img
-              max-width="150"
-              max-height="50"
-              class="ma-2"
-              :src="require('../../../public/images/ul-logo.png')"
+              :src="require('../../../public/images/couperin-text.png')"
             />
             <v-img
               max-width="50"
               max-height="50"
               class="ma-2"
               :src="require('../../../public/images/cnrs-logo.svg')"
-            />
-            <v-img
-              max-width="170"
-              max-height="70"
-              class="ma-2"
-              :src="require('../../../public/images/oclc-logo.png')"
             />
           </v-row>
         </v-card>

@@ -1,23 +1,29 @@
 <template>
   <v-container>
     <v-row
-      class="text-center my-8"
+      class=" my-8"
       justify="center"
       align="center"
     >
-      <v-img
-        max-width="350"
-        :src="require('../../../public/images/ezpaarse.png')"
-        class="ma-2"
-      />
-      <h1>Qu'est ce que c'est ?</h1>
-    </v-row>
-    <v-row class="my-10">
-      <v-col cols="12" md="6">
-        <p class="text-center ma-2"> {{ $t("ezpaarse.text1") }}</p>
+      <v-col
+        cols="12"
+        md="4"
+      >
+        <v-img
+          max-width="350"
+          :src="require('../../../public/images/ezpaarse-text.png')"
+          class="ma-2 mx-auto"
+        />
       </v-col>
-      <v-col cols="12" md="6">
-        <p class="text-center ma-2"> {{ $t("ezpaarse.text2") }}</p>
+      <v-col>
+        <v-row class="my-10">
+          <v-col cols="12">
+            <p class="ma-2 text text-center"> {{ $t("ezpaarse.text1") }}</p>
+          </v-col>
+          <v-col cols="12">
+            <p class="ma-2 text text-center"> {{ $t("ezpaarse.text2") }}</p>
+          </v-col>
+        </v-row>
       </v-col>
     </v-row>
   </v-container>

@@ -1,15 +1,24 @@
 <template>
-  <v-container class="my-10">
-    <v-row class="text-center" justify="center" align="center">
+    <v-container class="my-10">
+    <v-row justify="center" align="center">
+      <v-col
+        cols="12"
+        md="8"
+      >
+        <p class="ma-2 text text-center">
+          {{ $t("readmetrics") }}
+        </p>
+      </v-col>
+      <v-col
+        cols="12"
+        md="4"
+      >
       <v-img
-        max-width="400"
-        :src="require('../../../public/images/readmetrics-logo.png')"
-        class="ma-2"
+        height="auto"
+        max-width="200"
+        :src="require('../../../public/images/readmetrics-text.png')"
+        class="ma-2 mx-auto"
       />
-    </v-row>
-    <v-row>
-      <v-col>
-        <p class="text-center">{{ $t("readmetrics") }}</p>
       </v-col>
     </v-row>
   </v-container>
