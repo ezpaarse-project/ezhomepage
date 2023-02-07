@@ -61,8 +61,8 @@ export default {
 
 <style>
 .content {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .text {
