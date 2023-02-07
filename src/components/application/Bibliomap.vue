@@ -2,14 +2,17 @@
   <v-container class="my-10">
     <v-row justify="center" align="center">
       <v-col cols="12" md="8">
-        <v-row justify="center" align="center">
-          <iframe
-            src="https://bibliomap.inist.fr/?d=false&m=false&z=5"
-            width="100%"
-            height="444"
-            title="Bibliomap"
-          />
-          <p class="ma-2">{{ $t("bibliomapTitle") }}</p>
+        <v-row>
+          <v-card width="100%" justify="center" align="center">
+            <iframe
+              src="https://bibliomap.inist.fr/?d=false&m=false&z=5"
+              width="100%"
+              height="444"
+              title="Bibliomap"
+              style="border: 0;"
+            />
+            <p class="ma-2">{{ $t("bibliomapTitle") }}</p>
+          </v-card>
         </v-row>
       </v-col>
       <v-col cols="12" md="4">
