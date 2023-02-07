@@ -8,7 +8,7 @@
         </v-btn>
       </template>
 
-      <v-card>
+      <v-card class="py-4">
         <v-list-item
           v-for="application in applications"
           :key="application.name"
