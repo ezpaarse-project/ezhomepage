@@ -1,42 +1,32 @@
 <template>
   <div class="text-center">
-    <v-menu :nudge-width="200" open-on-hover bottom offset-y>
+    <v-menu :nudge-width="200" open-on-hover bottom offset-y >
       <template v-slot:activator="{ on, attrs }">
-        <v-btn dark v-bind="attrs" text v-on="on" v-text="$t('softwares')" />
+       <v-btn dark v-bind="attrs" text v-on="on">
+          {{ $t('softwares') }}
+          <v-icon right>mdi-menu-down</v-icon>
+        </v-btn>
       </template>
 
-      <v-card class="pt-4 pb-4">
-        <a
-          :href="application.link"
-          class="ma-2 black--text"
-          :key="application.name"
+      <v-card>
+        <v-list-item
           v-for="application in applications"
+          :key="application.name"
+          link
         >
-          <v-row align="center" justify="center">
-            <v-col class="ma-4" cols="12" sm="1" md="1" lg="1">
-              <v-btn icon>
-                <img
-                  style="max-width: 60px"
-                  :src="
-                    require(`../../../public/images/${application.pathImage}`)
-                  "
-                  class="mr-1 logo-white"
-                  :alt="`${application.name}-img`"
-                />
-              </v-btn>
-            </v-col>
-            <v-col cols="12" sm="10" md="10" lg="10">
-              <v-row>
-                <v-col class="pa-1" cols="12">
-                  <b> {{ application.name }}</b>
-                </v-col>
-                <v-col class="pa-1" cols="12">
-                  <span>{{ application.text }}</span>
-                </v-col>
-              </v-row>
-            </v-col>
-          </v-row>
-        </a>
+          <v-list-item-avatar tile="false">
+            <img
+              style="max-width: 60px"
+              :src="require(`../../../public/images/${application.pathImage}`)"
+              class="logo-white"
+              :alt="`${application.name}-img`"
+            />
+          </v-list-item-avatar>
+          <v-list-item-content>
+            <v-list-item-title v-text="application.name" />
+            <v-list-item-subtitle v-text="application.text" />
+          </v-list-item-content>
+        </v-list-item>
       </v-card>
     </v-menu>
   </div>
