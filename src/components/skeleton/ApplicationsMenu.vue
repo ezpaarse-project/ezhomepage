@@ -1,6 +1,6 @@
 <template>
   <div class="text-center">
-    <v-menu :nudge-width="200" open-on-hover bottom offset-y >
+    <v-menu open-on-hover bottom offset-y >
       <template v-slot:activator="{ on, attrs }">
        <v-btn dark v-bind="attrs" text v-on="on">
           {{ $t('softwares') }}
