@@ -2,29 +2,16 @@
   <v-navigation-drawer
     :value="value"
     disable-resize-watcher
+    app
+    class="hidden-lg-and-up"
     width="300"
     @input="updateVisible($event)"
   >
-    <v-list>
-      <v-list-item link :href="blogURL">
-        <v-list-item-icon>
-          <v-icon>mdi-message-text</v-icon>
-        </v-list-item-icon>
-
-        <v-list-item-content>
-          <v-list-item-title v-text="$t('blog')" />
-        </v-list-item-content>
-      </v-list-item>
-
-      <v-list-item link :href="ezpaarseDocURL">
-        <v-list-item-icon>
-          <v-icon>mdi-file-document-multiple</v-icon>
-        </v-list-item-icon>
-
-        <v-list-item-content>
-          <v-list-item-title v-text="$t('documentation')" />
-        </v-list-item-content>
-      </v-list-item>
+    <v-list
+      nav
+      dense
+    >
+      <p class="my-4">{{ $t('softwares') }}</p>
 
       <v-list-item
         v-for="application in applications"
@@ -44,6 +31,10 @@
         </v-list-item-content>
       </v-list-item>
 
+      <v-divider class="my-4" />
+
+      <p class="my-4">{{ $t('socialNetworks') }}</p>
+
       <v-list-item
         v-for="socialNetwork in socialNetworks"
         :key="socialNetwork.name"
@@ -59,7 +50,7 @@
       </v-list-item>
     </v-list>
 
-    <v-spacer></v-spacer>
+    <v-divider class="ma-2" />
 
     <v-list-group
       no-action
@@ -90,11 +81,14 @@
 <script>
 export default {
   name: 'Drawer',
+  props: {
+    value: {
+      type: Boolean,
+      default: false,
+    },
+  },
   data() {
     return {
-      appVersion: '1.0.0',
-      ezpaarseDocURL: 'https://ezpaarse-project.github.io/ezpaarse/',
-      blogURL: 'https://blog.ezpaarse.org/',
       applications: [
         {
           name: 'ezMESURE',
@@ -138,6 +132,11 @@ export default {
         },
       ],
       socialNetworks: [
+        {
+          name: 'Blog',
+          icon: 'mdi-message-text',
+          link: 'https://blog.ezpaarse.org/',
+        },
         {
           name: 'Mail',
           icon: 'mdi-email',
