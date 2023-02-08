@@ -102,10 +102,5 @@ export default {
       return this.$store.state.drawer;
     },
   },
-  watch: {
-    group() {
-      this.drawer = false;
-    },
-  },
 };
 </script>
