@@ -17,7 +17,7 @@
       {{ $t('documentation') }}
     </v-btn>
 
-    <ApplicationsMenu />
+    <ApplicationsMenu class="hidden-md-and-down" />
 
     <v-spacer></v-spacer>
 
