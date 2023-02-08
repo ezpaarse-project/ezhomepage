@@ -9,4 +9,4 @@ COPY . /usr/src/app
 RUN npm run build
 
 FROM nginx:1.23.1-alpine AS production
-COPY --from=generate /homepage/dist /usr/share/nginx/html
+COPY --from=generate /usr/src/app/dist /usr/share/nginx/html
