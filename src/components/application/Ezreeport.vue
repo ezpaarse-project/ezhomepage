@@ -5,7 +5,7 @@
         cols="12"
         md="4"
       >
-        <img
+        <v-img
           style="max-width: 350px"
           :src="require('../../../public/images/ezmesure-logo.svg')"
           class="ma-2 mx-auto"
@@ -16,7 +16,7 @@
         cols="12"
         md="8"
       >
-        <p class="ma-2 text text-center">
+        <p class="ma-2 text text-center text-justify">
           {{ $t("ezreeport") }}
         </p>
       </v-col>

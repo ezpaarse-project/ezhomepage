@@ -1,14 +1,11 @@
 <template>
   <v-container class="my-10">
     <v-row justify="center" align="center">
-      <v-col
-        cols="12"
-        md="4"
-      >
-        <img
+      <v-col cols="12" md="4">
+        <v-img
           style="max-width: 350px"
           :src="require('../../../public/images/ezmesure-text.png')"
-          class="ma-2 mx-auto"
+          class="mx-auto"
           alt="ezmesure-img"
         />
       </v-col>
@@ -16,7 +13,7 @@
         cols="12"
         md="8"
       >
-        <p class="ma-2 text text-center">
+        <p class="ma-2 text text-center text-justify">
           {{ $t("ezmesure") }}
         </p>
       </v-col>

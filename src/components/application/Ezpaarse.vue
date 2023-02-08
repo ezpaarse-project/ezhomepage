@@ -9,7 +9,7 @@
         cols="12"
         md="4"
       >
-        <img
+        <v-img
           style="max-width: 350px"
           :src="require('../../../public/images/ezpaarse-text.png')"
           class="ma-2 mx-auto"
@@ -19,10 +19,10 @@
       <v-col>
         <v-row class="my-10">
           <v-col cols="12">
-            <p class="ma-2 text text-center"> {{ $t("ezpaarse.text1") }}</p>
+            <p class="ma-2 text text-center text-justify"> {{ $t("ezpaarse.text1") }}</p>
           </v-col>
           <v-col cols="12">
-            <p class="ma-2 text text-center"> {{ $t("ezpaarse.text2") }}</p>
+            <p class="ma-2 text text-center text-justify"> {{ $t("ezpaarse.text2") }}</p>
           </v-col>
         </v-row>
       </v-col>

@@ -4,16 +4,20 @@
       <v-col
         cols="12"
         md="8"
+        order="2"
+        order-md="1"
       >
-        <p class="ma-2 text text-center">
+        <p class="ma-2 text text-center text-justify">
           {{ $t("readmetrics") }}
         </p>
       </v-col>
       <v-col
         cols="12"
         md="4"
+        order="1"
+        order-md="2"
       >
-      <img
+      <v-img
         style="max-width: 200px"
         height="auto"
         :src="require('../../../public/images/readmetrics-text.png')"
