@@ -1,6 +1,8 @@
 FROM node:16.17.0-alpine3.15 AS generate
 LABEL maintainer="ezTeam <ezteam@couperin.org>"
 
+EXPOSE 80
+
 WORKDIR /usr/src/app
 
 COPY package*.json /usr/src/app/
