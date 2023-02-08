@@ -12,6 +12,7 @@
         <v-list-item
           v-for="application in applications"
           :key="application.name"
+          :href="application.link"
           link
         >
           <v-list-item-avatar tile="false">
@@ -59,7 +60,7 @@ export default {
           name: 'bibliomap',
           pathImage: 'bibliomap-logo.svg',
           text: this.$t('bibliomapSubtitle'),
-          link: '',
+          link: 'https://bibliomap.inist.fr/',
         },
         {
           name: 'ezPAARSE',
