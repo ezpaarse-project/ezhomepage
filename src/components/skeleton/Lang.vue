@@ -1,5 +1,5 @@
 <template>
-  <v-menu :value="selectedOpen" open-on-hover offset-y right :nudge-width="50">
+  <v-menu :value="selectedOpen" open-on-hover offset-y right>
     <template v-slot:activator="{ on, attrs }">
       <v-btn class="hidden-md-and-down" icon v-bind="attrs" v-on="on">
         {{ $i18n.locale }}

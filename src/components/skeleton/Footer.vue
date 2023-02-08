@@ -2,7 +2,7 @@
   <v-footer dark bottom padless>
     <v-row >
       <v-col class="pa-0" cols=12>
-        <v-card class="flex cyan darken-4 pa-5" flat tile>
+        <v-card class="cyan darken-4 pa-5" flat tile>
           <v-row align="center" class="ma-2">
             <img
               style="max-width: 160px; max-height: 50px"
