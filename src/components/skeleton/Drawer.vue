@@ -8,7 +8,7 @@
     width="300"
   >
     <v-list>
-      <v-list-item link :href="blogURL" ripple>
+      <v-list-item link :href="blogURL">
         <v-list-item-icon>
           <v-icon>mdi-message-text</v-icon>
         </v-list-item-icon>
@@ -18,11 +18,11 @@
         </v-list-item-content>
       </v-list-item>
 
-      <v-list-item link :href="analogistURL" ripple>
+      <v-list-item link :href="analogistURL">
         <img
           style="max-width: 30px"
           :src="require('../../../public/images/analogist-logo.png')"
-          class="mr-6 logo-white"
+          class="mr-6"
           alt="analogist-img"
         />
 
@@ -31,7 +31,7 @@
         </v-list-item-content>
       </v-list-item>
 
-      <v-list-item link :href="ezpaarseDemoURL" ripple>
+      <v-list-item link :href="ezpaarseDemoURL">
         <v-list-item-icon>
           <v-icon>mdi-chevron-double-right</v-icon>
         </v-list-item-icon>
@@ -41,11 +41,11 @@
         </v-list-item-content>
       </v-list-item>
 
-      <v-list-item link :href="ezmesureURL" ripple>
+      <v-list-item link :href="ezmesureURL">
         <img
           style="max-width: 32px"
           :src="require('../../../public/images/ezmesure-logo.svg')"
-          class="mr-6 logo-white"
+          class="mr-6"
           alt="ezmesure-img"
         />
 
@@ -54,7 +54,7 @@
         </v-list-item-content>
       </v-list-item>
 
-      <v-list-item link :href="bibliomapURL" ripple>
+      <v-list-item link :href="bibliomapURL">
         <v-list-item-icon>
           <v-icon>mdi-web</v-icon>
         </v-list-item-icon>
@@ -64,7 +64,7 @@
         </v-list-item-content>
       </v-list-item>
 
-      <v-list-item link :href="ezpaarseDocURL" ripple>
+      <v-list-item link :href="ezpaarseDocURL">
         <v-list-item-icon>
           <v-icon>mdi-file-document-multiple</v-icon>
         </v-list-item-icon>
@@ -74,7 +74,7 @@
         </v-list-item-content>
       </v-list-item>
 
-       <v-list-item link :href="mailURL" ripple>
+       <v-list-item link :href="mailURL">
         <v-list-item-icon>
           <v-icon>mdi-email</v-icon>
         </v-list-item-icon>
@@ -84,7 +84,7 @@
         </v-list-item-content>
       </v-list-item>
 
-       <v-list-item link :href="githubURL" ripple>
+       <v-list-item link :href="githubURL">
         <v-list-item-icon>
           <v-icon>mdi-github</v-icon>
         </v-list-item-icon>
@@ -94,7 +94,7 @@
         </v-list-item-content>
       </v-list-item>
 
-       <v-list-item link :href="twitterURL" ripple>
+       <v-list-item link :href="twitterURL">
         <v-list-item-icon>
           <v-icon>mdi-twitter</v-icon>
         </v-list-item-icon>
@@ -104,7 +104,7 @@
         </v-list-item-content>
       </v-list-item>
 
-       <v-list-item link :href="youtubeURL" ripple>
+       <v-list-item link :href="youtubeURL">
         <v-list-item-icon>
           <v-icon>mdi-youtube</v-icon>
         </v-list-item-icon>

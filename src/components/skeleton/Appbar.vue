@@ -4,7 +4,7 @@
     <img
       style="max-width: 150px"
       :src="require('../../../public/images/ezpaarse-text.png')"
-      class="ma-4 logo-white"
+      class="ma-4"
       alt="ezpaarse-img"
     />
 
@@ -109,9 +109,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.logo-white {
-  filter: brightness(0) invert(1);
-}
-</style>
