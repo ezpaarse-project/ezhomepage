@@ -1,6 +1,6 @@
 <template>
-  <v-app-bar class="cyan darken-4" dark>
-    <v-app-bar-nav-icon dark @click.stop="setDrawer()" class="hidden-lg-and-up" />
+  <v-app-bar class="cyan darken-3" dark>
+    <v-app-bar-nav-icon dark @click.stop="updateVisibleDrawer($event)" class="hidden-lg-and-up" />
     <img
       style="max-width: 150px"
       :src="require('../../../public/images/ezpaarse-text.png')"
@@ -58,7 +58,6 @@
     </v-tooltip>
 
     <Lang />
-
   </v-app-bar>
 </template>
 
@@ -90,16 +89,13 @@ export default {
     youtubeURL: 'https://www.youtube.com/channel/UCcR-0UE9WjYiwS4fMG2T4tQ',
   }),
   methods: {
-    setDrawer() {
-      this.$store.dispatch('setDrawer', !this.drawer);
+    updateVisibleDrawer() {
+      this.$emit('drawerUpdate');
     },
   },
   computed: {
     locale() {
       return this.$i18n.locale;
-    },
-    drawer() {
-      return this.$store.state.drawer;
     },
   },
 };

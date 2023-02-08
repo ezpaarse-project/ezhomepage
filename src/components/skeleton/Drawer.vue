@@ -1,11 +1,9 @@
 <template>
   <v-navigation-drawer
-    v-model="drawer"
-    app
-    clipped
-    fixed
+    :value="value"
     disable-resize-watcher
     width="300"
+    @input="updateVisible($event)"
   >
     <v-list>
       <v-list-item link :href="blogURL">
@@ -173,17 +171,9 @@ export default {
       ],
     };
   },
-  computed: {
-    drawer: {
-      get() {
-        if (this.$vuetify.breakpoint.lgAndUp) {
-          return false;
-        }
-        return this.$store.state.drawer;
-      },
-      set(newVal) {
-        this.$store.dispatch('setDrawer', newVal);
-      },
+  methods: {
+    updateVisible(visible) {
+      this.$emit('input', visible);
     },
   },
 };

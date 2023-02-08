@@ -1,7 +1,7 @@
 <template>
   <v-app>
-    <Appbar />
-    <Drawer />
+    <Appbar @drawerUpdate="updateVisibleDrawer()"/>
+    <Drawer v-model="visible"/>
     <div class="content">
       <Ezmesure />
       <v-divider />
@@ -26,10 +26,10 @@
 </template>
 
 <script>
-import Drawer from '@/components/skeleton/Drawer.vue';
 import Appbar from '@/components/skeleton/Appbar.vue';
 import Footer from '@/components/skeleton/Footer.vue';
 import Team from '@/components/skeleton/Team.vue';
+import Drawer from '@/components/skeleton/Drawer.vue';
 
 import Ezmesure from '@/components/application/Ezmesure.vue';
 import Ezcounter from '@/components/application/Ezcounter.vue';
@@ -43,7 +43,6 @@ import Readmetrics from '@/components/application/Readmetrics.vue';
 export default {
   name: 'App',
   components: {
-    Drawer,
     Appbar,
     Ezmesure,
     Ezcounter,
@@ -55,6 +54,16 @@ export default {
     Readmetrics,
     Team,
     Footer,
+    Drawer,
+  },
+  data: () => ({
+    visible: false,
+  }),
+  methods: {
+    updateVisibleDrawer() {
+      this.visible = !this.visible;
+      this.$emit('input', this.visible);
+    },
   },
 };
 </script>
