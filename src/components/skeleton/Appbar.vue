@@ -10,7 +10,7 @@
 
     <v-btn class="hidden-md-and-down" :href="blogURL" text>
       <v-icon class="mr-1">mdi-message-text</v-icon>
-      Blog
+      {{ $t('Blog') }}
     </v-btn>
     <v-btn class="hidden-md-and-down" :href="ezpaarseDocURL" text>
       <v-icon class="mr-1">mdi-file-document-multiple</v-icon>

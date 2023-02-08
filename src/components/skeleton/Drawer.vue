@@ -14,7 +14,7 @@
         </v-list-item-icon>
 
         <v-list-item-content>
-          <v-list-item-title> Blog </v-list-item-title>
+          <v-list-item-title v-text="$t('blog')" />
         </v-list-item-content>
       </v-list-item>
 
