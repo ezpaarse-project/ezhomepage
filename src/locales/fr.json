@@ -1,12 +1,11 @@
 {
   "message": "français",
-  "blog": "blog",
-  "appbar": {
-    "demonstration": "Démonstration",
-    "language": "Language",
-    "french": "Français",
-    "english": "Anglais"
-  },
+  "blog": "Blog",
+  "documentation": "Documentation",
+  "demonstration": "Démonstration",
+  "language": "Language",
+  "french": "Français",
+  "english": "Anglais",
   "metrics": "En France, 130 établissements de l'ESR utilisent ezPAARSE",
   "ezmesure": "ezMESURE est un entrepôt national conçu pour collecter les données générées par les instances ezPAARSE installées dans les établissements de l'ESR et les présenter dans des visualisations dynamiques et personnalisables.", 
   "ezmesureSubtitle" : "Visualation des données d'usages",

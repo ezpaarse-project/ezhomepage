@@ -37,7 +37,7 @@
         </v-list-item-icon>
 
         <v-list-item-content>
-          <v-list-item-title v-text="$t('appbar.demonstration')"> </v-list-item-title>
+          <v-list-item-title v-text="$t('demonstration')"> </v-list-item-title>
         </v-list-item-content>
       </v-list-item>
 
@@ -70,7 +70,7 @@
         </v-list-item-icon>
 
         <v-list-item-content>
-          <v-list-item-title> documentation </v-list-item-title>
+          <v-list-item-title v-text="$('documentation')" />
         </v-list-item-content>
       </v-list-item>
 
@@ -125,14 +125,14 @@
       <template #activator>
         <v-list-item-title
           class="body-2"
-          v-text="$t('appbar.language')"
+          v-text="$t('language')"
         />
       </template>
 
       <v-list-item
         @click="$i18n.locale = 'fr'"
       >
-        <v-list-item-title class="body-2" v-text="$t('appbar.french')"/>
+        <v-list-item-title class="body-2" v-text="$t('french')"/>
         <v-list-item-icon>
           <img width="24" :src="require('../../../public/images/lang/fr.png')" alt="fr">
         </v-list-item-icon>
@@ -141,7 +141,7 @@
       <v-list-item
         @click="$i18n.locale = 'en'"
       >
-        <v-list-item-title class="body-2" v-text="$t('appbar.english')"/>
+        <v-list-item-title class="body-2" v-text="$t('english')"/>
         <v-list-item-icon>
           <img width="24" :src="require('../../../public/images/lang/en.png')" alt="en">
         </v-list-item-icon>
