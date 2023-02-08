@@ -18,7 +18,6 @@
             <img
               style="max-width: 60px"
               :src="require(`../../../public/images/${application.pathImage}`)"
-              class="logo-white"
               :alt="`${application.name}-img`"
             />
           </v-list-item-avatar>
