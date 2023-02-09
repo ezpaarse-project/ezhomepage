@@ -5,9 +5,9 @@ EXPOSE 80
 
 WORKDIR /usr/src/app
 
-COPY package*.json /usr/src/app/
+COPY package*.json .
 RUN npm ci 
-COPY . /usr/src/app
+COPY . .
 RUN npm run build
 
 FROM nginx:1.23.1-alpine AS production
