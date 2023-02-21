@@ -36,7 +36,7 @@
 <script>
 export default {
   data: () => ({
-    link: ' https://blog.ezpaarse.org/2022/02/tutoriels-ezcounter-bonnes-pratiques-pour-la-saisie-des-identifiants-sushi/',
+    link: 'https://blog.ezpaarse.org/2022/02/tutoriels-ezcounter-bonnes-pratiques-pour-la-saisie-des-identifiants-sushi/',
   }),
   computed: {
     alignCentered() {
