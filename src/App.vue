@@ -3,22 +3,22 @@
     <Appbar @drawerUpdate="updateVisibleDrawer()"/>
     <Drawer v-model="visible"/>
     <div class="content">
-      <Ezmesure />
-      <v-divider />
+      <Title />
+      <Ezmesure class="my-16" />
+      <v-divider class="my-16"/>
       <Ezcounter />
-      <v-divider />
+      <v-divider class="my-16"/>
       <Ezreeport />
-      <v-divider />
+      <v-divider class="my-16"/>
       <Bibliomap />
-      <v-divider />
+      <v-divider class="my-16"/>
       <Ezpaarse />
-      <v-divider />
+      <v-divider class="my-16"/>
       <Analogist />
-      <v-divider />
+      <v-divider class="my-16"/>
       <Ezunpaywall />
-      <v-divider />
-      <Readmetrics />
-      <v-divider />
+      <v-divider class="my-16"/>
+      <Readmetrics class="my-16"/>
     </div>
     <Team />
     <Footer />
@@ -27,9 +27,10 @@
 
 <script>
 import Appbar from '@/components/skeleton/Appbar.vue';
-import Footer from '@/components/skeleton/Footer.vue';
-import Team from '@/components/skeleton/Team.vue';
 import Drawer from '@/components/skeleton/Drawer.vue';
+import Title from '@/components/skeleton/Title.vue';
+import Team from '@/components/skeleton/Team.vue';
+import Footer from '@/components/skeleton/Footer.vue';
 
 import Ezmesure from '@/components/application/Ezmesure.vue';
 import Ezcounter from '@/components/application/Ezcounter.vue';
@@ -44,6 +45,11 @@ export default {
   name: 'App',
   components: {
     Appbar,
+    Drawer,
+    Title,
+    Team,
+    Footer,
+
     Ezmesure,
     Ezcounter,
     Ezreeport,
@@ -52,9 +58,6 @@ export default {
     Analogist,
     Ezunpaywall,
     Readmetrics,
-    Team,
-    Footer,
-    Drawer,
   },
   data: () => ({
     visible: false,
@@ -69,12 +72,8 @@ export default {
 </script>
 
 <style>
-.content {
-  margin-left: 10%;
-  margin-right: 10%;
-}
 
 .text {
-  font-size: 16pt;
+  font-size: 1.2em;
 }
 </style>
