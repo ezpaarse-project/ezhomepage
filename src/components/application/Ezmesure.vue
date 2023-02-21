@@ -16,7 +16,7 @@
       </v-col>
       <v-col cols="12" md="6" order="1" order-md="2">
         <v-row>
-          <v-col cols="12" :align="alignCentered">
+          <v-col cols="12" class="justify-center justify-md-start d-flex">
             <v-img
               style="max-width: 350px"
               :src="require('../../../public/images/ezmesure-text.png')"
@@ -42,17 +42,5 @@ export default {
   data: () => ({
     link: 'https://ezmesure.couperin.org/',
   }),
-  computed: {
-    alignCentered() {
-      switch (this.$vuetify.breakpoint.name) {
-        case 'xs': return 'center';
-        case 'sm': return 'center';
-        case 'md': return '';
-        case 'lg': return '';
-        case 'xl': return '';
-        default: return '';
-      }
-    },
-  },
 };
 </script>

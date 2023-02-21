@@ -3,7 +3,7 @@
     <v-row justify="center" align="center">
       <v-col cols="12" md="6">
         <v-row>
-          <v-col cols="12" :align="alignCentered">
+          <v-col cols="12" class="justify-center justify-md-start d-flex">
             <v-img
               style="max-width: 450px"
               :src="require('../../../public/images/ezcounter-text.png')"
@@ -38,23 +38,5 @@ export default {
   data: () => ({
     link: 'https://blog.ezpaarse.org/2022/02/tutoriels-ezcounter-bonnes-pratiques-pour-la-saisie-des-identifiants-sushi/',
   }),
-  computed: {
-    alignCentered() {
-      switch (this.$vuetify.breakpoint.name) {
-        case 'xs':
-          return 'center';
-        case 'sm':
-          return 'center';
-        case 'md':
-          return '';
-        case 'lg':
-          return '';
-        case 'xl':
-          return '';
-        default:
-          return '';
-      }
-    },
-  },
 };
 </script>

@@ -21,13 +21,10 @@ export default {
     mobileCentered() {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs':
-          return '0';
         case 'sm':
           return '0';
         case 'md':
-          return '2';
         case 'lg':
-          return '2';
         case 'xl':
           return '2';
         default:

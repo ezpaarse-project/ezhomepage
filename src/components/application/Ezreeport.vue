@@ -13,7 +13,7 @@
       </v-col>
       <v-col cols="12" md="6" order="1" order-md="2">
         <v-row>
-          <v-col cols="12" :align="alignCentered">
+          <v-col cols="12" class="justify-center justify-md-start d-flex">
             <h1 class="mx-2">ezREEPORT</h1>
           </v-col>
           <v-col cols="12">
@@ -35,23 +35,5 @@ export default {
   data: () => ({
     link: '#',
   }),
-  computed: {
-    alignCentered() {
-      switch (this.$vuetify.breakpoint.name) {
-        case 'xs':
-          return 'center';
-        case 'sm':
-          return 'center';
-        case 'md':
-          return '';
-        case 'lg':
-          return '';
-        case 'xl':
-          return '';
-        default:
-          return '';
-      }
-    },
-  },
 };
 </script>
