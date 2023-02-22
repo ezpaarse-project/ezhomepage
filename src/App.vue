@@ -5,7 +5,7 @@
     <div class="content">
       <Title />
       <v-divider class="ma-16"/>
-      <Ezmesure class="ma-16" />
+      <Ezmesure />
       <v-divider class="ma-16"/>
       <Ezcounter />
       <v-divider class="ma-16"/>
@@ -19,7 +19,7 @@
       <v-divider class="ma-16"/>
       <Ezunpaywall />
       <v-divider class="ma-16"/>
-      <Readmetrics class="ma-16"/>
+      <Readmetrics />
     </div>
     <Team />
     <Footer />

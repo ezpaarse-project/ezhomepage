@@ -1,5 +1,5 @@
 <template>
-  <v-container >
+  <v-container>
     <v-row justify="center" align="center">
       <v-col cols="12" lg="6" order="2" order-lg="1">
         <v-card>
@@ -7,7 +7,7 @@
             style="max-width: 100%"
             :src="require('../../../public/images/ezreeport-screenshot.png')"
             class="ma-2 mx-auto"
-            alt="ezreeport-png "
+            alt="ezreeport-png"
           />
         </v-card>
       </v-col>

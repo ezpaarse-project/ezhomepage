@@ -1,5 +1,5 @@
 <template>
-  <v-container >
+  <v-container>
     <v-row justify="center" align="center">
       <v-col cols="12" lg="6">
         <v-row>
