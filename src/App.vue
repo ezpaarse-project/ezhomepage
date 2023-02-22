@@ -4,21 +4,22 @@
     <Drawer v-model="visible"/>
     <div class="content">
       <Title />
-      <Ezmesure class="my-16" />
-      <v-divider class="my-16"/>
+      <v-divider class="ma-16"/>
+      <Ezmesure class="ma-16" />
+      <v-divider class="ma-16"/>
       <Ezcounter />
-      <v-divider class="my-16"/>
+      <v-divider class="ma-16"/>
       <Ezreeport />
-      <v-divider class="my-16"/>
+      <v-divider class="ma-16"/>
       <Bibliomap />
-      <v-divider class="my-16"/>
+      <v-divider class="ma-16"/>
       <Ezpaarse />
-      <v-divider class="my-16"/>
+      <v-divider class="ma-16"/>
       <Analogist />
-      <v-divider class="my-16"/>
+      <v-divider class="ma-16"/>
       <Ezunpaywall />
-      <v-divider class="my-16"/>
-      <Readmetrics class="my-16"/>
+      <v-divider class="ma-16"/>
+      <Readmetrics class="ma-16"/>
     </div>
     <Team />
     <Footer />

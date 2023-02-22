@@ -1,22 +1,19 @@
 <template>
   <v-container >
     <v-row justify="center" align="center">
-      <v-col cols="12" md="6" order="2" order-md="1">
+      <v-col cols="12" lg="6" order="2" order-lg="1">
         <v-card>
-          <video
-            :src="require('../../../public/videos/ezmesure-demo.webm')"
-            type="video/webm"
-            class="ma-2 mx-auto"
+          <v-img
             style="max-width: 100%"
-            muted
-            loop
-            autoplay
+            :src="require('../../../public/images/ezmesure-screenshot.png')"
+            class="ma-2 mx-auto"
+            alt="ezpaarse-screenshot"
           />
         </v-card>
       </v-col>
-      <v-col cols="12" md="6" order="1" order-md="2">
+      <v-col cols="12" lg="6" order="1" order-lg="2">
         <v-row>
-          <v-col cols="12" class="justify-center justify-md-start d-flex">
+          <v-col cols="12" class="justify-center justify-lg-start d-flex">
             <v-img
               style="max-width: 350px"
               :src="require('../../../public/images/ezmesure-text.png')"

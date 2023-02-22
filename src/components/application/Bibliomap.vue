@@ -1,9 +1,9 @@
 <template>
   <v-container >
     <v-row justify="center" align="center">
-      <v-col cols="12" md="6">
+      <v-col cols="12" lg="6">
         <v-row>
-          <v-col cols="12" class="justify-center justify-md-start d-flex">
+          <v-col cols="12" class="justify-center justify-lg-start d-flex">
             <h1 class="mx-2">Bibliomap</h1>
           </v-col>
           <v-col cols="12">
@@ -14,7 +14,7 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-col cols="12" md="6">
+      <v-col cols="12" lg="6">
         <v-row>
           <v-card width="100%" justify="center" align="center">
             <iframe

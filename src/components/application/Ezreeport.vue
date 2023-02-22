@@ -1,19 +1,19 @@
 <template>
   <v-container >
     <v-row justify="center" align="center">
-      <v-col cols="12" md="6" order="2" order-md="1">
+      <v-col cols="12" lg="6" order="2" order-lg="1">
         <v-card>
           <v-img
-            :src="require('../../../public/videos/ezreeport-demo.gif')"
+            style="max-width: 100%"
+            :src="require('../../../public/images/ezreeport-screenshot.png')"
             class="ma-2 mx-auto"
-            style="max-width: 80%"
-            alt="ezreeport-gif"
+            alt="ezreeport-png "
           />
         </v-card>
       </v-col>
-      <v-col cols="12" md="6" order="1" order-md="2">
+      <v-col cols="12" lg="6" order="1" order-lg="2">
         <v-row>
-          <v-col cols="12" class="justify-center justify-md-start d-flex">
+          <v-col cols="12" class="justify-center justify-lg-start d-flex">
             <h1 class="mx-2">ezREEPORT</h1>
           </v-col>
           <v-col cols="12">
