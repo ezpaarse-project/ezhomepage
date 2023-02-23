@@ -4,7 +4,6 @@
       <v-col cols="12" lg="6" order="2" order-lg="1">
         <v-card>
           <v-img
-            style="max-width: 100%"
             :src="require('../../../public/images/ezpaarse-screenshot.png')"
             class="ma-2 mx-auto"
             alt="ezpaarse-screenshot"

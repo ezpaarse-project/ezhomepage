@@ -1,10 +1,10 @@
 <template>
-  <v-app-bar class="cyan darken-3" dark>
+  <v-app-bar class="purple" dark>
     <v-app-bar-nav-icon dark @click.stop="updateVisibleDrawer($event)" class="hidden-lg-and-up" />
     <img
       style="max-width: 150px"
-      :src="require('../../../public/images/ezpaarse-text.png')"
-      class="ma-4"
+      :src="require('../../../public/images/ezmesure-text.png')"
+      class="ma-4 img-white"
       alt="ezpaarse-img"
     />
 
@@ -100,3 +100,11 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+
+.img-white {
+  filter: brightness(0) invert(1);
+}
+
+</style>

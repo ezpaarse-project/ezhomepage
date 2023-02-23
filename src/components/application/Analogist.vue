@@ -23,7 +23,6 @@
       <v-col cols="12" lg="6">
         <v-card>
           <v-img
-            style="max-width: 100%"
             :src="require('../../../public/images/analogist-screenshot.png')"
             class="ma-2 mx-auto"
             alt="analogist-img"

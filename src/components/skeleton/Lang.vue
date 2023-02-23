@@ -14,7 +14,7 @@
             class="mr-2"
             alt="fr"
           />
-          fr
+          Français
         </v-list-item>
         <v-list-item @click="$i18n.locale = 'en'">
           <img
@@ -23,7 +23,7 @@
             class="mr-2"
             alt="fr"
           />
-          en
+          English
         </v-list-item>
       </v-list>
     </v-card>

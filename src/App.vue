@@ -20,6 +20,7 @@
       <Ezunpaywall />
       <v-divider class="ma-16"/>
       <Readmetrics />
+      <v-divider class="ma-16"/>
     </div>
     <Team />
     <Footer />
