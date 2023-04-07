@@ -1,5 +1,5 @@
 <template>
-  <v-card class="flex py-10" dark flat tile>
+  <v-card class="flex py-10 grey darken-4" dark flat tile>
     <div class="text-center">
       <h2>{{ $t("footer.title") }}</h2>
     </div>

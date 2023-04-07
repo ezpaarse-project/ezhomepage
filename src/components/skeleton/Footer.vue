@@ -2,7 +2,7 @@
   <v-footer dark bottom padless>
     <v-row>
       <v-col class="pa-0" cols=12>
-        <v-card class="cyan darken-4 pa-5" flat tile>
+        <v-card class="white pa-5" flat tile>
           <v-row align="center" class="ma-2">
             <a
               v-for="partner in partners"
@@ -49,9 +49,9 @@ export default {
       },
       {
         name: 'cnrs',
-        imageFilename: 'cnrs-logo.svg',
-        style: 'max-width: 70px; max-height: 70px',
-        link: 'https://www.cnrs.fr/fr',
+        imageFilename: 'inist-cnrs-logo.png',
+        style: 'max-width: 100px; max-height: 100px',
+        link: 'https://www.inist.fr/',
       },
       {
         name: 'ministery',
