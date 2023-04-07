@@ -1,5 +1,15 @@
 <template>
-  <v-container>
+  <v-container fluid class="px-0 py-4" :style="style">
+    <v-row justify="center" align="center">
+      <v-col cols="12">
+        <v-img
+          style="max-width: 550px"
+          :src="require('../../../public/images/ezmesure-text-vertical.png')"
+          class="ma-2 mx-auto"
+          alt="ezpaarse-screenshot"
+        />
+      </v-col>
+    </v-row>
     <v-row>
       <v-col cols="12" md="8" :offset="mobileCentered">
         <h1 class="my-16 text-center title-page">
@@ -16,8 +26,14 @@
 </template>
 
 <script>
+
+import dashboard from '../../../public/images/dashboard.jpg';
+
 export default {
   computed: {
+    style() {
+      return `background-image: url('${dashboard}'; background-size: initial; background-position-x: center; background-position-y: top; background-repeat: repeat;`;
+    },
     mobileCentered() {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs':
@@ -35,8 +51,11 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 
+h1 {
+  font-family: oxygen;
+}
 .title-page {
   font-size: 3em;
 }
