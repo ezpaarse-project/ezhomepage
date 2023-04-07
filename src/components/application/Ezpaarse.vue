@@ -1,17 +1,8 @@
 <template>
   <v-container>
     <v-row class="my-8" justify="center" align="center">
-      <v-col cols="12" lg="6" order="2" order-lg="1">
-        <v-card>
-          <v-img
-            :src="require('../../../public/images/ezpaarse-screenshot.png')"
-            class="ma-2 mx-auto"
-            alt="ezpaarse-screenshot"
-          />
-        </v-card>
-      </v-col>
-      <v-col cols="12" lg="6" order="1" order-lg="2">
-        <v-row >
+      <v-col cols="12" lg="6">
+        <v-row>
           <v-col cols="12" class="justify-center justify-lg-start d-flex">
             <v-img
               style="max-width: 350px"
@@ -30,9 +21,34 @@
             </p>
           </v-col>
           <v-col>
-            <a class="mx-2 text text-center text-justify" :href="link" v-text="$t('learnMore')" />
+            <v-row>
+              <v-btn
+                class="blue--text text--darken-1 hidden-md-and-down"
+                :href="ezpaarseDocURL"
+                text
+              >
+                <v-icon class="mr-1">mdi-file-document-multiple</v-icon>
+                {{ $t("documentation") }}
+              </v-btn>
+              <v-spacer />
+              <a
+                class="mx-2 text text-center text-justify"
+                :href="ezpaarseLink"
+              >
+                {{ $t("learnMore") }}
+              </a>
+            </v-row>
           </v-col>
         </v-row>
+      </v-col>
+      <v-col cols="12" lg="6">
+        <v-card>
+          <v-img
+            :src="require('../../../public/images/ezpaarse-screenshot.png')"
+            class="ma-2 mx-auto"
+            alt="ezpaarse-screenshot"
+          />
+        </v-card>
       </v-col>
     </v-row>
   </v-container>
@@ -41,15 +57,14 @@
 <script>
 export default {
   data: () => ({
-    link: 'http://demo.ezpaarse.org/',
+    ezpaarseLink: 'http://demo.ezpaarse.org/',
+    ezpaarseDocURL: 'https://ezpaarse-project.github.io/ezpaarse/',
   }),
 };
 </script>
 
 <style scoped>
-
 video {
   border: none;
 }
-
 </style>
