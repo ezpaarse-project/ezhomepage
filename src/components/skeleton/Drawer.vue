@@ -27,7 +27,7 @@
         />
 
         <v-list-item-content>
-          <v-list-item-title v-text="application.name" />
+          <v-list-item-title> {{ application.name }} </v-list-item-title>
         </v-list-item-content>
       </v-list-item>
 
@@ -45,7 +45,7 @@
           <v-icon> {{ socialNetwork.icon }} </v-icon>
         </v-list-item-icon>
         <v-list-item-content>
-          <v-list-item-title v-text="socialNetwork.name" />
+          <v-list-item-title> {{ socialNetwork.name }} </v-list-item-title>
         </v-list-item-content>
       </v-list-item>
     </v-list>
@@ -58,14 +58,14 @@
       prepend-icon="mdi-translate"
     >
       <template #activator>
-        <v-list-item-title class="body-2" v-text="$t('language')" />
+        <v-list-item-title class="body-2"> {{ $t('language') }} </v-list-item-title>
       </template>
 
       <v-list-item
         v-for="lang in langs"
         :key="lang.locale"
         @click="$i18n.locale = lang.locale">
-        <v-list-item-title class="body-2" v-text="$t(lang.language)" />
+        <v-list-item-title class="body-2"> {{ $t(lang.language) }} </v-list-item-title>
         <v-list-item-icon>
           <img
             width="24"
@@ -122,19 +122,14 @@ export default {
         },
         {
           name: 'ezUNPAYWALL',
-          pathImage: 'circle.png',
+          pathImage: 'unpaywall-logo.svg',
           link: 'https://unpaywall.inist.fr/',
-        },
-        {
-          name: 'readmetrics',
-          pathImage: 'readmetrics-logo.png',
-          link: '',
         },
       ],
       socialNetworks: [
         {
           name: 'Blog',
-          icon: 'mdi-message-text',
+          icon: 'mdi-post',
           link: 'https://blog.ezpaarse.org/',
         },
         {

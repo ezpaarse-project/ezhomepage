@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar class="purple" dark>
+  <v-app-bar class="blue-grey" dark>
     <v-app-bar-nav-icon dark @click.stop="updateVisibleDrawer($event)" class="hidden-lg-and-up" />
     <img
       style="max-width: 150px"
@@ -8,22 +8,22 @@
       alt="ezpaarse-img"
     />
 
-    <v-btn class="hidden-md-and-down" :href="blogURL" text>
-      <v-icon class="mr-1">mdi-message-text</v-icon>
-      {{ $t('blog') }}
-    </v-btn>
-    <v-btn class="hidden-md-and-down" :href="ezpaarseDocURL" text>
-      <v-icon class="mr-1">mdi-file-document-multiple</v-icon>
-      {{ $t('documentation') }}
-    </v-btn>
-
     <ApplicationsMenu class="hidden-md-and-down" />
 
     <v-spacer></v-spacer>
 
     <v-tooltip bottom>
-      <template v-slot:activator="{ on, attrs }">
-        <v-btn class="hidden-md-and-down" :href="mailURL" v-bind="attrs" v-on="on" icon>
+      <template v-slot:activator="{ on }">
+        <v-btn class="hidden-md-and-down" :href="blogURL" v-on="on" icon>
+          <v-icon>mdi-post</v-icon>
+        </v-btn>
+      </template>
+      <span>Blog ezPAARSE</span>
+    </v-tooltip>
+
+    <v-tooltip bottom>
+      <template v-slot:activator="{ on }">
+        <v-btn class="hidden-md-and-down" :href="mailURL" v-on="on" icon>
           <v-icon>mdi-email</v-icon>
         </v-btn>
       </template>
@@ -31,8 +31,8 @@
     </v-tooltip>
 
     <v-tooltip bottom>
-      <template v-slot:activator="{ on, attrs }">
-        <v-btn class="hidden-md-and-down" :href="githubURL" v-bind="attrs" v-on="on" icon>
+      <template v-slot:activator="{ on }">
+        <v-btn class="hidden-md-and-down" :href="githubURL" v-on="on" icon>
           <v-icon>mdi-github</v-icon>
         </v-btn>
       </template>
@@ -40,8 +40,8 @@
     </v-tooltip>
 
     <v-tooltip bottom>
-      <template v-slot:activator="{ on, attrs }">
-        <v-btn class="hidden-md-and-down" :href="twitterURL" v-bind="attrs" v-on="on" icon>
+      <template v-slot:activator="{ on }">
+        <v-btn class="hidden-md-and-down" :href="twitterURL" v-on="on" icon>
           <v-icon>mdi-twitter</v-icon>
         </v-btn>
       </template>
@@ -49,8 +49,8 @@
     </v-tooltip>
 
     <v-tooltip bottom>
-      <template v-slot:activator="{ on, attrs }">
-        <v-btn class="hidden-md-and-down" :href="youtubeURL" v-bind="attrs" v-on="on" icon>
+      <template v-slot:activator="{ on }">
+        <v-btn class="hidden-md-and-down" :href="youtubeURL" v-on="on" icon>
           <v-icon>mdi-youtube</v-icon>
         </v-btn>
       </template>
@@ -81,7 +81,6 @@ export default {
     ezpaarseDemoURL: 'http://demo.ezpaarse.org/',
     ezmesureURL: 'https://ezmesure.couperin.org/',
     bibliomapURL: 'https://bibliomap.inist.fr/',
-    ezpaarseDocURL: 'https://ezpaarse-project.github.io/ezpaarse/',
 
     mailURL: 'mailto:ezteam@couperin.org',
     githubURL: 'https://github.com/ezpaarse-project',

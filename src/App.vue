@@ -4,25 +4,39 @@
     <Drawer v-model="visible"/>
     <div class="content">
       <Title />
-      <v-divider class="ma-16"/>
+    </div>
+    <div>
+      <v-divider class="ma-16 purple" style="border-width: 15px"/>
       <Ezmesure />
       <v-divider class="ma-16"/>
       <Ezcounter />
       <v-divider class="ma-16"/>
       <Ezreeport />
       <v-divider class="ma-16"/>
+    </div>
+    <div>
+      <v-divider class="ma-16 indigo" style="border-width: 15px" />
+      <Ezpaarse />
+      <v-divider class="ma-16" />
       <Bibliomap />
       <v-divider class="ma-16"/>
-      <Ezpaarse />
-      <v-divider class="ma-16"/>
+    </div>
+    <div>
+      <v-divider class="ma-16 red" style="border-width: 15px" />
       <Analogist />
       <v-divider class="ma-16"/>
+    </div>
+    <div>
+      <v-divider class="ma-16 green" style="border-width: 15px" />
       <Ezunpaywall />
       <v-divider class="ma-16"/>
-      <Readmetrics />
-      <v-divider class="ma-16"/>
     </div>
-    <Team />
+      <!-- <Readmetrics /> -->
+    <div class="grey darken-4">
+      <v-divider class="ma-16" dark />
+      <Team />
+      <Organization />
+    </div>
     <Footer />
   </v-app>
 </template>
@@ -32,6 +46,7 @@ import Appbar from '@/components/skeleton/Appbar.vue';
 import Drawer from '@/components/skeleton/Drawer.vue';
 import Title from '@/components/skeleton/Title.vue';
 import Team from '@/components/skeleton/Team.vue';
+import Organization from '@/components/skeleton/Organization.vue';
 import Footer from '@/components/skeleton/Footer.vue';
 
 import Ezmesure from '@/components/application/Ezmesure.vue';
@@ -50,6 +65,7 @@ export default {
     Drawer,
     Title,
     Team,
+    Organization,
     Footer,
 
     Ezmesure,

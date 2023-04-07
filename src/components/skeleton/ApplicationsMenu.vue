@@ -23,8 +23,8 @@
             />
           </v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title v-text="application.name" />
-            <v-list-item-subtitle v-text="application.text" />
+            <v-list-item-title> {{ application.name }} </v-list-item-title>
+            <v-list-item-subtitle> {{ application.text }}</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
       </v-card>
@@ -76,15 +76,9 @@ export default {
         },
         {
           name: 'ezUNPAYWALL',
-          pathImage: 'circle.png',
+          pathImage: 'unpaywall-logo.svg',
           text: this.$t('ezunpaywallSubtitle'),
           link: 'https://unpaywall.inist.fr/',
-        },
-        {
-          name: 'readmetrics',
-          pathImage: 'readmetrics-logo.png',
-          text: this.$t('readmetricsSubtitle'),
-          link: '',
         },
       ];
     },
