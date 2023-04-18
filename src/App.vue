@@ -5,8 +5,8 @@
     <div class="content">
       <Title />
     </div>
-    <div>
-      <v-divider class="ma-16 purple" style="border-width: 15px"/>
+    <div class="purple lighten-5">
+      <v-divider class="ma-16" />
       <Ezmesure />
       <v-divider class="ma-16"/>
       <Ezcounter />
@@ -14,29 +14,27 @@
       <Ezreeport />
       <v-divider class="ma-16"/>
     </div>
-    <div>
-      <v-divider class="ma-16 indigo" style="border-width: 15px" />
+    <div class="blue lighten-5">
+      <v-divider class="ma-16"/>
       <Ezpaarse />
       <v-divider class="ma-16" />
       <Bibliomap />
       <v-divider class="ma-16"/>
     </div>
-    <div>
-      <v-divider class="ma-16 red" style="border-width: 15px" />
+    <div class="red lighten-5">
+      <v-divider class="ma-16"/>
       <Analogist />
       <v-divider class="ma-16"/>
     </div>
-    <div>
-      <v-divider class="ma-16 green" style="border-width: 15px" />
+    <div class="green lighten-5">
+      <v-divider class="ma-16"/>
       <Ezunpaywall />
       <v-divider class="ma-16"/>
     </div>
-      <!-- <Readmetrics /> -->
     <div class="grey darken-4">
-      <v-divider class="ma-16" dark />
       <Team />
-      <Organization />
     </div>
+    <Organization />
     <Footer />
   </v-app>
 </template>
@@ -56,7 +54,6 @@ import Bibliomap from '@/components/application/Bibliomap.vue';
 import Ezpaarse from '@/components/application/Ezpaarse.vue';
 import Analogist from '@/components/application/Analogist.vue';
 import Ezunpaywall from '@/components/application/Ezunpaywall.vue';
-import Readmetrics from '@/components/application/Readmetrics.vue';
 
 export default {
   name: 'App',
@@ -75,7 +72,6 @@ export default {
     Ezpaarse,
     Analogist,
     Ezunpaywall,
-    Readmetrics,
   },
   data: () => ({
     visible: false,
