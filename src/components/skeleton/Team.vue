@@ -1,7 +1,7 @@
 <template>
-  <v-card class="flex py-10 grey darken-4" dark flat tile>
+  <v-card class="flex py-12 grey darken-4" :style="style" dark flat tile>
     <div class="text-center">
-      <h2>{{ $t("footer.title") }}</h2>
+      <h2 style="font-size: 2.5em;" >{{ $t("footer.title") }}</h2>
     </div>
     <v-row class="py-5">
       <v-col cols="12">
@@ -30,5 +30,13 @@
 </template>
 
 <script>
-export default {};
+import prism from '../../../public/images/prism.png';
+
+export default {
+  computed: {
+    style() {
+      return `background-image: url('${prism}'; background-size: initial; background-position-x: center; background-position-y: top; background-repeat: repeat;`;
+    },
+  },
+};
 </script>

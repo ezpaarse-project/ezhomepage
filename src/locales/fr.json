@@ -30,6 +30,7 @@
   "ezunpaywallSubtitle": "Miroir de données unpaywall",
   "readmetrics": "ReadMetrics est un package ezPAARSE ezMESURE qui vous fournir un aperçu complet de l'utilisation des ressources électroniques de votre institution.",
   "readmetricsSubtitle": "Paquet ezPAARSE ezMESURE",
+  "organization": "Ces logiciels ont été réalisé par l'Inist CNRS en collaboration avec le consortium Couperin sous la tutelle du ministère de l'enseignement supérieur de la recherche.",
   "footer": {
     "title": "Une équipe et une communauté",
     "block1": {

@@ -13,6 +13,7 @@ export default {
   data() {
     return {
       map: null,
+      latlngMap: [48.6571921, 6.149913],
       latlng: [48.6552777, 6.1498841],
       zoom: 16,
       url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -21,7 +22,7 @@ export default {
   },
   mounted() {
     this.map = L.map('mapContainer').setView(
-      this.latlng,
+      this.latlngMap,
       this.zoom,
     );
     L.tileLayer(this.url, {
@@ -34,11 +35,13 @@ export default {
       iconAnchor: [12, 36],
     }));
 
-    L.marker(this.latlng).addTo(this.map);
-    L.popup({ closeButton: false }).setLatLng(this.latlng)
-      .setContent(`<img style="width: 100%;"src="${inistcnrs}"/> <p style="margin: 0; text-align: center; font-weight: bold">Inist-CNRS</p>`)
-      .openOn(this.map);
-    this.$emit('ready');
+    L.marker(this.latlng).addTo(this.map)
+      .bindPopup(`<img style="width: 100%;"src="${inistcnrs}"/> 
+        <p style="margin: 0; text-align: center; font-weight: bold">Inist-CNRS</p>
+        <p style="margin: 0; text-align: center">2 rue Jean Zay</p>
+        <p style="margin: 0; text-align: center"> 54519 Vandœuvre-lès-Nancy </p>
+        <p style="margin: 0; text-align: center">+33 (0)3 83 50 46 00 </p>`)
+      .openPopup();
   },
 };
 </script>
