@@ -15,7 +15,7 @@
         </v-col>
         <v-col class="text-center" cols="12" sm="4">
           <v-img
-            style="max-width: 250px"
+            style="max-width: 300px"
             :src="require('../../../public/images/couperin-text.png')"
             class="ma-2 mx-auto"
             alt="counter-img"
