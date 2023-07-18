@@ -33,6 +33,110 @@
 
       <v-divider class="my-4" />
 
+      <p class="my-4">{{ $t('Blog') }}</p>
+
+      <v-list-item
+        href="https://blog.ezpaarse.org/"
+        link
+      >
+        <v-list-item-icon>
+           <v-icon left>mdi-message-text</v-icon>
+        </v-list-item-icon>
+        <v-list-item-content>
+          <v-list-item-title> Blog </v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-divider class="my-4" />
+
+      <p class="my-4">{{ $t('Contact') }}</p>
+
+      <v-list-item
+          href="mailto:ezteam@couperin.org"
+          link
+          target="_blank"
+        >
+          <v-list-item-avatar tile="false">
+             <v-icon left>mdi-account-group</v-icon>
+          </v-list-item-avatar>
+          <v-list-item-content>
+            <v-list-item-title>
+              {{ $t('contact') }}
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item
+          href="https://groupes.renater.fr/sympa/info/ezpaarse-users"
+          link
+          target="_blank"
+        >
+          <v-list-item-avatar tile="false">
+            <img
+              style="max-width: 60px"
+              :src="require('../../../public/images/ezpaarse-logo.png')"
+              :alt="`ezpaarse-img`"
+            />
+          </v-list-item-avatar>
+          <v-list-item-content>
+            <v-list-item-title> ezPAARSE </v-list-item-title>
+            <v-list-item-subtitle> {{ $t('subscribe') }} </v-list-item-subtitle>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item
+          href="https://groupes.renater.fr/sympa/info/ezmesure-users"
+          link
+          target="_blank"
+        >
+          <v-list-item-avatar tile="false">
+            <img
+              style="max-width: 60px"
+              :src="require('../../../public/images/ezmesure-logo.png')"
+              :alt="`ezmesure-img`"
+            />
+          </v-list-item-avatar>
+          <v-list-item-content>
+            <v-list-item-title> ezMESURE </v-list-item-title>
+            <v-list-item-subtitle> {{ $t('subscribe') }} </v-list-item-subtitle>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item
+          href="mailto:ezteam-dev@couperin.org"
+          link
+          target="_blank"
+        >
+          <v-list-item-avatar tile="false">
+             <v-icon left>mdi-account-supervisor</v-icon>
+          </v-list-item-avatar>
+          <v-list-item-content>
+            <v-list-item-title>
+              {{ $t('supportEzcounter') }}
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item
+          href="https://groupes.renater.fr/sympa/info/ezunpaywall-users"
+          link
+          target="_blank"
+        >
+          <v-list-item-avatar tile="false">
+            <img
+              style="max-width: 60px"
+              :src="require('../../../public/images/unpaywall-logo.svg')"
+              :alt="`ezunpaywall-img`"
+            />
+          </v-list-item-avatar>
+          <v-list-item-content>
+            <v-list-item-title> ezUNPAYWALL </v-list-item-title>
+            <v-list-item-subtitle> {{ $t('subscribe') }} </v-list-item-subtitle>
+          </v-list-item-content>
+        </v-list-item>
+
+      <v-divider class="my-4" />
+
       <p class="my-4">{{ $t('socialNetworks') }}</p>
 
       <v-list-item
@@ -127,16 +231,6 @@ export default {
         },
       ],
       socialNetworks: [
-        {
-          name: 'Blog',
-          icon: 'mdi-post',
-          link: 'https://blog.ezpaarse.org/',
-        },
-        {
-          name: 'Mail',
-          icon: 'mdi-email',
-          link: 'mailto:ezteam@couperin.org',
-        },
         {
           name: 'Github',
           icon: 'mdi-github',

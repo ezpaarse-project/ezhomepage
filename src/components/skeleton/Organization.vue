@@ -6,28 +6,34 @@
       </p>
       <v-row justify="center" align="center">
         <v-col class="text-center" cols="12" sm="4">
-          <v-img
-            style="max-width: 250px"
-            :src="require('../../../public/images/inist-cnrs-logo.png')"
-            class="ma-2 mx-auto"
-            alt="counter-img"
-          />
+          <a :href="inistLink" target="_blank">
+            <v-img
+              style="max-width: 250px"
+              :src="require('../../../public/images/inist-cnrs-logo.png')"
+              class="ma-2 mx-auto"
+              alt="counter-img"
+            />
+          </a>
         </v-col>
         <v-col class="text-center" cols="12" sm="4">
-          <v-img
-            style="max-width: 300px"
-            :src="require('../../../public/images/couperin-text.png')"
-            class="ma-2 mx-auto"
-            alt="counter-img"
-          />
+          <a :href="couperinLink" target="_blank">
+            <v-img
+              style="max-width: 300px"
+              :src="require('../../../public/images/couperin-text.png')"
+              class="ma-2 mx-auto"
+              alt="counter-img"
+            />
+          </a>
         </v-col>
         <v-col class="text-center" cols="12" sm="4">
-          <v-img
-            style="max-width: 250px"
-            :src="require('../../../public/images/ministry-text.png')"
-            class="ma-2 mx-auto"
-            alt="counter-img"
-          />
+          <a :href="ministryLink" target="_blank">
+            <v-img
+              style="max-width: 250px"
+              :src="require('../../../public/images/ministry-text.png')"
+              class="ma-2 mx-auto"
+              alt="counter-img"
+            />
+          </a>
         </v-col>
       </v-row>
     </v-col>
@@ -47,5 +53,10 @@ export default {
   components: {
     Map,
   },
+  data: () => ({
+    inistLink: 'https://www.inist.fr/',
+    couperinLink: 'https://www.couperin.org/',
+    ministryLink: 'https://www.enseignementsup-recherche.gouv.fr/fr',
+  }),
 };
 </script>

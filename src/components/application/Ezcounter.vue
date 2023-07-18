@@ -19,13 +19,15 @@
             </p>
           </v-col>
           <v-col cols="12">
-            <a
-              class="mx-2 text text-center text-justify"
+            <v-btn
+              class="blue--text text--darken-1 hidden-md-and-down"
               :href="link"
+              text
               target="_blank"
             >
-            {{ $t('learnMore') }}
-            </a>
+              {{ $t("learnMore") }}
+              <v-icon right>mdi-arrow-right-thin</v-icon>
+            </v-btn>
           </v-col>
         </v-row>
       </v-col>

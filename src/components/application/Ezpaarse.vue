@@ -28,18 +28,21 @@
                 class="blue--text text--darken-1 hidden-md-and-down"
                 :href="ezpaarseDocURL"
                 text
+                target="_blank"
               >
                 <v-icon class="mr-1">mdi-file-document-multiple</v-icon>
                 {{ $t("documentation") }}
               </v-btn>
               <v-spacer />
-              <a
-                class="mx-2 text text-center text-justify"
+              <v-btn
+                class="blue--text text--darken-1 hidden-md-and-down"
                 :href="ezpaarseLink"
+                text
                 target="_blank"
               >
                 {{ $t("learnMore") }}
-              </a>
+                <v-icon right>mdi-arrow-right-thin</v-icon>
+              </v-btn>
             </v-row>
           </v-col>
         </v-row>

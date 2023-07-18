@@ -10,37 +10,86 @@
 
       <v-card class="py-4">
         <v-list-item
-          v-for="email in emails"
-          :key="email.name"
-          :href="email.link"
+          href="mailto:ezteam@couperin.org"
           link
+          target="_blank"
         >
           <v-list-item-avatar tile="false">
-             <v-icon left>{{ email.icon }}</v-icon>
+             <v-icon left>mdi-account-group</v-icon>
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title>
-              {{ email.name }}
+              {{ $t('contact') }}
             </v-list-item-title>
-            <v-list-item-subtitle> {{ email.text }}</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
+
         <v-list-item
-          v-for="application in applications"
-          :key="application.name"
-          :href="application.link"
+          href="https://groupes.renater.fr/sympa/info/ezpaarse-users"
           link
+          target="_blank"
         >
           <v-list-item-avatar tile="false">
             <img
               style="max-width: 60px"
-              :src="require(`../../../public/images/${application.pathImage}`)"
-              :alt="`${application.name}-img`"
+              :src="require('../../../public/images/ezpaarse-logo.png')"
+              :alt="`ezpaarse-img`"
             />
           </v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title> {{ application.name }} </v-list-item-title>
-            <v-list-item-subtitle> {{ application.text }}</v-list-item-subtitle>
+            <v-list-item-title> ezPAARSE </v-list-item-title>
+            <v-list-item-subtitle> {{ $t('subscribe') }} </v-list-item-subtitle>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item
+          href="https://groupes.renater.fr/sympa/info/ezmesure-users"
+          link
+          target="_blank"
+        >
+          <v-list-item-avatar tile="false">
+            <img
+              style="max-width: 60px"
+              :src="require('../../../public/images/ezmesure-logo.png')"
+              :alt="`ezmesure-img`"
+            />
+          </v-list-item-avatar>
+          <v-list-item-content>
+            <v-list-item-title> ezMESURE </v-list-item-title>
+            <v-list-item-subtitle> {{ $t('subscribe') }} </v-list-item-subtitle>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item
+          href="mailto:ezteam-dev@couperin.org"
+          link
+          target="_blank"
+        >
+          <v-list-item-avatar tile="false">
+             <v-icon left>mdi-account-supervisor</v-icon>
+          </v-list-item-avatar>
+          <v-list-item-content>
+            <v-list-item-title>
+              {{ $t('supportEzcounter') }}
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item
+          href="https://groupes.renater.fr/sympa/info/ezunpaywall-users"
+          link
+          target="_blank"
+        >
+          <v-list-item-avatar tile="false">
+            <img
+              style="max-width: 60px"
+              :src="require('../../../public/images/unpaywall-logo.svg')"
+              :alt="`ezunpaywall-img`"
+            />
+          </v-list-item-avatar>
+          <v-list-item-content>
+            <v-list-item-title> ezUNPAYWALL </v-list-item-title>
+            <v-list-item-subtitle> {{ $t('subscribe') }} </v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
       </v-card>
@@ -50,44 +99,6 @@
 
 <script>
 export default {
-  computed: {
-    emails() {
-      return [
-        {
-          name: this.$t('contact'),
-          icon: 'mdi-account-group',
-          link: 'mailto:ezteam@couperin.org',
-        },
-        {
-          name: this.$t('supportEzcounter'),
-          icon: 'mdi-account-supervisor',
-          link: 'mailto:ezteam-dev@couperin.org',
-        },
-      ];
-    },
-    applications() {
-      return [
-        {
-          name: 'ezMESURE',
-          pathImage: 'ezmesure-logo.svg',
-          text: this.$t('subscribe'),
-          link: 'https://groupes.renater.fr/sympa/info/ezmesure-users',
-        },
-        {
-          name: 'ezPAARSE',
-          pathImage: 'ezpaarse-logo.png',
-          text: this.$t('subscribe'),
-          link: 'https://groupes.renater.fr/sympa/info/ezpaarse-users',
-        },
-        {
-          name: 'ezUNPAYWALL',
-          pathImage: 'unpaywall-logo.svg',
-          text: this.$t('subscribe'),
-          link: 'https://groupes.renater.fr/sympa/info/ezunpaywall-users',
-        },
-      ];
-    },
-  },
 };
 </script>
 
