@@ -18,7 +18,7 @@
                 style="max-width: 300px"
                 :src="require('../../../public/images/ezpaarse-text.png')"
                 alt="ezpaarse-logo"
-                class="ml-auto"
+                class="ml-auto mx-16"
               />
             </v-col>
             <v-col cols="6">
@@ -26,6 +26,7 @@
                 style="max-width: 350px"
                 :src="require('../../../public/images/ezmesure-text.png')"
                 alt="ezmesure-logo"
+                class="mx-16"
               />
            </v-col>
         </v-row>
