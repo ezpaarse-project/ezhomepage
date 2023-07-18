@@ -18,7 +18,9 @@
       <v-col cols="12" lg="6" order="1" order-lg="2">
         <v-row>
           <v-col cols="12" class="justify-center justify-lg-start d-flex">
-            <h1 class="mx-2">Bibliomap</h1>
+            <a class="logo" :href="link" target="_blank">
+              <h1 class="mx-2">Bibliomap</h1>
+            </a>
           </v-col>
           <v-col cols="12">
             <p class="ma-2 text text-center text-justify">
@@ -29,8 +31,10 @@
             <a
               class="mx-2 text text-center text-justify"
               :href="link"
-              v-text="$t('learnMore')"
-            />
+              target="_blank"
+            >
+            {{ $t('learnMore')}}
+            </a>
           </v-col>
         </v-row>
       </v-col>
@@ -50,3 +54,15 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.logo {
+  color: black;
+  text-decoration: none;
+}
+
+.logo:hover {
+  text-decoration:none;
+  cursor:pointer;
+}
+</style>

@@ -5,31 +5,20 @@
       style="max-width: 40px"
       :src="require('../../../public/images/readmetrics-logo.png')"
       class="ma-4"
-      alt="ezpaarse-img"
+      alt="readmetrics logo"
     />
     <b> ReadMETRICS </b>
 
+    <v-btn class="hidden-md-and-down ml-6" :href="blogURL" text>
+      <v-icon left>mdi-message-text</v-icon>
+      Blog
+    </v-btn>
+
     <ApplicationsMenu class="hidden-md-and-down" />
 
+    <MailMenu class="hidden-md-and-down"/>
+
     <v-spacer></v-spacer>
-
-    <v-tooltip bottom>
-      <template v-slot:activator="{ on }">
-        <v-btn class="hidden-md-and-down" :href="blogURL" v-on="on" icon>
-          <v-icon>mdi-post</v-icon>
-        </v-btn>
-      </template>
-      <span>Blog ezPAARSE</span>
-    </v-tooltip>
-
-    <v-tooltip bottom>
-      <template v-slot:activator="{ on }">
-        <v-btn class="hidden-md-and-down" :href="mailURL" v-on="on" icon>
-          <v-icon>mdi-email</v-icon>
-        </v-btn>
-      </template>
-      <span>Mail ezPAARSE</span>
-    </v-tooltip>
 
     <v-tooltip bottom>
       <template v-slot:activator="{ on }">
@@ -65,6 +54,7 @@
 <script>
 
 import ApplicationsMenu from '@/components/skeleton/ApplicationsMenu.vue';
+import MailMenu from '@/components/skeleton/MailMenu.vue';
 import Lang from '@/components/skeleton/Lang.vue';
 import frFlag from '../../../public/images/lang/fr.png';
 import enFlag from '../../../public/images/lang/en.png';
@@ -72,6 +62,7 @@ import enFlag from '../../../public/images/lang/en.png';
 export default {
   components: {
     ApplicationsMenu,
+    MailMenu,
     Lang,
   },
   data: () => ({

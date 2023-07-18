@@ -14,5 +14,6 @@ module.exports = {
     'no-console': 'warn',
     'no-debugger': 'warn',
     'vue/multi-word-component-names': 'off',
+    'vuejs-accessibility/anchor-has-content': 'off',
   },
 };

@@ -1,13 +1,34 @@
 <template>
   <v-container fluid class="px-0 py-4" :style="style">
     <v-row justify="center" align="center">
-      <v-col cols="12">
+      <v-col cols="4">
         <v-img
           style="max-width: 400px"
           :src="require('../../../public/images/readmetrics-text.png')"
           class="ma-2 mx-auto"
-          alt="ezpaarse-screenshot"
+          alt="readmetric-logo"
         />
+      </v-col>
+    </v-row>
+    <v-row justify="center" align="center">
+      <v-col cols="6">
+        <v-row justify="center" align="center">
+           <v-col cols="6">
+              <v-img
+                style="max-width: 300px"
+                :src="require('../../../public/images/ezpaarse-text.png')"
+                alt="ezpaarse-logo"
+                class="ml-auto"
+              />
+            </v-col>
+            <v-col cols="6">
+              <v-img
+                style="max-width: 350px"
+                :src="require('../../../public/images/ezmesure-text.png')"
+                alt="ezmesure-logo"
+              />
+           </v-col>
+        </v-row>
       </v-col>
     </v-row>
     <v-row>

@@ -4,11 +4,13 @@
       <v-col cols="12" lg="6">
         <v-row>
           <v-col cols="12" class="justify-center justify-lg-start d-flex">
-            <v-img
-              style="max-width: 350px"
-              :src="require('../../../public/images/ezpaarse-text.png')"
-              alt="ezpaarse-img"
-            />
+            <a :href="link" target="_blank">
+              <v-img
+                style="max-width: 350px"
+                :src="require('../../../public/images/ezpaarse-text.png')"
+                alt="ezpaarse-img"
+              />
+            </a>
           </v-col>
           <v-col cols="12">
             <p class="ma-2 text text-center text-justify">
@@ -34,6 +36,7 @@
               <a
                 class="mx-2 text text-center text-justify"
                 :href="ezpaarseLink"
+                target="_blank"
               >
                 {{ $t("learnMore") }}
               </a>

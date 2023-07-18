@@ -17,7 +17,9 @@
             </p>
           </v-col>
           <v-col cols="12">
-            <a class="mx-2 text text-center text-justify" :href="link" v-text="$t('learnMore')" />
+            <a class="mx-2 text text-center text-justify" :href="link" target="_blank">
+              {{ $t('learnMore') }}
+            </a>
           </v-col>
         </v-row>
       </v-col>

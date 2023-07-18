@@ -1,7 +1,7 @@
 {
   "lang": "Français",
   "title": "Collecte, Visualisation, Détection et enrichissement des données d'usages de vos ressources électroniques",
-  "subtitle": "Avec notre écosystème, mettez à l'échelle l'automatisation de la collecte des données d'usages éditeurs, des données d'usages de vos ressources électroniques pour obtenir la visualisation de ceux-ci dans des tableaux de bords dynamiques.",
+  "subtitle": "ReadMETRICS est la boîte à outil dédiée à la Détection, Collecte, Enrichissement et Visualisation dynamique et des données d’usages de vos ressources électroniques grâce à ezPAARSE et ezMESURE. Cette suite logicielle open source est composée des éléments nécessaires pour vous décharger d’un travail lourd et fastidieux en automatisant les processus à mettre en œuvre. Grâce à cette suite, vous pourrez produire très facilement des tableaux de bords de suivi et de valorisation de vos ressources documentaires.",
   "blog": "Blog",
   "documentation": "Documentation",
   "demonstration": "Démonstration",
@@ -9,16 +9,15 @@
   "french": "Français",
   "english": "Anglais",
   "learnMore": "En savoir plus",
-  "metrics": "En France, 130 établissements de l'ESR utilisent ezPAARSE",
-  "ezmesure": "ezMESURE est l’entrepôt national Français conçu pour collecter les données générées par les instances ezPAARSE installées dans les établissements de l'ESR et les présenter dans des visualisations dynamiques et personnalisables. Depuis 2021, ezMESURE peut aussi collecter les données d’usage éditeur grâce à son module ezCOUNTER.", 
+  "ezmesure": "ezMESURE est l’entrepôt national français où sont les établissements de l’ESR qui utilisent ezPAARSE localement reversent leurs données d’usage collectées et les retrouvent, présentées dans des visualisations dynamiques et personnalisables. Depuis 2021, ezMESURE collecte aussi les données d’usage fournies par les éditeurs conformes à COUNTER 5 grâce à son module ezCOUNTER.", 
   "ezmesureSubtitle" : "Visualisation des données d'usages",
-  "ezcounter": "ezCOUNTER est un module d'ezMESURE pour automatiser la collecte des données d'usage COUNTER 5 des rapports fournis par les éditeurs scientifiques et les présenter dans des tableaux de bord dynamiques et personnalisables. Une interface permet de saisir des identifiants SUSHI et paramétrer les demandes de moissonnage de données.",
+  "ezcounter": "ezCOUNTER est un module d'ezMESURE pour automatiser la collecte des rapports d’usage COUNTER 5 fournis par les éditeurs scientifiques et les présenter dans des tableaux de bord dynamiques et personnalisables. Une interface permet de saisir des identifiants SUSHI et paramétrer les demandes de moissonnage de données.",
   "ezcounterSubtitle": "Récolte automatique des données d'usages auprès des éditeurs",
   "ezreeport": "EzREEPORT est un module d’Ezmesure pour configurer et automatiser l’envoi de mail de rapports réguliers en PDF (journaliers, hebdomadaires, mensuels, etc.) aux utilisateurs d’Ezmesure et à leurs équipes : l’évolution des données d’usage dans votre boîte aux lettres en un clin d’oeil",
   "ezreeportSubtitle": "Module permettant la génération de rapport en PDF pour ezMESURE",
   "bibliomapTitle": "Consultations analysées en temps réel par ezPAARSE (Bibliomap).",
   "bibliomapSubtitle": "Visualisation des données d'usage sur une carte",
-  "bibliomap": "Bibliomap affiche les événements de consultation générés par l’activité Bibliographique de la communauté de recherche CNRS. Une instance ezPAARSE produit les données en temps réel affichées sur une carte. C'est un outil utile pour observer le trafic de votre ezproxy ou pour aider à porter le projet d'adoption d'ezPAARSE dans votre établissement.",
+  "bibliomap": "Bibliomap affiche en direct les événements de consultation générés par l’activité bibliographique de la communauté de recherche CNRS. Une instance ezPAARSE produit les données en temps réel affichées sur une carte. C'est un outil utile pour observer le trafic de votre proxy ou pour aider à porter le projet d'adoption d'ezPAARSE dans votre établissement.",
   "ezpaarse": {
     "text1": "ezPAARSE est un logiciel libre et gratuit chargé d'exploiter, analyser et enrichir les traces (logs) d'accès aux ressources électroniques disponibles sur les plateformes web des éditeurs de littérature scientifique.",
     "text2": "ezPAARSE propose un formulaire en ligne et une API permettant le traitement manuel ou automatique des logs collectées sur les serveurs ou proxies de votre établissement."
@@ -48,5 +47,8 @@
     "signature": "Tout droit réservés" 
   },
   "softwares": "Logiciels",
-  "socialNetworks": "Réseaux socials"
+  "socialNetworks": "Réseaux socials",
+  "subscribe": "S'abonner à la liste de diffusion",
+  "supportEzcounter": "Support ezCOUNTER",
+  "contact": "Contact"
 }

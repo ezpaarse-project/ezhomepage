@@ -13,19 +13,21 @@
       <v-col cols="12" lg="6" order="1" order-lg="2">
         <v-row>
           <v-col cols="12" class="justify-center justify-lg-start d-flex">
-            <v-list-item>
-              <v-list-item-avatar tile="false">
+            <v-list-item-avatar tile="true">
+              <a :href="link" target="_blank">
                 <v-img
                   style="max-width: 35px"
                   :src="require('../../../public/images/unpaywall-logo.svg')"
                   class="ma-2 mx-auto"
                   alt="ezunpaywall-screenshot"
                 />
-              </v-list-item-avatar>
-              <v-list-item-content>
-                <h1> ezUNPAYWALL </h1>
-              </v-list-item-content>
-            </v-list-item>
+              </a>
+            </v-list-item-avatar>
+            <v-list-item-content>
+              <a class="logo" :href="link" target="_blank">
+                <h1 class="logo"> ezUNPAYWALL </h1>
+              </a>
+            </v-list-item-content>
           </v-col>
           <v-col cols="12">
             <p class="mx-2 text text-center text-justify">
@@ -33,7 +35,9 @@
             </p>
           </v-col>
           <v-col cols="12">
-            <a class="mx-2 text text-center text-justify" :href="link" v-text="$t('learnMore')" />
+            <a class="mx-2 text text-center text-justify" :href="link" target="_blank">
+              {{ $t('learnMore') }}
+            </a>
           </v-col>
         </v-row>
       </v-col>
@@ -48,3 +52,15 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+.logo {
+  color: black;
+  text-decoration: none;
+}
+
+.logo:hover {
+  text-decoration:none;
+  cursor:pointer;
+}
+</style>

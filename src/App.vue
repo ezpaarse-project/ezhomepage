@@ -5,31 +5,25 @@
     <div class="content">
       <Title />
     </div>
-    <div class="purple lighten-5">
+    <div>
       <v-divider class="ma-16" />
       <Ezmesure />
-      <v-divider class="ma-16"/>
       <Ezcounter />
-      <v-divider class="ma-16"/>
       <Ezreeport />
-      <v-divider class="ma-16"/>
     </div>
-    <div class="blue lighten-5">
+    <div>
       <v-divider class="ma-16"/>
       <Ezpaarse />
-      <v-divider class="ma-16" />
       <Bibliomap />
-      <v-divider class="ma-16"/>
     </div>
-    <div class="red lighten-5">
+    <div>
       <v-divider class="ma-16"/>
       <Analogist />
-      <v-divider class="ma-16"/>
     </div>
-    <div class="green lighten-5">
+    <div>
       <v-divider class="ma-16"/>
       <Ezunpaywall />
-      <v-divider class="ma-16"/>
+      <v-divider class="ma-16" />
     </div>
     <div class="grey darken-4">
       <Team />

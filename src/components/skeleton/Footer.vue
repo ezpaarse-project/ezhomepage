@@ -4,7 +4,7 @@
       <v-col class="pa-0" cols="12">
         <v-card dark class="pa-5 pb-1 pl-10" flat tile>
           <p>
-            © ezPAARSE {{ new Date().getFullYear() }} —
+            © ezMESURE ezPAARSE {{ new Date().getFullYear() }} —
             <strong> {{ $t("footer.signature") }} </strong>
           </p>
         </v-card>
