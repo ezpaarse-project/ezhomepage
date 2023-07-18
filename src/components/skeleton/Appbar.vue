@@ -3,7 +3,7 @@
     <v-app-bar-nav-icon dark @click.stop="updateVisibleDrawer($event)" class="hidden-lg-and-up" />
     <img
       style="max-width: 150px"
-      :src="require('../../../public/images/ezmesure-text.png')"
+      :src="require('../../../public/images/readmetrics-text-vertical.png')"
       class="ma-4 img-white"
       alt="ezpaarse-img"
     />

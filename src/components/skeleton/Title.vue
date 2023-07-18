@@ -4,7 +4,7 @@
       <v-col cols="12">
         <v-img
           style="max-width: 550px"
-          :src="require('../../../public/images/ezmesure-text-vertical.png')"
+          :src="require('../../../public/images/readmetrics-text.png')"
           class="ma-2 mx-auto"
           alt="ezpaarse-screenshot"
         />
