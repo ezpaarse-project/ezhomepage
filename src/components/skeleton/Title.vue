@@ -3,7 +3,7 @@
     <v-row justify="center" align="center">
       <v-col cols="12">
         <v-img
-          style="max-width: 550px"
+          style="max-width: 400px"
           :src="require('../../../public/images/readmetrics-text.png')"
           class="ma-2 mx-auto"
           alt="ezpaarse-screenshot"

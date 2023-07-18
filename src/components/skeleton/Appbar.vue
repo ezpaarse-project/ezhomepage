@@ -2,11 +2,12 @@
   <v-app-bar class="blue-grey" dark>
     <v-app-bar-nav-icon dark @click.stop="updateVisibleDrawer($event)" class="hidden-lg-and-up" />
     <img
-      style="max-width: 150px"
-      :src="require('../../../public/images/readmetrics-text-vertical.png')"
-      class="ma-4 img-white"
+      style="max-width: 40px"
+      :src="require('../../../public/images/readmetrics-logo.png')"
+      class="ma-4"
       alt="ezpaarse-img"
     />
+    <b> ReadMETRICS </b>
 
     <ApplicationsMenu class="hidden-md-and-down" />
 
