@@ -12,20 +12,24 @@
     </v-row>
     <v-row justify="center" align="center">
       <v-col cols="12" md="4">
-        <v-img
-          style="max-width: 300px;"
-          :src="require('../../../public/images/ezpaarse-logo-text.svg')"
-          alt="ezpaarse-logo"
-          class="mx-auto"
+        <a :href="ezpaarseLink" target="_blank">
+          <v-img
+            style="max-width: 300px;"
+            :src="require('../../../public/images/ezpaarse-logo-text.svg')"
+            alt="ezpaarse-logo"
+            class="mx-auto"
           />
+        </a>
       </v-col>
       <v-col cols="12" md="4">
-        <v-img
-          style="max-width: 300px;"
-          :src="require('../../../public/images/ezmesure-logo-text.png')"
-          alt="ezmesure-logo"
-          class="mx-auto"
-        />
+        <a :href="ezmesureLink" target="_blank">
+          <v-img
+            style="max-width: 300px;"
+            :src="require('../../../public/images/ezmesure-logo-text.png')"
+            alt="ezmesure-logo"
+            class="mx-auto"
+          />
+        </a>
       </v-col>
     </v-row>
     <v-row>
@@ -48,6 +52,10 @@
 import dashboard from '../../../public/images/dashboard.jpg';
 
 export default {
+  data: () => ({
+    ezpaarseLink: 'http://demo.ezpaarse.org/',
+    ezmesureLink: 'https://ezmesure.couperin.org/',
+  }),
   computed: {
     style() {
       return `background-image: url('${dashboard}'; background-size: initial; background-position-x: center; background-position-y: top; background-repeat: repeat;`;
