@@ -1,5 +1,5 @@
 <template>
-  <v-row v-row class="py-5 text-center" justify="center" align="center">
+  <v-row class="py-5 text-center" justify="center" align="center">
     <v-col cols="12" md="8">
       <p style="font-size: 1.5em; margin: 1em">
         {{ $t('organization') }}

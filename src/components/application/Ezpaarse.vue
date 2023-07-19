@@ -4,7 +4,7 @@
       <v-col cols="12" lg="6">
         <v-row>
           <v-col cols="12" class="justify-center justify-lg-start d-flex">
-            <a :href="link" target="_blank">
+            <a :href="ezpaarseLink" target="_blank">
               <v-img
                 style="max-width: 350px"
                 :src="require('../../../public/images/ezpaarse-text.png')"
@@ -26,7 +26,7 @@
           <v-col>
             <v-row>
               <v-btn
-                class="blue--text text--darken-1 hidden-md-and-down mx-2"
+                class="blue--text text--darken-1 mx-2"
                 :href="ezpaarseDocURL"
                 text
                 target="_blank"
@@ -36,7 +36,7 @@
               </v-btn>
               <v-spacer />
               <v-btn
-                class="blue--text text--darken-1 hidden-md-and-down"
+                class="blue--text text--darken-1"
                 :href="ezpaarseLink"
                 text
                 target="_blank"

@@ -14,7 +14,7 @@
           link
           target="_blank"
         >
-          <v-list-item-avatar tile="false">
+          <v-list-item-avatar :tile="false">
              <v-icon left>mdi-account-group</v-icon>
           </v-list-item-avatar>
           <v-list-item-content>
@@ -29,7 +29,7 @@
           link
           target="_blank"
         >
-          <v-list-item-avatar tile="false">
+          <v-list-item-avatar :tile="false">
             <img
               style="max-width: 60px"
               :src="require('../../../public/images/ezpaarse-logo.png')"
@@ -47,7 +47,7 @@
           link
           target="_blank"
         >
-          <v-list-item-avatar tile="false">
+          <v-list-item-avatar :tile="false">
             <img
               style="max-width: 60px"
               :src="require('../../../public/images/ezmesure-logo.png')"
@@ -65,7 +65,7 @@
           link
           target="_blank"
         >
-          <v-list-item-avatar tile="false">
+          <v-list-item-avatar :tile="false">
              <v-icon left>mdi-account-supervisor</v-icon>
           </v-list-item-avatar>
           <v-list-item-content>
@@ -80,7 +80,7 @@
           link
           target="_blank"
         >
-          <v-list-item-avatar tile="false">
+          <v-list-item-avatar :tile="false">
             <img
               style="max-width: 60px"
               :src="require('../../../public/images/unpaywall-logo.svg')"

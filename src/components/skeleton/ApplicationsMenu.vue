@@ -15,7 +15,7 @@
           :href="application.link"
           link
         >
-          <v-list-item-avatar tile="false">
+          <v-list-item-avatar :tile="false">
             <img
               style="max-width: 60px"
               :src="require(`../../../public/images/${application.pathImage}`)"

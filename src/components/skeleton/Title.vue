@@ -82,8 +82,18 @@ export default {
 h1 {
   font-family: oxygen;
 }
+
 .title-page {
-  font-size: 3em;
+  font-size: 2em;
+    @media only screen and (min-width: 600px) {
+        font-size: 2em;
+    }
+    @media only screen and (min-width: 1000px) {
+        font-size: 2.5em;
+    }
+    @media only screen and (min-width: 1200px) {
+        font-size: 3em;
+    }
 }
 
 .subtitle-page {

@@ -33,7 +33,7 @@
 
       <v-divider class="my-4" />
 
-      <p class="my-4">{{ $t('Blog') }}</p>
+      <p class="my-4">{{ $t('blog') }}</p>
 
       <v-list-item
         href="https://blog.ezpaarse.org/"
@@ -49,14 +49,14 @@
 
       <v-divider class="my-4" />
 
-      <p class="my-4">{{ $t('Contact') }}</p>
+      <p class="my-4">{{ $t('contact') }}</p>
 
       <v-list-item
           href="mailto:ezteam@couperin.org"
           link
           target="_blank"
         >
-          <v-list-item-avatar tile="false">
+          <v-list-item-avatar :tile="false">
              <v-icon left>mdi-account-group</v-icon>
           </v-list-item-avatar>
           <v-list-item-content>
@@ -71,7 +71,7 @@
           link
           target="_blank"
         >
-          <v-list-item-avatar tile="false">
+          <v-list-item-avatar :tile="false">
             <img
               style="max-width: 60px"
               :src="require('../../../public/images/ezpaarse-logo.png')"
@@ -89,7 +89,7 @@
           link
           target="_blank"
         >
-          <v-list-item-avatar tile="false">
+          <v-list-item-avatar :tile="false">
             <img
               style="max-width: 60px"
               :src="require('../../../public/images/ezmesure-logo.png')"
@@ -107,7 +107,7 @@
           link
           target="_blank"
         >
-          <v-list-item-avatar tile="false">
+          <v-list-item-avatar :tile="false">
              <v-icon left>mdi-account-supervisor</v-icon>
           </v-list-item-avatar>
           <v-list-item-content>
@@ -122,7 +122,7 @@
           link
           target="_blank"
         >
-          <v-list-item-avatar tile="false">
+          <v-list-item-avatar :tile="false">
             <img
               style="max-width: 60px"
               :src="require('../../../public/images/unpaywall-logo.svg')"

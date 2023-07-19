@@ -22,9 +22,9 @@
               {{ $t("ezreeport") }}
             </p>
           </v-col>
-          <v-col cols="12">
+          <v-col cols="12" class="text-right">
             <v-btn
-              class="blue--text text--darken-1 hidden-md-and-down"
+              class="blue--text text--darken-1"
               :href="link"
               text
               target="_blank"

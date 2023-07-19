@@ -6,7 +6,7 @@
           <v-col cols="12" class="justify-center justify-lg-start d-flex">
             <a :href="link" target="_blank">
               <v-img
-                style="max-width: 450px"
+                style="max-width: 350px"
                 :src="require('../../../public/images/ezcounter-text.png')"
                 class="mx-2"
                 alt="ezcounter-img"
@@ -18,9 +18,9 @@
               {{ $t("ezcounter") }}
             </p>
           </v-col>
-          <v-col cols="12">
+          <v-col cols="12" class="text-right">
             <v-btn
-              class="blue--text text--darken-1 hidden-md-and-down"
+              class="blue--text text--darken-1 "
               :href="link"
               text
               target="_blank"
