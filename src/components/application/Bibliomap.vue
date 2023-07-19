@@ -18,12 +18,12 @@
       <v-col cols="12" lg="6" order="1" order-lg="2">
         <v-row>
           <v-col cols="12" class="justify-center justify-lg-start d-flex">
-            <a class="logo" :href="link" target="_blank">
+            <a class="logo mx-2" :href="link" target="_blank">
               <h1 class="mx-2">Bibliomap</h1>
             </a>
           </v-col>
           <v-col cols="12">
-            <p class="ma-2 text text-center text-justify">
+            <p class="mx-4 text text-center text-justify">
               {{ $t("bibliomap") }}
             </p>
           </v-col>

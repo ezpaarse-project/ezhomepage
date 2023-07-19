@@ -12,7 +12,7 @@
             />
           </v-col>
           <v-col cols="12">
-            <p class="ma-2 text text-center text-justify">
+            <p class="mx-4 text text-center text-justify">
               {{ $t("readmetrics") }}
             </p>
           </v-col>

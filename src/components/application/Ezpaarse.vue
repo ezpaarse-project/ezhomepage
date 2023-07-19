@@ -9,23 +9,24 @@
                 style="max-width: 350px"
                 :src="require('../../../public/images/ezpaarse-text.png')"
                 alt="ezpaarse-img"
+                class="mx-4"
               />
             </a>
           </v-col>
           <v-col cols="12">
-            <p class="ma-2 text text-center text-justify">
+            <p class="mx-4 text text-center text-justify">
               {{ $t("ezpaarse.text1") }}
             </p>
           </v-col>
           <v-col cols="12">
-            <p class="ma-2 text text-center text-justify">
+            <p class="mx-4 text text-center text-justify">
               {{ $t("ezpaarse.text2") }}
             </p>
           </v-col>
           <v-col>
             <v-row>
               <v-btn
-                class="blue--text text--darken-1 hidden-md-and-down"
+                class="blue--text text--darken-1 hidden-md-and-down mx-2"
                 :href="ezpaarseDocURL"
                 text
                 target="_blank"

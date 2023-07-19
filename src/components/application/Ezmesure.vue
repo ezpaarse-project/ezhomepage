@@ -22,7 +22,7 @@
             </a>
           </v-col>
           <v-col cols="12" >
-            <p class="mx-2 text text-center text-justify">
+            <p class="mx-4 text text-center text-justify">
               {{ $t("ezmesure") }}
             </p>
           </v-col>

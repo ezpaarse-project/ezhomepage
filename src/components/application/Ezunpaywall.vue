@@ -13,24 +13,20 @@
       <v-col cols="12" lg="6" order="1" order-lg="2">
         <v-row>
           <v-col cols="12" class="justify-center justify-lg-start d-flex">
-            <v-list-item-avatar tile="true">
-              <a :href="link" target="_blank">
-                <v-img
-                  style="max-width: 35px"
-                  :src="require('../../../public/images/unpaywall-logo.svg')"
-                  class="ma-2 mx-auto"
-                  alt="ezunpaywall-screenshot"
-                />
-              </a>
-            </v-list-item-avatar>
-            <v-list-item-content>
-              <a class="logo" :href="link" target="_blank">
-                <h1 class="logo"> ezUNPAYWALL </h1>
-              </a>
-            </v-list-item-content>
+            <a :href="link" target="_blank">
+              <v-img
+                style="max-width: 35px"
+                :src="require('../../../public/images/unpaywall-logo.svg')"
+                class="ma-1 mx-4"
+                alt="ezunpaywall-logo"
+              />
+            </a>
+            <a class="logo" :href="link" target="_blank">
+              <h1 class="logo mx-2"> ezUNPAYWALL </h1>
+            </a>
           </v-col>
           <v-col cols="12">
-            <p class="mx-2 text text-center text-justify">
+            <p class="mx-4 text text-center text-justify">
               {{ $t("ezunpaywall") }}
             </p>
           </v-col>

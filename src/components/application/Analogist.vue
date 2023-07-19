@@ -9,11 +9,12 @@
                 style="max-width: 350px"
                 :src="require('../../../public/images/analogist-text.png')"
                 alt="ezmesure-img"
+                class="mx-4"
               />
             </a>
           </v-col>
           <v-col cols="12">
-            <p class="mx-2 text text-center text-justify">
+            <p class="mx-4 text text-center text-justify">
               {{ $t("analogist") }}
             </p>
           </v-col>
