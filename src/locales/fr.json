@@ -13,23 +13,23 @@
   "ezmesureSubtitle" : "Visualisation des données d'usages",
   "ezcounter": "ezCOUNTER est un module d'ezMESURE pour automatiser la collecte des rapports d’usage COUNTER 5 fournis par les éditeurs scientifiques et les présenter dans des tableaux de bord dynamiques et personnalisables. Une interface permet de saisir des identifiants SUSHI et paramétrer les demandes de moissonnage de données.",
   "ezcounterSubtitle": "Récolte automatique des données d'usages auprès des éditeurs",
-  "ezreeport": "EzREEPORT est un module d’Ezmesure pour configurer et automatiser l’envoi de mail de rapports réguliers en PDF (journaliers, hebdomadaires, mensuels, etc.) aux utilisateurs d’Ezmesure et à leurs équipes : l’évolution des données d’usage dans votre boîte aux lettres en un clin d’oeil",
+  "ezreeport": "ezREEPORT est un module d’ezMESURE pour configurer et automatiser l’envoi de mail de rapports réguliers en PDF (journaliers, hebdomadaires, mensuels, etc.) aux utilisateurs d’Ezmesure et à leurs équipes : l’évolution des données d’usage dans votre boîte aux lettres en un clin d’oeil",
   "ezreeportSubtitle": "Module permettant la génération de rapport en PDF pour ezMESURE",
   "bibliomapTitle": "Consultations analysées en temps réel par ezPAARSE (Bibliomap).",
   "bibliomapSubtitle": "Visualisation des données d'usage sur une carte",
   "bibliomap": "Bibliomap affiche en direct les événements de consultation générés par l’activité bibliographique de la communauté de recherche CNRS. Une instance ezPAARSE produit les données en temps réel affichées sur une carte. C'est un outil utile pour observer le trafic de votre proxy ou pour aider à porter le projet d'adoption d'ezPAARSE dans votre établissement.",
   "ezpaarse": {
     "text1": "ezPAARSE est un logiciel libre et gratuit chargé d'exploiter, analyser et enrichir les traces (logs) d'accès aux ressources électroniques disponibles sur les plateformes web des éditeurs de littérature scientifique.",
-    "text2": "ezPAARSE propose un formulaire en ligne et une API permettant le traitement manuel ou automatique des logs collectées sur les serveurs ou proxies de votre établissement."
+    "text2": "ezPAARSE propose un formulaire en ligne et une API permettant le traitement manuel ou automatique des logs collectés sur les serveurs ou proxies de votre établissement."
   },
   "ezpaarseSubtitle": "Production locales des données d'usage",
-  "analogist": "AnalogIST est l'espace collaborative où sont réunies toutes les analyses de plateformes (pré-requises pour la création de parseurs nécessaires à ezPAARSE) sous forme d’une base de connaissance.",
+  "analogist": "AnalogIST est l'espace collaborative où sont réunies toutes les analyses de plateformes (pré-requises pour la création de parseurs nécessaires à ezPAARSE) sous forme d’une base de connaissances.",
   "analogistSubtitle": "Plateforme collaboratif pour la détection des données d'usage",
-  "ezunpaywall": "ezUNPAYWALL est un miroir de données provenant d’unpaywall hébergé en France par l’Inist CNRS. Unpaywall est un réservoir de metadonnées de ressources électroniques de références bibliographiques disponibles en accès gratuit.",
+  "ezunpaywall": "ezUNPAYWALL est un miroir de données provenant d’unpaywall hébergé en France par l’Inist CNRS. Unpaywall est un réservoir de métadonnées de ressources électroniques de références bibliographiques disponibles en accès gratuit.",
   "ezunpaywallSubtitle": "Miroir de données unpaywall pour le lien vers l'Open Access",
   "readmetrics": "ReadMetrics est un package ezPAARSE ezMESURE qui vous fournir un aperçu complet de l'utilisation des ressources électroniques de votre institution.",
   "readmetricsSubtitle": "Paquet ezPAARSE ezMESURE",
-  "organization": "Ces logiciels ont été réalisé par l'Inist CNRS en collaboration avec le consortium Couperin sous la tutelle du ministère de l'enseignement supérieur de la recherche.",
+  "organization": "Ces logiciels ont été réalisés par l'Inist CNRS en collaboration avec le consortium Couperin sous la tutelle du ministère de l'enseignement supérieur de la recherche.",
   "footer": {
     "title": "Une équipe et une communauté",
     "block1": {
@@ -38,7 +38,7 @@
     },
     "block2": {
       "title": "Une équipe disponible et réactive",
-      "text": "Un problème, une question, une suggestions ? N'hésitez pas à prendre contact avec nous : ça nous intéresse !"
+      "text": "Un problème, une question, une suggestion ? N'hésitez pas à prendre contact avec nous : ça nous intéresse !"
     },
     "block3": {
       "title": "Une communauté grandissante",
