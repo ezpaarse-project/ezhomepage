@@ -24,7 +24,7 @@
       <v-col cols="12" md="4">
         <a :href="ezmesureLink" target="_blank">
           <v-img
-            style="max-width: 300px;"
+            style="max-width: 350px;"
             :src="require('../../../public/images/ezmesure-logo-text.png')"
             alt="ezmesure-logo"
             class="mx-auto"
