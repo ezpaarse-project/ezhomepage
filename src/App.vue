@@ -1,87 +1,76 @@
 <template>
-  <v-app>
-    <Appbar @drawerUpdate="updateVisibleDrawer()"/>
-    <Drawer v-model="visible"/>
-    <div class="content">
-      <Title />
-    </div>
-    <div>
+  <v-app class="ma-0">
+    <AppBar @drawerUpdate="updateVisibleDrawer()"/>
+    <v-main>
+      <MobileMenu v-model="visible"/>
+      <AppTittle />
       <v-divider class="ma-16" />
-      <Ezmesure />
-      <Ezcounter />
-      <Ezreeport />
-    </div>
-    <div>
-      <v-divider class="ma-16"/>
-      <Ezpaarse />
-      <Bibliomap />
-    </div>
-    <div>
-      <v-divider class="ma-16"/>
-      <Analogist />
-    </div>
-    <div>
-      <v-divider class="ma-16"/>
-      <Ezunpaywall />
+      <div>
+        <EzmesureApp />
+        <EzcounterApp />
+        <EzreeportApp />
+      </div>
       <v-divider class="ma-16" />
-    </div>
-    <div class="grey darken-4">
-      <Team />
-    </div>
-    <Organization />
-    <Footer />
+      <div>
+        <EzpaarseApp />
+        <BibliomapApp />
+      </div>
+      <v-divider class="ma-16" />
+      <div>
+        <AnalogistApp />
+      </div>
+      <v-divider class="ma-16" />
+      <div>
+        <EzunpaywallApp />
+      </div>
+      <v-divider class="ma-16" />
+      <div>
+        <AppTeam />
+      </div>
+      <AppOrganization />
+      <AppFooter />
+    </v-main>
+    
   </v-app>
 </template>
 
-<script>
-import Appbar from '@/components/skeleton/Appbar.vue';
-import Drawer from '@/components/skeleton/Drawer.vue';
-import Title from '@/components/skeleton/Title.vue';
-import Team from '@/components/skeleton/Team.vue';
-import Organization from '@/components/skeleton/Organization.vue';
-import Footer from '@/components/skeleton/Footer.vue';
+<script setup>
+import AppBar from '@/components/skeleton/AppBar.vue';
+import MobileMenu from '@/components/skeleton/MobileMenu.vue';
+import AppTittle from '@/components/skeleton/AppTittle.vue';
 
-import Ezmesure from '@/components/application/Ezmesure.vue';
-import Ezcounter from '@/components/application/Ezcounter.vue';
-import Ezreeport from '@/components/application/Ezreeport.vue';
-import Bibliomap from '@/components/application/Bibliomap.vue';
-import Ezpaarse from '@/components/application/Ezpaarse.vue';
-import Analogist from '@/components/application/Analogist.vue';
-import Ezunpaywall from '@/components/application/Ezunpaywall.vue';
+import EzmesureApp from '@/components/applications/EzmesureApp.vue';
+import EzcounterApp from '@/components/applications/EzcounterApp.vue';
+import EzreeportApp from '@/components/applications/EzreeportApp.vue';
+import EzpaarseApp from '@/components/applications/EzpaarseApp.vue';
+import BibliomapApp from '@/components/applications/BibliomapApp.vue';
+import AnalogistApp from '@/components/applications/AnalogistApp.vue';
+import EzunpaywallApp from '@/components/applications/EzunpaywallApp.vue';
 
-export default {
-  name: 'App',
-  components: {
-    Appbar,
-    Drawer,
-    Title,
-    Team,
-    Organization,
-    Footer,
 
-    Ezmesure,
-    Ezcounter,
-    Ezreeport,
-    Bibliomap,
-    Ezpaarse,
-    Analogist,
-    Ezunpaywall,
-  },
-  data: () => ({
-    visible: false,
-  }),
-  methods: {
-    updateVisibleDrawer() {
-      this.visible = !this.visible;
-      this.$emit('input', this.visible);
-    },
-  },
+
+import AppFooter from '@/components/skeleton/AppFooter.vue';
+import AppOrganization from '@/components/team/AppOrganization.vue';
+import AppTeam from '@/components/team/AppTeam.vue';
+
+
+
+
+import {ref} from 'vue';
+
+let visible = ref(false);
+
+const emit = defineEmits({
+  updated: () => true
+})
+  
+async function updateVisibleDrawer() {
+  visible.value = !visible.value;
+  emit('updated');
 };
+
 </script>
 
 <style>
 
-.text {
-  font-size: 1.2em;
-}
 </style>
