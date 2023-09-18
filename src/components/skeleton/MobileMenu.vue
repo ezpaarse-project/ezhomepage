@@ -46,6 +46,7 @@ import MailList from '@/components/menu/MailList.vue';
 import ApplicationsList from '@/components/menu/ApplicationsList.vue';
 import LangList from '@/components/menu/LangList.vue';
 
+const i18n = useI18n()
 
 const visible = defineProps({
   value: { type: Boolean, default: false }
@@ -58,8 +59,6 @@ const emit = defineEmits({
 async function updateVisible() {
   emit('updated');
 };
-
-const i18n = useI18n()
 
 const socialNetworks = [
   {

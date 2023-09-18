@@ -1,6 +1,6 @@
 <template>
   <v-list>
-    <v-list-item v-bind="props" v-for="lang in langs" :key="lang.locale" @click="$i18n.locale = lang.locale"
+    <v-list-item v-bind="props" v-for="lang in langs" :key="lang.locale" @click="i18n.locale.value = lang.locale"
       :title="i18n.t(lang.language)">
       <template v-slot:prepend>
         <img width="24" class="mr-2" :src="lang.pathImage" :alt="lang.locale" />

@@ -47,14 +47,9 @@ import BibliomapApp from '@/components/applications/BibliomapApp.vue';
 import AnalogistApp from '@/components/applications/AnalogistApp.vue';
 import EzunpaywallApp from '@/components/applications/EzunpaywallApp.vue';
 
-
-
 import AppFooter from '@/components/skeleton/AppFooter.vue';
 import AppOrganization from '@/components/team/AppOrganization.vue';
 import AppTeam from '@/components/team/AppTeam.vue';
-
-
-
 
 import {ref} from 'vue';
 
@@ -71,6 +66,3 @@ async function updateVisibleDrawer() {
 
 </script>
 
-<style>
-
-</style>
