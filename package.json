@@ -1,18 +1,29 @@
 {
-   "name": "ezpaarse-home",
-   "version": "1.0.0",
-   "description": "EzPAARSE projecthome page",
-   "scripts": {
-      "start": "npm run static",
-      "static": "./node_modules/node-static/bin/cli.js -H '{\"Access-Control-Allow-Origin\":\"*\"}'"
-   },
-   "dependencies": {
-      "node-static": "^0.7.9"
-   },
-   "repository": {
-      "type": "git",
-      "url": "https://github.com/ezpaarse-project/web-home"
-   },
-   "author": "Patrick Kremer <patrickkrem@gmail.com>",
-   "license": "MIT"
+  "name": "ezhomepage",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "@intlify/unplugin-vue-i18n": "^0.12.2",
+    "leaflet": "^1.9.4",
+    "vue": "^3.3.4",
+    "vue-i18n": "^9.2.2",
+    "vuetify": "^3.3.11"
+  },
+  "devDependencies": {
+    "@mdi/font": "^7.2.96",
+    "@rushstack/eslint-patch": "^1.3.2",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "eslint": "^8.45.0",
+    "eslint-plugin-vue": "^9.15.1",
+    "prettier": "^3.0.0",
+    "vite": "^4.4.6"
+  }
 }

@@ -1,0 +1,54 @@
+{
+  "lang": "Français",
+  "title": "Vous souhaitez savoir comment sont utilisées les ressources documentaires auxquelles vous êtes abonné ?",
+  "subtitle": "ReadMETRICS est la boîte à outils dédiée à la détection, à la collecte, à l’enrichissement et à la visualisation dynamique et des données d’usages de vos ressources électroniques grâce à ezPAARSE et ezMESURE. Cette suite logicielle open source est composée des éléments nécessaires pour vous décharger d’un travail lourd et fastidieux en automatisant les processus à mettre en œuvre. Grâce à cette suite, vous pourrez produire très facilement des tableaux de bords de suivi et de valorisation de vos ressources documentaires.",
+  "blog": "Blog",
+  "documentation": "Documentation",
+  "demonstration": "Démonstration",
+  "language": "Language",
+  "french": "Français",
+  "english": "Anglais",
+  "learnMore": "En savoir plus",
+  "ezmesure": "ezMESURE est l’entrepôt national français où sont les établissements de l’ESR qui utilisent ezPAARSE localement reversent leurs données d’usage collectées et les retrouvent, présentées dans des visualisations dynamiques et personnalisables. Depuis 2021, ezMESURE collecte aussi les données d’usage fournies par les éditeurs conformes à COUNTER 5 grâce à son module ezCOUNTER.", 
+  "ezmesureSubtitle" : "Visualisation des données d'usages",
+  "ezcounter": "ezCOUNTER est un module d'ezMESURE pour automatiser la collecte des rapports d’usage COUNTER 5 fournis par les éditeurs scientifiques et les présenter dans des tableaux de bord dynamiques et personnalisables. Une interface permet de saisir des identifiants SUSHI et paramétrer les demandes de moissonnage de données.",
+  "ezcounterSubtitle": "Récolte automatique des données d'usages auprès des éditeurs",
+  "ezreeport": "ezREEPORT est un module d’ezMESURE pour configurer et automatiser l’envoi de mail de rapports réguliers en PDF (journaliers, hebdomadaires, mensuels, etc.) aux utilisateurs d’Ezmesure et à leurs équipes : l’évolution des données d’usage dans votre boîte aux lettres en un clin d’oeil",
+  "ezreeportSubtitle": "Module permettant la génération de rapport en PDF pour ezMESURE",
+  "bibliomapTitle": "Consultations analysées en temps réel par ezPAARSE (Bibliomap).",
+  "bibliomapSubtitle": "Visualisation des données d'usage sur une carte",
+  "bibliomap": "Bibliomap affiche en direct les événements de consultation générés par l’activité bibliographique de la communauté de recherche CNRS. Une instance ezPAARSE produit les données en temps réel affichées sur une carte. C'est un outil utile pour observer le trafic de votre proxy ou pour aider à porter le projet d'adoption d'ezPAARSE dans votre établissement.",
+  "ezpaarse": {
+    "text1": "ezPAARSE est un logiciel libre et gratuit chargé d'exploiter, analyser et enrichir les traces (logs) d'accès aux ressources électroniques disponibles sur les plateformes web des éditeurs de littérature scientifique.",
+    "text2": "ezPAARSE propose un formulaire en ligne et une API permettant le traitement manuel ou automatique des logs collectés sur les serveurs ou proxies de votre établissement."
+  },
+  "ezpaarseSubtitle": "Production locales des données d'usage",
+  "analogist": "AnalogIST est l'espace collaboratif où sont réunies toutes les analyses de plateformes (pré-requises pour la création de parseurs nécessaires à ezPAARSE) sous forme d’une base de connaissances.",
+  "analogistSubtitle": "Plateforme collaborative pour la détection des données d'usage",
+  "ezunpaywall": "ezUNPAYWALL est un miroir de données provenant d’Unpaywall hébergé en France par l’Inist CNRS. Unpaywall est un réservoir de métadonnées de ressources électroniques de références bibliographiques disponibles en accès gratuit.",
+  "ezunpaywallSubtitle": "Miroir de données unpaywall pour le lien vers l'Open Access",
+  "readmetrics": "ReadMetrics est un package ezPAARSE ezMESURE qui vous fournir un aperçu complet de l'utilisation des ressources électroniques de votre institution.",
+  "readmetricsSubtitle": "Paquet ezPAARSE ezMESURE",
+  "organization": "Ces logiciels ont été réalisés par l'Inist CNRS en collaboration avec le consortium Couperin sous la tutelle du ministère de l'enseignement supérieur de la recherche.",
+  "footer": {
+    "title": "Une équipe et une communauté",
+    "block1": {
+      "title": "Un outil simple et efficace",
+      "text": "Quelques clics suffisent à l'installer pour commencer à analyser vos logs"
+    },
+    "block2": {
+      "title": "Une équipe disponible et réactive",
+      "text": "Un problème, une question, une suggestion ? N'hésitez pas à prendre contact avec nous : ça nous intéresse !"
+    },
+    "block3": {
+      "title": "Une communauté grandissante",
+      "text": "Et pas seulement francophone : ezPAARSE est installé dans des établissements aux États-Unis, à Singapour, en Allemagne et beaucoup d'autres !"
+    },
+    "signature": "Tout droit réservés" 
+  },
+  "softwares": "Logiciels",
+  "socialNetworks": "Réseaux sociaux",
+  "subscribe": "S'abonner à la liste de diffusion",
+  "supportEzcounter": "Support ezCOUNTER",
+  "contact": "Contact"
+}
