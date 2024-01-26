@@ -14,7 +14,13 @@
         <v-row>
           <v-col cols="12">
             <a class="d-flex justify-center justify-lg-start logo mx-2" :href="ezreeportLink" target="_blank">
-              <h1 class="mx-2">ezREEPORT</h1>
+              <v-img
+                style="max-width: 350px"
+                v-once
+                :src="ezreeportTextImg"
+                alt="ezreeport-img"
+                class="mx-4"
+              />
             </a>
           </v-col>
           <v-col cols="12">
@@ -44,22 +50,12 @@
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n';
 
+import ezreeportTextImg from '@/images/applications/ezreeport/ezreeport-text.png';
 import ezreeportScreenshotImg from '@/images/applications/ezreeport/ezreeport-screenshot.png';
+
 
 const i18n = useI18n()
 
 const ezreeportLink = ref('#');
 
 </script>
-
-<style scoped>
-.logo {
-  color: black;
-  text-decoration: none;
-}
-
-.logo:hover {
-  text-decoration:none;
-  cursor:pointer;
-}
-</style>

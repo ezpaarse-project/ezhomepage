@@ -12,7 +12,13 @@
         <v-row>
           <v-col cols="12">
             <a class="d-flex justify-center justify-lg-start logo mx-2" :href="bibliomapLink" target="_blank">
-              <h1 class="mx-2">Bibliomap</h1>
+              <v-img
+                style="max-width: 350px"
+                v-once
+                :src="bibliomapTextImg"
+                alt="bibliomap-img"
+                class="mx-4"
+              />
             </a>
           </v-col>
           <v-col cols="12">
@@ -43,6 +49,7 @@ import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 import bibliomapVideo from '@/videos/applications/bibliomap/bibliomap-demo.webm';
+import bibliomapTextImg from '@/images/applications/bibliomap/bibliomap-text.png';
 
 const i18n = useI18n()
 
@@ -54,16 +61,3 @@ const bibliomapLink = computed(() => {
 });
 
 </script>
-
-
-<style scoped>
-.logo {
-  color: black;
-  text-decoration: none;
-}
-
-.logo:hover {
-  text-decoration: none;
-  cursor: pointer;
-}
-</style>
