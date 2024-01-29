@@ -39,7 +39,7 @@ import ezunpaywallScreenshotImg from '@/images/applications/ezunpaywall/ezunpayw
 const i18n = useI18n()
 
 const ezunpaywallLink = computed(() => {
-  if (i18n.locale === 'fr') {
+  if (i18n.locale.value === 'fr') {
     return 'https://unpaywall.inist.fr';
   }
   return 'https://unpaywall.inist.fr?lang=en';

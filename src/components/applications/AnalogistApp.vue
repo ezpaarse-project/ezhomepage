@@ -55,7 +55,7 @@ import analogistImg from '@/images/applications/analogist/analogist-text.png';
 const i18n = useI18n()
 
 const analogistLink = computed(() => {
-  if (i18n.locale === 'fr') {
+  if (i18n.locale.value === 'fr') {
     return 'http://analyses.ezpaarse.org';
   }
   return 'http://analyses.ezpaarse.org?lang=en';

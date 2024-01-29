@@ -54,7 +54,7 @@ import bibliomapTextImg from '@/images/applications/bibliomap/bibliomap-text.png
 const i18n = useI18n()
 
 const bibliomapLink = computed(() => {
-  if (i18n.locale === 'fr') {
+  if (i18n.locale.value === 'fr') {
     return 'https://bibliomap.inist.fr/';
   }
   return 'https://bibliomap.inist.fr?lang=en';
