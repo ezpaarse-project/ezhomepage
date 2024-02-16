@@ -25,7 +25,7 @@
   "ezpaarseSubtitle": "Production locales des données d'usage",
   "analogist": "AnalogIST est l'espace collaboratif où sont réunies toutes les analyses de plateformes (pré-requises pour la création de parseurs nécessaires à ezPAARSE) sous forme d’une base de connaissances.",
   "analogistSubtitle": "Plateforme collaborative pour la détection des données d'usage",
-  "ezunpaywall": "ezUNPAYWALL est un miroir de données provenant d’Unpaywall hébergé en France par l’Inist CNRS depuis 2020 qui est mis à jour quotidiennement. Unpaywall est un réservoir de métadonnées décrivant les ressources électroniques disponibles en accès gratuit ou libre accès.",
+  "ezunpaywall": "ezUNPAYWALL est un miroir de données provenant d’Unpaywall hébergé en France par l’Inist CNRS depuis 2020 et mises à jour quotidiennement. Unpaywall est un réservoir de métadonnées décrivant les ressources électroniques disponibles en accès gratuit ou libre accès.",
   "ezunpaywallSubtitle": "Miroir de données unpaywall pour le lien vers l'Open Access",
   "readmetrics": "ReadMetrics est un package ezPAARSE ezMESURE qui vous fournir un aperçu complet de l'utilisation des ressources électroniques de votre institution.",
   "readmetricsSubtitle": "Paquet ezPAARSE ezMESURE",

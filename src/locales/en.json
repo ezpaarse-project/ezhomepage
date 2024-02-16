@@ -25,7 +25,7 @@
   "ezpaarseSubtitle": "Generating usage data from local logfiles",
   "analogist": "AnalogIST is the collaborative workspace where all the platform analyses (prerequisites for creating the parsers needed for ezPAARSE) are gathered in a common knowledge base.",
   "analogistSubtitle": "Analysing providers’ platforms for ezPAARSE",
-  "ezunpaywall": "ezUNPAYWALL is a mirror hosted in France by Inist-CNRS of data from Unpaywall since 2020 that is updated daily. Unpaywall is a metadata repository of free and open access electronic resources.",
+  "ezunpaywall": "ezUNPAYWALL is a mirror hosted in France by Inist-CNRS of data from Unpaywall since 2020 and updated daily. Unpaywall is a metadata repository of free and open access electronic resources.",
   "ezunpaywallSubtitle": "Unpaywall data mirror for OA metadata",
   "readmetrics": "ReadMetrics is an ezPAARSE ezMESURE package that provides you with a comprehensive overview of your institution's electronic resource usage.",
   "readmetricsSubtitle": "ezPAARSE ezMESURE package",
