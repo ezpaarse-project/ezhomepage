@@ -12,6 +12,7 @@
 <script setup>
 import ezmesureLogo from '@/images/applications/ezmesure/ezmesure-logo.svg';
 import ezcounterLogo from '@/images/applications/ezcounter/ezcounter-logo.png';
+import ezreeportLogo from '@/images/applications/ezreeport/ezreeport-logo.png';
 import bibliomapLogo from '@/images/applications/bibliomap/bibliomap-logo.svg';
 import ezpaarseLogo from '@/images/applications/ezpaarse/ezpaarse-logo.png';
 import analogistLogo from '@/images/applications/analogist/analogist-logo.png';
@@ -38,7 +39,7 @@ const applications = computed(() => {
     },
     {
       name: 'ezREEPORT',
-      pathImage: ezmesureLogo,
+      pathImage: ezreeportLogo,
       text: i18n.t('ezreeportSubtitle'),
       link: '',
     },
