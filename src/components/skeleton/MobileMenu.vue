@@ -1,6 +1,11 @@
 <template>
-  <v-navigation-drawer :value="visible" app class="hidden-lg-and-up" width="300"
-    @input="updateVisible($event)">
+  <v-navigation-drawer
+  v-if="isMobile"
+  disable-resize-watcher="true"
+  :value="visible"
+  app width="300"
+  @input="updateVisible($event)"
+  >
     <v-list nav dense>
       <p class="my-4">{{ i18n.t('softwares') }}</p>
 
@@ -40,6 +45,7 @@
 
 <script setup>
 
+import { computed, ref, onMounted } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 import MailList from '@/components/menu/MailList.vue';
@@ -50,6 +56,19 @@ const i18n = useI18n()
 
 const visible = defineProps({
   value: { type: Boolean, default: false }
+});
+
+const windowWidth = ref(window.innerWidth);
+
+const isMobile = computed(() => windowWidth.value < 1280);
+
+function checkScreenSize() {
+  windowWidth.value = window.innerWidth;
+}
+
+onMounted(() => {
+  checkScreenSize();
+  window.addEventListener('resize', checkScreenSize);
 });
 
 const emit = defineEmits({
