@@ -1,6 +1,6 @@
 <template>
   <v-footer class="py-5 pl-10 bg-grey-darken-4" bottom>
-    © ezPAARSE ezMESURE {{ new Date().getFullYear() }} — <strong> {{ i18n.t("footer.signature") }} </strong>
+    © Readmetrics {{ new Date().getFullYear() }} — <strong> {{ i18n.t("footer.signature") }} </strong>
   </v-footer>
 </template>
 
