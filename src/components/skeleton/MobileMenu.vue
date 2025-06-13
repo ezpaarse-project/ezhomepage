@@ -86,11 +86,6 @@ const socialNetworks = [
     link: 'https://github.com/ezpaarse-project',
   },
   {
-    name: 'Twitter',
-    icon: 'mdi-twitter',
-    link: 'https://twitter.com/ezpaarse',
-  },
-  {
     name: 'Youtube',
     icon: 'mdi-youtube',
     link: 'https://www.youtube.com/channel/UCcR-0UE9WjYiwS4fMG2T4tQ',

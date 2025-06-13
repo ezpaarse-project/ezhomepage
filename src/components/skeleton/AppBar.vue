@@ -18,12 +18,6 @@
       </template>
     </v-tooltip>
 
-    <v-tooltip text="Twitter ezPAARSE" location="bottom">
-      <template v-slot:activator="{ props }">
-        <v-btn class="hidden-md-and-down" :href="twitterURL" target="_blank" v-bind="props" icon="mdi-twitter" />
-      </template>
-    </v-tooltip>
-
     <v-tooltip text="Youtube ezPAARSE" location="bottom">
       <template v-slot:activator="{ props }">
         <v-btn class="hidden-md-and-down" :href="youtubeURL" target="_blank" v-bind="props" icon="mdi-youtube" />
@@ -45,7 +39,6 @@ import LangSwitch from '@/components/menu/LangSwitch.vue';
 const blogURL = 'https://blog.ezpaarse.org/';
 
 const githubURL = 'https://github.com/ezpaarse-project';
-const twitterURL = 'https://twitter.com/ezpaarse';
 const youtubeURL = 'https://www.youtube.com/channel/UCcR-0UE9WjYiwS4fMG2T4tQ';
 
 const emit = defineEmits({
