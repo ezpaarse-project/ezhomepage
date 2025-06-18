@@ -1,7 +1,7 @@
 {
   "lang": "Français",
   "title": "Vous souhaitez savoir comment sont utilisées les ressources documentaires auxquelles vous êtes abonné ?",
-  "subtitle": "ReadMETRICS est la boîte à outils dédiée à la détection, à la collecte, à l’enrichissement et à la visualisation dynamique et des données d’usages de vos ressources électroniques grâce à ezPAARSE et ezMESURE. Cette suite logicielle open source est composée des éléments nécessaires pour vous décharger d’un travail lourd et fastidieux en automatisant les processus à mettre en œuvre. Grâce à cette suite, vous pourrez produire très facilement des tableaux de bords de suivi et de valorisation de vos ressources documentaires.",
+  "subtitle": "ReadMETRICS est la boîte à outils dédiée à la détection, à la collecte, à l’enrichissement et à la visualisation dynamique des données d’usages de vos ressources électroniques grâce à ezPAARSE et ezMESURE. Cette suite logicielle open source est composée des éléments nécessaires pour vous décharger d’un travail lourd et fastidieux en automatisant les processus à mettre en œuvre. Grâce à cette suite, vous pourrez produire très facilement des tableaux de bord de suivi et de valorisation de vos ressources documentaires.",
   "blog": "Blog",
   "documentation": "Documentation",
   "demonstration": "Démonstration",
@@ -9,11 +9,11 @@
   "french": "Français",
   "english": "Anglais",
   "learnMore": "En savoir plus",
-  "ezmesure": "ezMESURE est l’entrepôt national français où sont les établissements de l’ESR qui utilisent ezPAARSE localement reversent leurs données d’usage collectées et les retrouvent, présentées dans des visualisations dynamiques et personnalisables. Depuis 2021, ezMESURE collecte et expose aussi les données d’usage fournies par les éditeurs conformes à COUNTER 5 grâce à son module ezCOUNTER.", 
+  "ezmesure": "ezMESURE est l’entrepôt national français où les établissements de l’ESR qui utilisent ezPAARSE localement reversent leurs données d’usage collectées et les retrouvent, présentées dans des visualisations dynamiques et personnalisables. Depuis 2021, ezMESURE collecte et expose aussi les données d’usage fournies par les éditeurs conformes à COUNTER 5 grâce à son module ezCOUNTER.", 
   "ezmesureSubtitle" : "Visualisation des données d'usages",
-  "ezcounter": "ezCOUNTER est un module d'ezMESURE pour automatiser la collecte des rapports d’usage COUNTER 5 fournis par les éditeurs scientifiques et les présenter dans des tableaux de bord dynamiques et personnalisables. Une interface dédiée permet de saisir des identifiants SUSHI et paramétrer les demandes de moissonnage de données.",
+  "ezcounter": "ezCOUNTER est un module d'ezMESURE qui sert a automatiser la collecte des rapports d’usage COUNTER 5 fournis par les éditeurs scientifiques et les présenter dans des tableaux de bord dynamiques et personnalisables. Une interface dédiée dans ezMESURE permet de saisir des identifiants SUSHI et paramétrer les demandes de moissonnage de données.",
   "ezcounterSubtitle": "Récolte automatique des données d'usages auprès des éditeurs",
-  "ezreeport": "ezREEPORT est un module d’ezMESURE pour configurer et automatiser l’envoi de mail de rapports réguliers en PDF (journaliers, hebdomadaires, mensuels, etc.) aux utilisateurs d’Ezmesure et à leurs équipes : l’évolution des données d’usage dans votre boîte aux lettres en un clin d’oeil.",
+  "ezreeport": "ezREEPORT est un module d’ezMESURE qui sert a configurer et automatiser l’envoi de mails de rapports réguliers en PDF (journaliers, hebdomadaires, mensuels, etc.) aux utilisateurs d’ezMESURE et à leurs équipes : l’évolution des données d’usage dans votre boîte aux lettres en un clin d’œil.",
   "ezreeportSubtitle": "Module permettant la génération de rapport en PDF pour ezMESURE",
   "bibliomapTitle": "Consultations analysées en temps réel par ezPAARSE (Bibliomap).",
   "bibliomapSubtitle": "Visualisation des données d'usage sur une carte",
@@ -29,12 +29,12 @@
   "ezunpaywallSubtitle": "Miroir de données unpaywall pour le lien vers l'Open Access",
   "readmetrics": "ReadMetrics est un package ezPAARSE ezMESURE qui vous fournir un aperçu complet de l'utilisation des ressources électroniques de votre institution.",
   "readmetricsSubtitle": "Paquet ezPAARSE ezMESURE",
-  "organization": "Ces logiciels ont été réalisés par l'Inist CNRS en collaboration avec le consortium Couperin sous la tutelle du ministère de l'enseignement supérieur de la recherche.",
+  "organization": "Ces logiciels ont été réalisés par l'Inist CNRS en collaboration avec le consortium Couperin sous la tutelle du Ministère chargé de l'Enseignement Supérieur et de la Recherche.",
   "footer": {
     "title": "Une équipe et une communauté",
     "block1": {
       "title": "Un outil simple et efficace",
-      "text": "Quelques clics suffisent à l'installer pour commencer à analyser vos logs"
+      "text": "Quelques clics suffisent pour l'installer et commencer à analyser vos logs"
     },
     "block2": {
       "title": "Une équipe disponible et réactive",
@@ -44,7 +44,7 @@
       "title": "Une communauté grandissante",
       "text": "Et pas seulement francophone : ezPAARSE est installé dans des établissements aux États-Unis, à Singapour, en Allemagne et beaucoup d'autres !"
     },
-    "signature": "Tout droit réservés" 
+    "signature": "Tous droits réservés" 
   },
   "softwares": "Logiciels",
   "socialNetworks": "Réseaux sociaux",
