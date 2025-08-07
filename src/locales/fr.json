@@ -9,7 +9,7 @@
   "french": "Français",
   "english": "Anglais",
   "learnMore": "En savoir plus",
-  "ezmesure": "ezMESURE est l’entrepôt national français où les établissements de l’ESR qui utilisent ezPAARSE localement reversent leurs données d’usage collectées et les retrouvent, présentées dans des visualisations dynamiques et personnalisables. Depuis 2021, ezMESURE collecte et expose aussi les données d’usage fournies par les éditeurs conformes à COUNTER 5 grâce à son module ezCOUNTER.", 
+  "ezmesure": "ezMESURE est l’entrepôt national français où les établissements de l’ESR qui utilisent ezPAARSE localement et qui reversent leurs données d’usage collectées et les retrouvent, présentées dans des visualisations dynamiques et personnalisables. Depuis 2021, ezMESURE collecte et expose aussi les données d’usage fournies par les éditeurs conformes à COUNTER 5 grâce à son module ezCOUNTER.", 
   "ezmesureSubtitle" : "Visualisation des données d'usages",
   "ezcounter": "ezCOUNTER est un module d'ezMESURE qui sert a automatiser la collecte des rapports d’usage COUNTER 5 fournis par les éditeurs scientifiques et les présenter dans des tableaux de bord dynamiques et personnalisables. Une interface dédiée dans ezMESURE permet de saisir des identifiants SUSHI et paramétrer les demandes de moissonnage de données.",
   "ezcounterSubtitle": "Récolte automatique des données d'usages auprès des éditeurs",
