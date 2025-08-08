@@ -1,32 +1,68 @@
 <template>
   <v-list>
-    <v-list-item href="mailto:ezteam@couperin.org" link target="_blank" :title="i18n.t('contact')">
-      <template v-slot:prepend>
-        <v-icon icon="mdi-account-group"></v-icon>
+    <v-tooltip text="ezteam@couperin.org" location="right">
+      <template #activator="{ props }">
+        <v-list-item
+          v-bind="props"
+          href="mailto:ezteam@couperin.org"
+          link
+          target="_blank"
+          prepend-icon="mdi-account-group"
+          :title="i18n.t('contact')"
+        />
       </template>
-    </v-list-item>
-    <v-list-item href="mailto:ezteam@couperin.org" link target="_blank" title="ezPAARSE" :subtitle="i18n.t('subscribe')">
-      <template v-slot:prepend>
-        <img class="mr-8" style="max-width: 30px" :src="ezpaarseLogo" :alt="`ezpaarse-logo`" />
+    </v-tooltip>
+
+    <v-tooltip text="ezmesure-users@groupes.renater.fr" location="right">
+      <template #activator="{ props }">
+        <v-list-item
+          v-bind="props"
+          href="https://groupes.renater.fr/sympa/info/ezmesure-users"
+          link
+          target="_blank"
+          title="ezMESURE"
+          :subtitle="i18n.t('subscribe')"
+        >
+          <template #prepend>
+            <img class="mr-8" style="max-width: 30px" :src="ezmesureLogo" :alt="`ezmesure-logo`" />
+          </template>
+        </v-list-item>
       </template>
-    </v-list-item>
-    <v-list-item href="https://groupes.renater.fr/sympa/info/ezmesure-users" link target="_blank" title="ezMESURE"
-      :subtitle="i18n.t('subscribe')">
-      <template v-slot:prepend>
-        <img class="mr-8" style="max-width: 30px" :src="ezmesureLogo" :alt="`ezmesure-logo`" />
+    </v-tooltip>
+
+    <v-tooltip text="ezpaarse-users@groupes.renater.fr" location="right">
+      <template #activator="{ props }">
+        <v-list-item
+          v-bind="props"
+          href="https://groupes.renater.fr/sympa/info/ezpaarse-users"
+          link
+          target="_blank"
+          title="ezPAARSE"
+          :subtitle="i18n.t('subscribe')"
+        >
+          <template #prepend>
+            <img class="mr-8" style="max-width: 30px" :src="ezpaarseLogo" :alt="`ezpaarse-logo`" />
+          </template>
+        </v-list-item>
       </template>
-    </v-list-item>
-    <v-list-item href="mailto:ezteam@couperin.org" link target="_blank" :title="i18n.t('supportEzcounter')">
-      <template v-slot:prepend>
-        <v-icon icon="mdi-account-supervisor"></v-icon>
+    </v-tooltip>
+
+    <v-tooltip text="ezunpaywall-users@groupes.renater.fr" location="right">
+      <template #activator="{ props }">
+        <v-list-item
+          v-bind="props"
+          href="https://groupes.renater.fr/sympa/info/ezunpaywall-users"
+          link
+          target="_blank"
+          title="ezunpaywall"
+          :subtitle="i18n.t('subscribe')"
+        >
+          <template #prepend>
+            <img class="mr-8" style="max-width: 30px" :src="unpaywallLogo" :alt="`ezunpaywall-logo`" />
+          </template>
+        </v-list-item>
       </template>
-    </v-list-item>
-    <v-list-item href="mailto:ezteam@couperin.org" link target="_blank" title="ezUNPAYWALL"
-      :subtitle="i18n.t('subscribe')">
-      <template v-slot:prepend>
-        <img class="mr-8" style="max-width: 30px" :src="unpaywallLogo" :alt="`unpaywall-logo`" />
-      </template>
-    </v-list-item>
+    </v-tooltip>
   </v-list>
 </template>
 
