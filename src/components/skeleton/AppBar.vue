@@ -4,11 +4,15 @@
     <img style="max-width: 40px" :src="readmetricsLogo" class="ma-4" alt="readmetrics logo" />
     <b> ReadMETRICS </b>
 
-    <v-btn prepend-icon="mdi-message-text" class="hidden-md-and-down ml-6" :href="blogURL" text>
+    <ApplicationsMenu class="hidden-md-and-down ml-2" />
+
+    <DocumentationMenu class="hidden-md-and-down ml-2" />
+
+    <v-btn prepend-icon="mdi-message-text" class="hidden-md-and-down ml-2" :href="blogURL" text>
       Blog
     </v-btn>
-    <ApplicationsMenu class="hidden-md-and-down" />
-    <MailMenu class="hidden-md-and-down"/>
+
+    <MailMenu class="hidden-md-and-down ml-2"/>
 
     <v-spacer></v-spacer>
 
@@ -35,6 +39,7 @@ import readmetricsLogo from '@/images/applications/readmetrics/readmetrics-logo.
 import ApplicationsMenu from '@/components/menu/ApplicationsMenu.vue';
 import MailMenu from '@/components/menu/MailMenu.vue';
 import LangSwitch from '@/components/menu/LangSwitch.vue';
+import DocumentationMenu from '../menu/DocumentationMenu.vue';
 
 const blogURL = 'https://blog.ezpaarse.org/';
 
