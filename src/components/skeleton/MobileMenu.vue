@@ -11,6 +11,10 @@
 
       <ApplicationsList />
 
+      <p class="my-4">{{ i18n.t('documentation') }}</p>
+
+      <DocumentationList />
+
       <v-divider class="my-4" />
 
       <v-list-item href="https://blog.ezpaarse.org/" link title="Blog">
@@ -50,6 +54,7 @@ import { useI18n } from 'vue-i18n';
 
 import MailList from '@/components/menu/MailList.vue';
 import ApplicationsList from '@/components/menu/ApplicationsList.vue';
+import DocumentationList from '@/components/menu/DocumentationList.vue';
 import LangList from '@/components/menu/LangList.vue';
 
 const i18n = useI18n()
