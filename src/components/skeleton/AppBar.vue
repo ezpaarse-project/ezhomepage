@@ -16,13 +16,13 @@
 
     <v-spacer></v-spacer>
 
-    <v-tooltip text="Github ezPAARSE" location="bottom">
+    <v-tooltip text="Github ReadMetrics" location="bottom">
       <template v-slot:activator="{ props }">
         <v-btn class="hidden-md-and-down" :href="githubURL" target="_blank" v-bind="props" icon="mdi-github" />
       </template>
     </v-tooltip>
 
-    <v-tooltip text="Youtube ezPAARSE" location="bottom">
+    <v-tooltip text="Youtube ReadMetrics" location="bottom">
       <template v-slot:activator="{ props }">
         <v-btn class="hidden-md-and-down" :href="youtubeURL" target="_blank" v-bind="props" icon="mdi-youtube" />
       </template>
