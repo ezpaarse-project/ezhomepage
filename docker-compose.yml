@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-    container_name: ezpaarse-homepage_nginx
+    container_name: ezhomepage
     ports:
       -  ${NGINX_PORT:-80}:80
     environment:
